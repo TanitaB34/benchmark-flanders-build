@@ -194,9 +194,15 @@ def is_bedrijfsnieuws(bedrijf, titel, samenvatting, medium):
         return False
     if RUIS.search(titel):
         return False
-    if eigen_medium:
+    if eigen_medium or heeft_bedrijfscontext(bedrijf, tekst):
         return True
-    return heeft_bedrijfscontext(bedrijf, tekst)
+    # Naam staat in de titel als bedrijfsnaam (niet als voor- of achternaam van een persoon)
+    namen = [n.strip() for n in bedrijf["zoeknamen"].split("|") if n.strip()]
+    for naam in namen:
+        for m in re.finditer(r"(?<![\w-])" + re.escape(naam) + r"(?![\w-])", titel, re.I):
+            if not lijkt_persoonsnaam(titel, m.start(), m.end()):
+                return True
+    return False
 
 
 def heeft_bedrijfscontext(bedrijf, tekst):
@@ -261,7 +267,11 @@ def artikeltekst(html_tekst):
 
 TOEGELATEN_VOOR = {"bouwbedrijf", "bouwgroep", "bouwfirma", "aannemer", "groep", "group", "firma", "bureau",
                    "studiebureau", "architectenbureau", "de", "het", "een", "en", "bij", "door", "voor", "van",
-                   "met", "ook", "of", "aan", "dat", "die", "volgens", "zoals", "nv", "bv"}
+                   "met", "ook", "of", "aan", "dat", "die", "volgens", "zoals", "nv", "bv", "maar", "dus", "toen",
+                   "nu", "zo", "daarom", "daarnaast", "bovendien", "intussen", "gisteren", "vandaag", "hier",
+                   "daar", "waar", "wie", "wat", "omdat", "als", "want", "hoewel", "sinds", "na", "tijdens", "in",
+                   "op", "uit", "om", "over", "onder", "tussen", "naast", "dankzij", "ceo", "aannemers", "partner",
+                   "bouwpartner", "klant", "opdrachtgever", "ontwikkelaar", "architect", "studiebureau's", "ook"}
 TOEGELATEN_NA = {"nv", "bv", "bvba", "group", "groep", "construct", "bouw", "architects", "architecten",
                  "engineering", "infra", "unitec", "steenfabrieken", "living", "automation", "ai", "en", "uit",
                  "in", "is", "heeft", "wordt", "werd", "de", "het", "van", "voor", "bouwt", "realiseert", "en"}
@@ -273,8 +283,8 @@ def lijkt_persoonsnaam(tekst, start, einde):
     na = re.match(r"\s+([A-Za-zÀ-ÿ'-]+)", tekst[einde:einde + 40])
     if voor:
         w = voor.group(1)
-        zinsbegin = re.search(r"(^|[.!?:\"“”])\s*$", tekst[max(0, start - 42 - len(w)):start - len(voor.group(0))])
-        if w[:1].isupper() and w.lower() not in TOEGELATEN_VOOR and not zinsbegin:
+        plaatsnaam = re.search(r"(se|sche)$", w.lower())  # Veurnse, Gentse, Limburgse ...
+        if w[:1].isupper() and w.lower() not in TOEGELATEN_VOOR and not plaatsnaam:
             return True
     if na:
         w = na.group(1)
@@ -615,10 +625,10 @@ def main():
     status_archief = json.loads(SITEMAP_STATUS.read_text("utf-8")) if SITEMAP_STATUS.exists() else {}
     eerste_run = not archief
     terugblik = TERUGBLIK_EERSTE_RUN if eerste_run else TERUGBLIK_NORMAAL
-    if not status_archief.get("versie_vermeldingen"):
+    if not status_archief.get("versie_vermeldingen2"):
         # Eenmalig opnieuw 4 maanden terugkijken nu ook vermeldingen in de artikeltekst meetellen
         terugblik = TERUGBLIK_EERSTE_RUN
-        status_archief["versie_vermeldingen"] = [dt.date.today().isoformat()]
+        status_archief["versie_vermeldingen2"] = [dt.date.today().isoformat()]
     artikels_geopend = {}
     teller = {"geopend": 0, "vermeld": 0}
     vandaag = dt.date.today()
