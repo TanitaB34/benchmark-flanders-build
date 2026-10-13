@@ -41,6 +41,7 @@ BEWAARTERMIJN_DAGEN = 400          # oudere publicaties worden opgeruimd
 TERUGBLIK_NORMAAL = 10             # dagen terugkijken bij een wekelijkse run
 TERUGBLIK_EERSTE_RUN = 120         # bij de allereerste run iets meer historiek
 MAX_NIEUWE_PAGINAS = 20            # per website per run
+MAX_ARTIKELS_PER_BEDRIJF = 40      # max. aantal artikels dat per bedrijf per run geopend wordt
 PAUZE = 1.2                        # seconden tussen verzoeken (beleefd blijven)
 
 THEMAS = {
@@ -195,9 +196,114 @@ def is_bedrijfsnieuws(bedrijf, titel, samenvatting, medium):
         return False
     if eigen_medium:
         return True
+    return heeft_bedrijfscontext(bedrijf, tekst)
+
+
+def heeft_bedrijfscontext(bedrijf, tekst):
     context = [c.strip().lower() for c in bedrijf.get("context", "").split("|") if c.strip()]
     t = tekst.lower()
     return any(c in t for c in context) or bool(BEDRIJFSWOORDEN.search(tekst))
+
+
+# ---------------------------------------------------------------- vermelding in de artikeltekst
+
+def google_link_naar_bron(url):
+    """Google Nieuws geeft omleidingslinks (news.google.com/rss/articles/...).
+    Zet zo'n link om naar het echte artikel. Geeft None terug als dat niet lukt."""
+    if "news.google.com" not in url:
+        return url
+    m = re.search(r"/articles/([^?/#]+)", url)
+    if not m:
+        return None
+    gid = m.group(1)
+    try:
+        r = sessie.get(f"https://news.google.com/rss/articles/{gid}", timeout=20)
+        time.sleep(PAUZE)
+        sig = re.search(r'data-n-a-sg="([^"]+)"', r.text)
+        ts = re.search(r'data-n-a-ts="([^"]+)"', r.text)
+        if not (sig and ts):
+            return None
+        verzoek = [[["Fbv4je",
+                     f'["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
+                     f'"X","X",1,[1,1,1],1,1,null,0,0,null,0],"{gid}",{ts.group(1)},"{sig.group(1)}"]',
+                     None, "generic"]]]
+        r = sessie.post("https://news.google.com/_/DotsSplashUi/data/batchexecute",
+                        data={"f.req": json.dumps(verzoek)},
+                        headers={"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"},
+                        timeout=20)
+        time.sleep(PAUZE)
+        deel = r.text.split("\n\n", 1)[1]
+        echte = json.loads(json.loads(deel)[0][2])[1]
+        return echte if echte.startswith("http") else None
+    except Exception:
+        return None
+
+
+def artikeltekst(html_tekst):
+    """Haalt de leesbare tekst van een artikel uit de HTML, zonder menu's, zijbalken en voettekst."""
+    stukken = []
+    for m in re.finditer(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', html_tekst, re.I | re.S):
+        for body in re.findall(r'"articleBody"\s*:\s*"((?:[^"\\]|\\.)*)"', m.group(1)):
+            try:
+                stukken.append(json.loads(f'"{body}"'))
+            except ValueError:
+                pass
+    h = re.sub(r"<(script|style|noscript|nav|header|footer|aside|form)\b.*?</\1>", " ", html_tekst, flags=re.I | re.S)
+    artikels = re.findall(r"<article\b.*?</article>", h, re.I | re.S)
+    if artikels:
+        h = " ".join(artikels)
+    else:
+        b = re.search(r"<body\b.*?</body>", h, re.I | re.S)
+        h = b.group(0) if b else h
+    stukken.append(html.unescape(re.sub(r"<[^>]+>", " ", h)))
+    return re.sub(r"\s+", " ", " ".join(stukken)).strip()
+
+
+TOEGELATEN_VOOR = {"bouwbedrijf", "bouwgroep", "bouwfirma", "aannemer", "groep", "group", "firma", "bureau",
+                   "studiebureau", "architectenbureau", "de", "het", "een", "en", "bij", "door", "voor", "van",
+                   "met", "ook", "of", "aan", "dat", "die", "volgens", "zoals", "nv", "bv"}
+TOEGELATEN_NA = {"nv", "bv", "bvba", "group", "groep", "construct", "bouw", "architects", "architecten",
+                 "engineering", "infra", "unitec", "steenfabrieken", "living", "automation", "ai", "en", "uit",
+                 "in", "is", "heeft", "wordt", "werd", "de", "het", "van", "voor", "bouwt", "realiseert", "en"}
+
+
+def lijkt_persoonsnaam(tekst, start, einde):
+    """True als de naam er staat als achternaam of voornaam van een persoon (bv. 'Jasper Vandersanden')."""
+    voor = re.search(r"([A-Za-zÀ-ÿ'-]+)\s+$", tekst[max(0, start - 40):start])
+    na = re.match(r"\s+([A-Za-zÀ-ÿ'-]+)", tekst[einde:einde + 40])
+    if voor:
+        w = voor.group(1)
+        zinsbegin = re.search(r"(^|[.!?:\"“”])\s*$", tekst[max(0, start - 42 - len(w)):start - len(voor.group(0))])
+        if w[:1].isupper() and w.lower() not in TOEGELATEN_VOOR and not zinsbegin:
+            return True
+    if na:
+        w = na.group(1)
+        if w[:1].isupper() and w.lower() not in TOEGELATEN_NA:
+            return True
+    return False
+
+
+def vermelding_in_artikel(bedrijf, url):
+    """Opent het artikel en zoekt of het bedrijf erin vermeld wordt in een zakelijke context.
+    Geeft het tekstfragment rond de vermelding terug, of None."""
+    echte = google_link_naar_bron(url)
+    if not echte:
+        return None, None
+    r = haal_op(echte, timeout=20)
+    if not r or "html" not in r.headers.get("Content-Type", "html"):
+        return None, echte
+    tekst = artikeltekst(r.text)
+    namen = [n.strip() for n in bedrijf["zoeknamen"].split("|") if n.strip()]
+    for naam in namen:
+        for m in re.finditer(r"(?<![\w-])" + re.escape(naam) + r"(?![\w-])", tekst, re.I):
+            if lijkt_persoonsnaam(tekst, m.start(), m.end()):
+                continue
+            venster = tekst[max(0, m.start() - 250):m.end() + 250]
+            if RUIS.search(venster) or not heeft_bedrijfscontext(bedrijf, venster):
+                continue
+            fragment = tekst[max(0, m.start() - 110):m.end() + 130]
+            return "…" + fragment.strip() + "…", echte
+    return None, echte
 
 
 # ---------------------------------------------------------------- bronnen
@@ -509,6 +615,12 @@ def main():
     status_archief = json.loads(SITEMAP_STATUS.read_text("utf-8")) if SITEMAP_STATUS.exists() else {}
     eerste_run = not archief
     terugblik = TERUGBLIK_EERSTE_RUN if eerste_run else TERUGBLIK_NORMAAL
+    if not status_archief.get("versie_vermeldingen"):
+        # Eenmalig opnieuw 4 maanden terugkijken nu ook vermeldingen in de artikeltekst meetellen
+        terugblik = TERUGBLIK_EERSTE_RUN
+        status_archief["versie_vermeldingen"] = [dt.date.today().isoformat()]
+    artikels_geopend = {}
+    teller = {"geopend": 0, "vermeld": 0}
     vandaag = dt.date.today()
     log(f"Start benchmark {vandaag} - terugblik {terugblik} dagen")
 
@@ -517,7 +629,7 @@ def main():
     per_naam = {b["bedrijf"]: b for b in bedrijven}
     voor = len(archief)
     archief = [p for p in archief
-               if p.get("kanaal") != "Pers & nieuws" or (
+               if p.get("kanaal") != "Pers & nieuws" or p.get("vermelding") or (
                    p["bedrijf"] in per_naam and
                    is_bedrijfsnieuws(per_naam[p["bedrijf"]], p["titel"], p.get("samenvatting", ""), p.get("medium", "")))]
     if len(archief) < voor:
@@ -569,7 +681,22 @@ def main():
                 continue
             is_pers = k["bron"] in ("Google Nieuws", "Bing Nieuws")
             if is_pers and not is_bedrijfsnieuws(b, k["titel"], k["samenvatting"], k["medium"]):
-                continue
+                # Naam niet (zakelijk) in de titel: open het artikel en zoek de vermelding in de tekst
+                if RUIS.search(k["titel"]) or artikels_geopend.get(naam, 0) >= MAX_ARTIKELS_PER_BEDRIJF:
+                    continue
+                artikels_geopend[naam] = artikels_geopend.get(naam, 0) + 1
+                fragment, echte = vermelding_in_artikel(b, k["url"])
+                teller["geopend"] += 1
+                if not fragment:
+                    continue
+                teller["vermeld"] += 1
+                k["samenvatting"] = fragment
+                k["vermelding"] = True
+                if echte:
+                    k["url"] = echte
+                    pid = maak_id(naam + "|" + echte.split("#")[0].rstrip("/"))
+                    if pid in bekende_ids:
+                        continue
             archief.append({
                 "id": pid,
                 "bedrijf": naam,
@@ -584,6 +711,7 @@ def main():
                 "naam_in_titel": naam_in_tekst(b, k["titel"]) if is_pers else True,
                 "samenvatting": k["samenvatting"],
                 **({"interacties": k["interacties"]} if k.get("interacties") is not None else {}),
+                **({"vermelding": True} if k.get("vermelding") else {}),
             })
             bekende_ids.add(pid)
             bekende_titels.add(tkey)
@@ -619,6 +747,7 @@ def main():
     }
     (DOCS_DIR / "data.js").write_text(
         "window.BENCHMARK = " + json.dumps(dashboard, ensure_ascii=False) + ";\n", "utf-8")
+    log(f"Artikels geopend om vermeldingen te zoeken: {teller['geopend']}, waarvan met vermelding: {teller['vermeld']}")
     log(f"Klaar: {nieuw_totaal} nieuwe publicaties, {len(archief)} in archief.")
 
     if all(s["google"] == "fout" and s["bing"] == "fout" for s in run_status):
