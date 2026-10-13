@@ -37,9 +37,10 @@ USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36 VerstraeteBenchmark/1.0"
 )
-BEWAARTERMIJN_DAGEN = 400          # oudere publicaties worden opgeruimd
+BEWAARTERMIJN_DAGEN = 3650         # publicaties worden 10 jaar bewaard
 TERUGBLIK_NORMAAL = 10             # dagen terugkijken bij een wekelijkse run
 TERUGBLIK_EERSTE_RUN = 120         # bij de allereerste run iets meer historiek
+TERUGBLIK_HISTORIEK = 1095         # eenmalige inhaalbeweging: 3 jaar terug
 MAX_NIEUWE_PAGINAS = 20            # per website per run
 MAX_ARTIKELS_PER_BEDRIJF = 40      # max. aantal artikels dat per bedrijf per run geopend wordt
 PAUZE = 1.2                        # seconden tussen verzoeken (beleefd blijven)
@@ -157,7 +158,18 @@ def bouw_query(bedrijf):
     if context:
         # (een van de namen) EN (een van de contextwoorden)
         q += " (" + " OR ".join(f'"{c}"' if " " in c else c for c in context) + ")"
+    for u in uitsluitingen(bedrijf):
+        q += f' -"{u}"'
     return q
+
+
+def uitsluitingen(bedrijf):
+    return [u.strip() for u in bedrijf.get("uitsluiten", "").split("|") if u.strip()]
+
+
+def is_uitgesloten(bedrijf, tekst):
+    t = tekst.lower()
+    return any(u.lower() in t for u in uitsluitingen(bedrijf))
 
 
 def naam_in_tekst(bedrijf, tekst):
@@ -336,6 +348,8 @@ def vermelding_in_artikel(bedrijf, url):
             if not heeft_bedrijfscontext(bedrijf, venster):
                 continue
             fragment = tekst[max(0, m.start() - 110):m.end() + 130]
+            if is_uitgesloten(bedrijf, venster):
+                continue
             return "ja", "…" + fragment.strip() + "…", echte
     return ("nee" if gezien else "onleesbaar"), None, echte
 
@@ -345,7 +359,8 @@ def vermelding_in_artikel(bedrijf, url):
 def google_nieuws(bedrijf, dagen):
     """Zoekt op de zoeknamen (+ context) en daarnaast op elke extra zoekopdracht uit bedrijven.csv."""
     vragen = [bouw_query(bedrijf)]
-    vragen += [v.strip() for v in bedrijf.get("extra_zoekopdracht", "").split("||") if v.strip()]
+    uit = "".join(f' -"{u}"' for u in uitsluitingen(bedrijf))
+    vragen += [v.strip() + uit for v in bedrijf.get("extra_zoekopdracht", "").split("||") if v.strip()]
     resultaten, gezien, gelukt = [], set(), False
     for vraag in vragen:
         deel = google_nieuws_vraag(vraag, dagen)
@@ -629,7 +644,7 @@ def lees_bedrijven():
             continue
         r.setdefault("zoeknamen", r["bedrijf"])
         r["zoeknamen"] = r.get("zoeknamen") or r["bedrijf"]
-        for veld in ("groep", "website", "context", "extra_feeds", "linkedin", "extra_zoekopdracht"):
+        for veld in ("groep", "website", "context", "extra_feeds", "linkedin", "extra_zoekopdracht", "uitsluiten"):
             r.setdefault(veld, "")
         bedrijven.append(r)
     return bedrijven
@@ -670,6 +685,10 @@ def main():
         # Eenmalig opnieuw 4 maanden terugkijken nu ook vermeldingen in de artikeltekst meetellen
         terugblik = TERUGBLIK_EERSTE_RUN
         status_archief["versie_zoektermen3"] = [dt.date.today().isoformat()]
+    if not status_archief.get("versie_historiek4"):
+        # Eenmalig 3 jaar historiek ophalen (zoveel als Google Nieuws nog teruggeeft)
+        terugblik = TERUGBLIK_HISTORIEK
+        status_archief["versie_historiek4"] = [dt.date.today().isoformat()]
     artikels_geopend = {}
     teller = {"geopend": 0, "vermeld": 0, "onleesbaar": 0}
     vandaag = dt.date.today()
@@ -679,6 +698,9 @@ def main():
     # Ruim ook eerder verzamelde persartikels op die niet over het bedrijf gaan
     per_naam = {b["bedrijf"]: b for b in bedrijven}
     voor = len(archief)
+    archief = [p for p in archief
+               if not (p.get("kanaal") == "Pers & nieuws" and p["bedrijf"] in per_naam and
+                       is_uitgesloten(per_naam[p["bedrijf"]], p["titel"] + " " + p.get("samenvatting", "")))]
     archief = [p for p in archief
                if p.get("kanaal") != "Pers & nieuws" or (p.get("vermelding") and (
                    "niet automatisch" not in p.get("samenvatting", "") or
@@ -733,6 +755,8 @@ def main():
             if pid in bekende_ids or tkey in bekende_titels:
                 continue
             is_pers = k["bron"] in ("Google Nieuws", "Bing Nieuws")
+            if is_pers and is_uitgesloten(b, k["titel"] + " " + k["samenvatting"]):
+                continue
             if is_pers and not is_bedrijfsnieuws(b, k["titel"], k["samenvatting"], k["medium"]):
                 # Naam niet (zakelijk) in de titel: open het artikel en zoek de vermelding in de tekst
                 if RUIS.search(k["titel"]) or artikels_geopend.get(naam, 0) >= MAX_ARTIKELS_PER_BEDRIJF:
