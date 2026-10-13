@@ -1,0 +1,36 @@
+name: Wekelijkse benchmark
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"     # elke maandag om 05:00 UTC (06:00/07:00 Belgische tijd)
+  workflow_dispatch:         # knop "Run workflow" om het manueel te starten
+
+permissions:
+  contents: write
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Bestanden ophalen
+        uses: actions/checkout@v4
+
+      - name: Python klaarzetten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Benodigdheden installeren
+        run: pip install -r requirements.txt
+
+      - name: Publicaties verzamelen
+        run: python scraper/benchmark.py
+
+      - name: Resultaten bewaren
+        run: |
+          git config user.name "benchmark-bot"
+          git config user.email "benchmark-bot@users.noreply.github.com"
+          git add data docs
+          git commit -m "Benchmark $(date +%G)-W$(date +%V)" || echo "Geen wijzigingen"
+          git push
