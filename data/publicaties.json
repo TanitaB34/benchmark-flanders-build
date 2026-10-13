@@ -16,6 +16,22 @@
   "samenvatting": "CEO Stadsbader Dominique Valcke is nieuwe voorzitter van Voka Focus en WTV"
  },
  {
+  "id": "adc43c1f4b181ac7",
+  "bedrijf": "OpenSpace",
+  "datum": "2026-10-13",
+  "week": "2026-W42",
+  "titel": "From laser scanners to Visual Intelligence: Reality capture’s three eras",
+  "url": "https://www.openspace.ai/blog/reality-capture-laser-scanning-to-visual-intelligence/",
+  "medium": "openspace.ai",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "BIM & digitaal"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Reality capture moved from laser scanners to 360 cameras to the Visual Intelligence Platform. See the data behind each era and where spatial AI goes next. The post From laser scanners to Visual Intelligence: Reality capture’s three eras…"
+ },
+ {
   "id": "69c54b11756b3f22",
   "bedrijf": "OpenSpace",
   "datum": "2026-10-12",
@@ -96,6 +112,40 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Embuild steunt Ombudsdienst Bouw, maar vraagt evenwichtige spelregels BATIBOUW"
+ },
+ {
+  "id": "d7e82a9e4bcff19f",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-10-12",
+  "week": "2026-W42",
+  "titel": "Dominique Valcke wordt de volgende voorzitter van Voka",
+  "url": "https://www.voka.be/vlaanderen/nieuws/dominique-valcke-wordt-de-volgende-voorzitter-van-voka",
+  "medium": "Voka - Vlaams netwerk van ondernemingen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…12/10/2026 Dominique Valcke, CEO van Stadsbader Group, volgt Rudy Provoost op als voorzitter van Voka, het Vlaams netwerk van ondernemingen, met ingang van 22 november 2026. De…",
+  "vermelding": true
+ },
+ {
+  "id": "bc5576117b430ede",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-12",
+  "week": "2026-W42",
+  "titel": "Biogebaseerde isolatie op de rand van de doorbraak: FTI Festival laat bezoekers de bouw van morgen vandaag al zien én voelen!",
+  "url": "https://bouwkroniek.be/vakbeurzen-en-evenementen/biogebaseerde-isolatie-op-de-rand-van-de-doorbraak-fti-festival-laat-bezoekers-de-bouw-van-morgen-vandaag-al-zien-en-voelen-53224",
+  "medium": "Bouwkroniek",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…ag al huizen isoleren. Op het Flanders Technology & Innovation Festival (16 oktober – 15 november 2026) slaan Buildwise en De Bouw Kijkt Verder de handen in elkaar om het grote publiek zelf te laten voelen, ontdekken en ervaren hoe dicht biogebaseer…",
+  "vermelding": true
  },
  {
   "id": "380a2eb54e55f2ee",
@@ -274,6 +324,23 @@
   "samenvatting": "Inhoudingsplicht bij buitenlandse onderaannemers Embuild Antwerpen"
  },
  {
+  "id": "1d512a35db4b8f2c",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-29",
+  "week": "2026-W40",
+  "titel": "Bouwfirma trekt zelf aanvraag in voor opslag en verwerking puin in Terlanenveld in Overijse",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/09/29/inge-lenseclaes-overijse-terlanenveld/",
+  "medium": "VRT",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…rtikel luisteren | 2min Meer info In Terlanen komt geen opslagplaats om grond en puin te verwerken. Bouwfirma Stadsbader heeft de aanvraag zelf ingetrokken. Heel wat inwoners hadden geprotesteerd tegen de plannen. Ze vreesden zwaar werfverkeer in het…",
+  "vermelding": true
+ },
+ {
   "id": "12e52c0928b1d317",
   "bedrijf": "OpenSpace",
   "datum": "2026-09-28",
@@ -405,6 +472,41 @@
   "samenvatting": "archipelago architects voltooit schoolsite Leefdaal met paviljoen Voerdal als nieuwe dorpsplek Architectura"
  },
  {
+  "id": "70fa94baf7c79a26",
+  "bedrijf": "Willemen Groep",
+  "datum": "2026-09-24",
+  "week": "2026-W39",
+  "titel": "archipelago architects voltooit schoolsite Leefdaal met paviljoen Voerdal als nieuwe dorpsplek",
+  "url": "https://www.architectura.be/nl/nieuws/archipelago-architects-voltooit-schoolsite-leefdaal-met-paviljoen-voerdal-als-nieuwe-dorpsplek/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…g met M-gineers , Sweco , Ontwerpbureau Pauwels en VETO & Partners . Voor de realisatie werd samengewerkt met Willemen Bouw . De ingreep bundelt een lagere school, kleuterschool en verschillende gemeenschapsfuncties op één site, aangevuld met een g…",
+  "vermelding": true
+ },
+ {
+  "id": "805f666849577b02",
+  "bedrijf": "Bureau Bouwtechniek",
+  "datum": "2026-09-23",
+  "week": "2026-W39",
+  "titel": "Houten bedrijfsgebouw ontworpen voor verandering en demontage",
+  "url": "https://www.architectura.be/nl/nieuws/be-one-in-puurs-houten-bedrijfsgebouw-ontworpen-voor-verandering-en-demontage-sharp-architectures-en-usages/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…enteel in Puurs wordt gerealiseerd in opdracht van Xpand, een ontwerp van SHARP architectures en USAGES , die Bureau Bouwtechniek inschakelden als technisch partner, wordt een schoolvoorbeeld van circulair bouwen. Zo vormt een demonteerbare draagstructuur van…",
+  "vermelding": true
+ },
+ {
   "id": "347fbd005f042b3b",
   "bedrijf": "Embuild",
   "datum": "2026-09-22",
@@ -489,6 +591,24 @@
   "samenvatting": "De voorbije jaren heeft EEG haar aanwezigheid in Brussel en Wallonië versterkt via twee strategische overnames. Deze maken deel uit van een duidelijke langetermijnstrategie: een duurzame verankering in de regio’s waar we actief zijn,…"
  },
  {
+  "id": "934eae7258eadb35",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-17",
+  "week": "2026-W38",
+  "titel": "In Dilsen-Stokkem start Giga Storage met de bouw van het momenteel grootste batterijpark van België",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/09/17/in-dilsen-stokkem-start-bouw-grootste-belgisch-batterijpark-van/",
+  "medium": "VRT",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…eerd (Anders) van Dilsen-Stokkem. Het energieproject wordt gerealiseerd in samenwerking met Tesla en aannemer Stadsbader. De aanwezigheid van een hoogspanningslijn van Elia was volgens de burgemeester een belangrijke reden om voor Dilsen-Stokkem te k…",
+  "vermelding": true
+ },
+ {
   "id": "f63992d97cde1d76",
   "bedrijf": "OpenSpace",
   "datum": "2026-09-15",
@@ -519,6 +639,23 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "Bouwen met minder milieu-impact: hoe werkt dit in de praktijk? Embuild Vlaanderen"
+ },
+ {
+  "id": "a09385575e4d14a6",
+  "bedrijf": "Buildwise",
+  "datum": "2026-09-15",
+  "week": "2026-W38",
+  "titel": "Bouwen met minder milieu-impact: hoe werkt dit in de praktijk?",
+  "url": "https://www.embuildvlaanderen.be/agenda/duplicate-of-bouwen-met-minder-milieu-impact-hoe-werkt-dit-in-de-praktijk/",
+  "medium": "Embuild Vlaanderen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…erzicht (opkomende) wetgeving – door Embuild Vlaanderen 17:30 – Voorstelling themapagina milieu-impact – door Buildwise 17:45 – Inzichten rond milieu-impact van de werf – door Buildwise 18:00 – Testimonial In Diepenbeek: Bouwcampus 2.0 18:15 – Q&A 1…",
+  "vermelding": true
  },
  {
   "id": "2d691baa92f3529b",
@@ -568,6 +705,23 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "Milieuforum: beleidsprioriteiten Embuild Vlaanderen"
+ },
+ {
+  "id": "cc7fad3dda8ea433",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-12",
+  "week": "2026-W37",
+  "titel": "Infomoment leidingentunnel Visartsluis maandagmiddag in Zeebrugge",
+  "url": "https://www.lokaalnieuws.online/2026/09/12/leidingentunnel-visartsluis-zeebrugge/",
+  "medium": "Lokaalnieuws.online",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…nder het water van de sluis door. (C) APK Group / MOW Eerst schachten, dan de tunnel In het eerste jaar zinkt Stadsbader vooral de schachten af. Die krijgen een buitendiameter van 9,7 en 13,5 meter en gaan tot 36 meter diep. Daarna legt K-Boringen de…",
+  "vermelding": true
  },
  {
   "id": "ea98bdc23962b36d",
@@ -636,6 +790,23 @@
   "samenvatting": "Nelissen investeert 10 miljoen in groenere baksteen, maar botst op vol elektriciteitsnet HBVL"
  },
  {
+  "id": "6ff05e51065fcf58",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-04",
+  "week": "2026-W36",
+  "titel": "Lokale herstellingen aan de rijweg op verschillende plaatsen in Sint-Niklaas",
+  "url": "https://www.sint-niklaas.be/actueel/lokale-herstellingen-aan-de-rijweg-op-verschillende-plaatsen-sint-niklaas",
+  "medium": "Stad Sint-Niklaas",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…de rijweg op verschillende plaatsen in Sint-Niklaas 4 september 2026 Vanaf maandag 7 september voert aannemer Stadsbader op verschillende plaatsen in Sint-Niklaas lokale herstellingen uit aan de rijweg. Op een vijftigtal locaties worden betonstraatst…",
+  "vermelding": true
+ },
+ {
   "id": "38438d280046e083",
   "bedrijf": "Embuild",
   "datum": "2026-09-03",
@@ -700,6 +871,25 @@
   "samenvatting": "Overname van DCA Infra en DC Recycling door Stadsbader Group is afgerond: “We kijken opnieuw vooruit” HLN"
  },
  {
+  "id": "cc9fa880228b5ce6",
+  "bedrijf": "ARQ Architecten",
+  "datum": "2026-08-27",
+  "week": "2026-W35",
+  "titel": "Droge vloeropbouw als duurzame basis voor houten buurtschool Hoedjes van Papier",
+  "url": "https://www.architectura.be/nl/nieuws/droge-vloeropbouw-als-duurzame-basis-voor-houten-buurtschool-hoedjes-van-papier/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven",
+   "HR & talent"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…voor houten buurtschool Hoedjes van Papier Joyce Robben 27 augustus 2026 Laatste update: 08 september 2026 © arQ Architecten © Isolteam © Isolteam © Isolteam © Isolteam © fermacell® © fermacell® Wie bij duurzaam bouwen alleen naar de draagstructuur en ge…",
+  "vermelding": true
+ },
+ {
   "id": "fb361f61fa16a9e9",
   "bedrijf": "DEME",
   "datum": "2026-08-26",
@@ -714,6 +904,23 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "DEME boekt recordwinst en trekt omzetprognose op Flows"
+ },
+ {
+  "id": "dca77cd4397a8b40",
+  "bedrijf": "Embuild",
+  "datum": "2026-08-26",
+  "week": "2026-W35",
+  "titel": "Bouwonderwijs onder druk: sector waarschuwt voor tekort aan vakmensen",
+  "url": "https://www.batibouw.com/nl/articles/1630/bouwonderwijs-onder-druk-sector-waarschuwt-voor-tekort-aan-vakmensen",
+  "medium": "BATIBOUW",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…de jaar volgens haar wel degelijk een belangrijke functie behoudt. Zes jaar beroepsonderwijs volstaat volgens Embuild niet altijd om leerlingen volledig klaar te stomen voor uitvoerend vakmanschap op de werf. Wie het specialisatiejaar overslaat, d…",
+  "vermelding": true
  },
  {
   "id": "c108f3eba9d4ebc4",
@@ -746,6 +953,60 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "Circulair slopen van ramen, vlakglas en deuren met CIRCO Embuild Vlaanderen"
+ },
+ {
+  "id": "e5b047c63ae04837",
+  "bedrijf": "BESIX Infra",
+  "datum": "2026-08-21",
+  "week": "2026-W34",
+  "titel": "A73 gaat in september weer enkele dagen dicht, dit keer om het asfalt richting het noorden te vervangen",
+  "url": "https://www.limburger.nl/regio/limburg/a73-gaat-in-september-weer-enkele-dagen-dicht-dit-keer-om-het-asfalt-richting-het-noorden-te-vervangen/160314466.html",
+  "medium": "De Limburger",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…rden te vervangen Rob Dieleman Verslaggever Roermond 21-08-2026, 16:12 Delen Asfalteren van de A73 in juli. © Besix Infra verkeersovertredingen Premium Dit is sinds kort de meest gevreesde vaste flitspaal in Limburg: bijna 4800 boetes in amper vier ma…",
+  "vermelding": true
+ },
+ {
+  "id": "7f0d2515038aa5cd",
+  "bedrijf": "DEME",
+  "datum": "2026-08-21",
+  "week": "2026-W34",
+  "titel": "Funderingswerken Prinses Elisabeth eiland afgerond",
+  "url": "https://engineeringnet.be/nl/nieuws/item/25380/funderingswerken-prinses-elisabeth-eiland-afgerond",
+  "medium": "Engineeringnet",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…het Verenigd Koninkrijk. De bouw van het energie-eiland wordt gerealiseerd door TM Edison, een consortium van DEME en Jan De Nul, in opdracht van Elia. Het project geldt wereldwijd als een primeur, aldus Gert De Smet, projectdirecteur voor het…",
+  "vermelding": true
+ },
+ {
+  "id": "20c8fea7fe08bad5",
+  "bedrijf": "Banimmo",
+  "datum": "2026-08-21",
+  "week": "2026-W34",
+  "titel": "Beursupdate: Brusselse beurs start voorzichtig hoger",
+  "url": "https://www.deaandeelhouder.be/nieuws/2026/08/21/beursupdate-brusselse-beurs-start-voorzichtig-hoger-2/",
+  "medium": "De AandeelHouder",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Bedrijf & financieel",
+   "Projecten & werven",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…de outlook, namelijk een verwachte EPRA-winstgroei van 7 procent. Montea opende ruim een half procent hoger. Banimmo heeft het verlies van vorig jaar omgebogen naar winst, dankzij de verkoop van een opgeleverd gebouw aan Farys, maar zag de waarde…",
+  "vermelding": true
  },
  {
   "id": "518b7712fecab6ec",
@@ -813,6 +1074,58 @@
   "samenvatting": "Herneming GRUP ‘Nelissen Steenfabrieken’ Lanaken: openbaar Departement Omgeving Vlaanderen"
  },
  {
+  "id": "f3d2a1fb82c4750c",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-08-19",
+  "week": "2026-W34",
+  "titel": "OP 19 AUGUSTUS STARTEN WERKEN AAN SPORTPARK LIER",
+  "url": "https://www.lierbelicht.be/op-19-augustus-starten-werken-aan-sportpark-lier/",
+  "medium": "Lier Belicht",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…en investeren immers in dit project. Verschillende aannemers uit Vlaanderen en Brussel toonden hun interesse. Stadsbader voerde reeds opdrachten uit voor meerdere sportclubs in Vlaanderen. Daartoe behoren de kunstgrasvelden van de jeugdacademie van S…",
+  "vermelding": true
+ },
+ {
+  "id": "8f1745daa6b220d0",
+  "bedrijf": "Buildwise",
+  "datum": "2026-08-16",
+  "week": "2026-W33",
+  "titel": "Wordt een goed geïsoleerd huis te warm in de zomer? Experten leggen uit",
+  "url": "https://www.redactie24.be/lifestyle/wordt-een-goed-geisoleerd-huis-te-warm-de-zomer-experten-leggen-uit-192873",
+  "medium": "Redactie24",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Innovatie & prefab",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…et warmtebehoud tijdens de winter. Maar helpt isolatie ook wanneer de temperaturen in de zomer sterk oplopen? Buildwise, het onafhankelijke innovatiecentrum van de Belgische bouwsector, laat in een bericht aan onze redactie weten dat het antwoord op…",
+  "vermelding": true
+ },
+ {
+  "id": "d6e94226620ebf1b",
+  "bedrijf": "Driesen",
+  "datum": "2026-08-11",
+  "week": "2026-W33",
+  "titel": "Zaventem zet rioleringswerken stop en breekt met aannemer: \"Veiligheid kwam in gedrang\"",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/08/11/rioleringswerken-zaventem/",
+  "medium": "VRT",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…ateriaal dat er nog ligt, wordt verwijderd. \"We gaan de huidige problemen zo goed mogelijk oplossen\", besluit Driesen. Gemaakte afspraken om problemen op te lossen, werden niet nageleefd Wim Driesen (Anders.Zaventem), schepen van Openbaar Domein D…",
+  "vermelding": true
+ },
+ {
   "id": "42a34166c432807c",
   "bedrijf": "Antea Group",
   "datum": "2026-08-10",
@@ -844,6 +1157,97 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "95 pct woonzorgcentra en ziekenhuizen moet gerenoveerd om hittebestendig te zijn (Embuild) De Specialist"
+ },
+ {
+  "id": "e285347e6264ab79",
+  "bedrijf": "Embuild",
+  "datum": "2026-08-10",
+  "week": "2026-W33",
+  "titel": "95% van woonzorgcentra en ziekenhuizen moet tegen 2050 worden gerenoveerd",
+  "url": "https://batibouw.com/nl/articles/1602/95-van-woonzorgcentra-en-ziekenhuizen-moet-tegen-2050-worden-gerenoveerd",
+  "medium": "BATIBOUW",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…a alle woonzorgcentra en ziekenhuizen in België staan voor een stevige renovatieopgave. Volgens onderzoek van Embuild moet 95 procent van de zorginstellingen worden gerenoveerd om tegen 2050 aan de Europese energienormen te voldoen. Tegelijk neemt…",
+  "vermelding": true
+ },
+ {
+  "id": "59965a0d10ad3a12",
+  "bedrijf": "Buildwise",
+  "datum": "2026-08-09",
+  "week": "2026-W32",
+  "titel": "Geen airco nodig? Zo houd je je woning koel zonder hoge energiekosten volgens experts",
+  "url": "https://www.redactie24.be/binnenland/geen-airco-nodig-zo-houd-je-je-woning-koel-zonder-hoge-energiekosten-volgens-experts-192679",
+  "medium": "Redactie24",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…l woningen onaangenaam heet. Steeds meer mensen zoeken naar manieren om hun huis koel te houden, maar volgens Buildwise ligt de meest duurzame oplossing niet alleen in het gebruik van airconditioning. Het innovatiecentrum van de Belgische bouwsector…",
+  "vermelding": true
+ },
+ {
+  "id": "3e6c39ba6878b12c",
+  "bedrijf": "Houben",
+  "datum": "2026-08-06",
+  "week": "2026-W32",
+  "titel": "\"Limburgse bouwsector kijkt voorzichtig naar 2027, maar blijft onmisbaar voor 2% economische groei\"",
+  "url": "https://www.voka.be/limburg/nieuws/limburgse-bouwsector-kijkt-voorzichtig-naar-2027-maar-blijft-onmisbaar-voor-2-economische",
+  "medium": "Voka - Vlaams netwerk van ondernemingen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…nquête wordt dit jaar voorgesteld in het vernieuwde oefencomplex van KRC Genk, een realisatie van bouwbedrijf Houben NV. Bekijk hier de reportage op Kanaal Z. De cijfers uit de Bouwenquête tonen een sector die voorzichtig vooruitkijkt. Slechts 34…",
+  "vermelding": true
+ },
+ {
+  "id": "da7bc8cc624ade1e",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-08-06",
+  "week": "2026-W32",
+  "titel": "Update werken LAR: Juli 2026",
+  "url": "https://www.menen.be/nieuws/update-werken-lar-juli-2026",
+  "medium": "Menen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…s 2026 Het bouwverlof van de aannemer loopt tot en met vrijdag 7 augustus 2026. Op maandag 10 augustus hervat Stadsbader alle werkzaamheden op bedrijventerrein LAR. Fase 6 gaat van start en de omleidingen veranderen. Waar wordt er nu gewerkt? De werk…",
+  "vermelding": true
+ },
+ {
+  "id": "9dc7a1b840b5496b",
+  "bedrijf": "Embuild",
+  "datum": "2026-08-06",
+  "week": "2026-W32",
+  "titel": "\"Limburgse bouwsector kijkt voorzichtig naar 2027, maar blijft onmisbaar voor 2% economische groei\"",
+  "url": "https://www.voka.be/limburg/nieuws/limburgse-bouwsector-kijkt-voorzichtig-naar-2027-maar-blijft-onmisbaar-voor-2-economische",
+  "medium": "Voka - Vlaams netwerk van ondernemingen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Bedrijf & financieel",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…. Daarnaast plant 43,4% bijkomende investeringen in 2027. Dat is cruciaal, want net daar ligt volgens Voka en Embuild de sleutel om opnieuw te groeien. Digitalisering, artificiële intelligentie, BIM, prefab en modulair bouwen moeten de productivit…",
+  "vermelding": true
  },
  {
   "id": "d01a480bf30f7353",
@@ -878,6 +1282,23 @@
   "samenvatting": "Informeren, waarschuwen of weigeren? De drie plichten van de aannemer op de werf Embuild Antwerpen"
  },
  {
+  "id": "2edafedf6c981150",
+  "bedrijf": "Bureau Bouwtechniek",
+  "datum": "2026-08-03",
+  "week": "2026-W32",
+  "titel": "Nauta Bedaux tekent nieuw kind- en buurtcentrum Ons Huis als publiek ankerpunt in de Seefhoek",
+  "url": "https://www.architectura.be/nl/nieuws/nauta-bedaux-tekent-nieuw-kind-en-buurtcentrum-ons-huis-als-publiek-ankerpunt-in-de-seefhoek/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…m in de Antwerpse Seefhoek. Het project wordt in opdracht van Stad Antwerpen gerealiseerd in samenwerking met Bureau Bouwtechniek en vormt een integraal onderdeel van het grootschalige masterplan Wilgenstraat. Met Ons Huis willen de ontwerpers een gebouw creë…",
+  "vermelding": true
+ },
+ {
   "id": "a82477b8ee199cb7",
   "bedrijf": "OpenSpace",
   "datum": "2026-07-30",
@@ -892,6 +1313,42 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "OpenSpace geeft AI ‘ogen’ op de bouwplaats ABN Amro"
+ },
+ {
+  "id": "0602900cb774e8f2",
+  "bedrijf": "Willemen Groep",
+  "datum": "2026-07-22",
+  "week": "2026-W30",
+  "titel": "Fluvius bouwt eerste energiepositief kantoor met waterstofbatterijen en 1.200 zonnepanelen",
+  "url": "https://solarmagazine.nl/nieuws-zonne-energie/i44353/fluvius-bouwt-eerste-energiepositief-kantoor-met-waterstofbatterijen-en-1-200-zonnepanelen",
+  "medium": "Solar & Storage Magazine",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…dat Fluvius met Lubbeek de beste keuze heeft gemaakt voor de uitbouw van zijn netwerken van morgen.’ Aannemer Willemen Bouw, onderdeel van Willemen Groep, is aangesteld om de werken uit te voeren. ‘We zijn trots dat we dit gebouw mogen bouwen’, ver…",
+  "vermelding": true
+ },
+ {
+  "id": "16caa77cf52cd7a9",
+  "bedrijf": "Bureau Bouwtechniek",
+  "datum": "2026-07-21",
+  "week": "2026-W30",
+  "titel": "The Grand in Nieuwpoort: ruwbouw voltooid, het art-decomonument hervindt zijn silhouet",
+  "url": "https://www.eventail.be/immobilier/articles/erfgoed/the-grand-in-nieuwpoort-ruwbouw-voltooid-het-art-decomonument-hervindt-zijn-silhouet",
+  "medium": "L'Éventail",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "HR & talent"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…tzker Prize 2023 staat David Chipperfield bekend om zijn restauraties, waaronder het Neues Museum in Berlijn. Bureau Bouwtechniek staat in voor de uitvoeringsarchitectuur, Arjaan De Feyter voor de interieurarchitectuur, en het bedrijf Verstraete.team uit Roes…",
+  "vermelding": true
  },
  {
   "id": "ee779bdbb98a47a0",
@@ -942,6 +1399,42 @@
   "samenvatting": "Gebouwenrenovatieplan: Embuild & Agoria roepen Vlaamse regering op om ‘hoofd koel te houden’ Embuild Vlaanderen"
  },
  {
+  "id": "c9f3c55a88b20b18",
+  "bedrijf": "VDS Vanderstraeten",
+  "datum": "2026-07-09",
+  "week": "2026-W28",
+  "titel": "Limburgse bouwbedrijven zetten AI-camera in om te controleren of personeel en bezoekers veiligheidskledij dragen op werf",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/07/08/ai-camera-controleren-veiligheidskledij-bouwwerven-houben-vander/",
+  "medium": "VRT",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…kers veiligheidskledij dragen op werf Artikel luisteren | 3min Meer info De Limburgse bouwbedrijven Houben en Vanderstraeten hebben op een werf in Sint-Truiden getest of een camera met AI in kaart kan brengen hoeveel personeelsleden en bezoekers op de we…",
+  "vermelding": true
+ },
+ {
+  "id": "188bc7dc2bfc01c3",
+  "bedrijf": "Houben",
+  "datum": "2026-07-09",
+  "week": "2026-W28",
+  "titel": "Limburgse bouwbedrijven zetten AI-camera in om te controleren of personeel en bezoekers veiligheidskledij dragen op werf",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/07/08/ai-camera-controleren-veiligheidskledij-bouwwerven-houben-vander/",
+  "medium": "VRT",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…l en bezoekers veiligheidskledij dragen op werf Artikel luisteren | 3min Meer info De Limburgse bouwbedrijven Houben en Vanderstraeten hebben op een werf in Sint-Truiden getest of een camera met AI in kaart kan brengen hoeveel personeelsleden en…",
+  "vermelding": true
+ },
+ {
   "id": "4144f8584dbd884d",
   "bedrijf": "Willemen Groep",
   "datum": "2026-07-07",
@@ -990,6 +1483,40 @@
   "samenvatting": "Vandersanden krijgt groen licht voor duurzame uitbreiding in Bilzen-Hoeselt TV Limburg"
  },
  {
+  "id": "0d25061e386576da",
+  "bedrijf": "VDS Vanderstraeten",
+  "datum": "2026-07-01",
+  "week": "2026-W27",
+  "titel": "Business Garden Brussels: waar doordachte samenwerking leidt tot een toekomstgerichte kantoorcampus",
+  "url": "https://architectura.be/nl/nieuws/business-garden-brussels-waar-doordachte-samenwerking-leidt-tot-een-toekomstgerichte-kantoorcampus/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…ontworpen door Atelier d’Architecture de Genval en gerealiseerd met onder meer Loveld , Reynaers Aluminium en Vanderstraeten , combineert 36.000 m² kantoorruimte met horeca, sport, een bedrijfscrèche en een uitgestrekt landschapspark. Dankzij die mix van…",
+  "vermelding": true
+ },
+ {
+  "id": "b335d87feeb606f9",
+  "bedrijf": "Nelissen",
+  "datum": "2026-06-30",
+  "week": "2026-W27",
+  "titel": "Rubio-baksteen kleurt woonproject Kubus Katrijp met nuance en karakter",
+  "url": "https://www.architectura.be/nl/nieuws/rubio-baksteen-kleurt-woonproject-kubus-katrijp-met-nuance-en-karakter/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…dse uitstraling heeft. Door verschillende baksteenmengingen te combineren, met focus op de Rubio-baksteen van Nelissen Steenfabrieken , ontstaat een gevelbeeld met subtiele kleurnuances, diepte en levendigheid. Aansluiting zoeken bij de buurt Kubus Katrijp bevind…",
+  "vermelding": true
+ },
+ {
   "id": "bec99168048b2544",
   "bedrijf": "Embuild",
   "datum": "2026-06-29",
@@ -1022,6 +1549,42 @@
   "samenvatting": "Onrechtmatige bedingen in overheidsopdrachten: een uitzondering op de regel? Embuild Antwerpen"
  },
  {
+  "id": "097be5f53eda1bf0",
+  "bedrijf": "Cordeel",
+  "datum": "2026-06-29",
+  "week": "2026-W27",
+  "titel": "Eerstesteenlegging nieuwe infrastructuur voor de nieuwe voertuigen van de Landmacht in Leopoldsburg",
+  "url": "https://www.mil.be/nl/news/eerstesteenlegging-nieuwe-infrastructuur-voor-de-nieuwe-voertuigen-van-de-landmacht-in-leopoldsburg/",
+  "medium": "Beldefnews",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…o legt ze een stevige basis om de transformatie van de Landmacht te ondersteunen,” aldus Kristien Olaerts van Cordeel. De oplevering van het project is voorzien eind 2027. Investering in operationele capaciteit Met dit project investeert Defensie…",
+  "vermelding": true
+ },
+ {
+  "id": "80288dc68aabb2c5",
+  "bedrijf": "Archipelago",
+  "datum": "2026-06-29",
+  "week": "2026-W27",
+  "titel": "Eerstesteenlegging nieuwe infrastructuur voor de nieuwe voertuigen van de Landmacht in Leopoldsburg",
+  "url": "https://www.mil.be/nl/news/eerstesteenlegging-nieuwe-infrastructuur-voor-de-nieuwe-voertuigen-van-de-landmacht-in-leopoldsburg/",
+  "medium": "Beldefnews",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "HR & talent"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…an verschillende partners. Tot het team behoren de aannemers Cordeel Belgium en CIT Blaton, architectenbureau archipelago en technische partner Imtech Belgium. “Wij zijn trots om, samen met onze partners, bij te dragen aan dit strategische project voo…",
+  "vermelding": true
+ },
+ {
   "id": "69d480c8a7b96f1c",
   "bedrijf": "EEG",
   "datum": "2026-06-25",
@@ -1037,6 +1600,41 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Wanneer we denken aan de technologische infrastructuur van een modern ziekenhuis, gaan onze gedachten vaak naar medische beeldvorming, robotchirurgie of hoogtechnologische operatiekwartieren. Veel minder zichtbaar, maar minstens even…"
+ },
+ {
+  "id": "8a5d8d4ae9f834f3",
+  "bedrijf": "Archipelago",
+  "datum": "2026-06-23",
+  "week": "2026-W26",
+  "titel": "\"Wij zijn vergeten hoe we met hitte moeten omgaan\": onze steden en huizen zijn onvoldoende voorbereid op volgende hittegolf",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/06/23/_wij-zijn-compleet-vergeten-hoe-om-te-gaan-met-hitte-hoe-onze-s/",
+  "medium": "VRT",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…en en huizen gaat er nog te weinig aandacht naar zomercomfort\", stelt Joost Declercq, directeur Onderzoek bij Archipelago Architects en al lang bezig met de klimaatrobuuste architectuur. Verloren kennis Vroeger was die kennis er nochtans wel, zegt Dec…",
+  "vermelding": true
+ },
+ {
+  "id": "4a3900f4b8726b80",
+  "bedrijf": "Antea Group",
+  "datum": "2026-06-23",
+  "week": "2026-W26",
+  "titel": "Ingrijpende consequenties aanpassing programma gebiedsontwikkeling Oostflank Purmerend",
+  "url": "https://www.stadspartijpurmerend.nl/ingrijpende-consequenties-aanpassing-programma-gebiedsontwikkeling-oostflank-purmerend.html",
+  "medium": "stadspartij purmerend",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…ing tot de Oostflank inzichtelijk te maken. In een notitie het door hen opgestelde notitie. Samenvattend komt Antea Group tot het volgende oordeel De achterliggende jaren zijn afspraken gemaakt over de Oostflank van Purmerend en de realisatie van woni…",
+  "vermelding": true
  },
  {
   "id": "4b439d9dd910faa7",
@@ -1102,6 +1700,40 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Zes op de tien aannemers ziet winstmarge dalen: Embuild en Voka Vlaams-Brabant vragen onder meer btw-verlaging naar 6% op nieuwbouw ROBtv"
+ },
+ {
+  "id": "41b71388f4cc49e3",
+  "bedrijf": "Antea Group",
+  "datum": "2026-06-19",
+  "week": "2026-W25",
+  "titel": "Actiegroep presenteert plan om zwembad in Smilde te behouden",
+  "url": "https://www.rtvdrenthe.nl/nieuws/18549097/actiegroep-presenteert-plan-om-zwembad-in-smilde-te-behouden",
+  "medium": "RTV Drenthe",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…der de Midden-Drenthe onderzoeken wat er dan moet gebeuren met het sterk verouderde zwembad. Onderzoeksbureau Antea Group onderzocht vier scenario's: handhaven, optimaliseren, afstoten en sluiten. De werkgroep voegt daar nu eentje aan toe: transformer…",
+  "vermelding": true
+ },
+ {
+  "id": "f618d32ac8d1932f",
+  "bedrijf": "Buildwise",
+  "datum": "2026-06-19",
+  "week": "2026-W25",
+  "titel": "Bouwsector kan levens redden bij extreme hitte",
+  "url": "https://www.bouwenwonen.net/artikel/Bouwsector-kan-levens-redden-bij-extreme-hitte/54550",
+  "medium": "Bouw & Wonen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…Nieuwbouw Bouwsector kan levens redden bij extreme hitte Bron: Buildwise 19 juni 2026 De dodelijke gevolgen van hitte blijven vaak lang buiten beeld, in tegenstelling tot de zichtbare schade door storme…",
+  "vermelding": true
  },
  {
   "id": "87320209e96ae4ab",
