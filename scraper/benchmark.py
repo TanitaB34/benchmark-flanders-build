@@ -168,7 +168,7 @@ def naam_in_tekst(bedrijf, tekst):
 
 # Woorden die erop wijzen dat een artikel over een bedrijf of de bouwsector gaat.
 BEDRIJFSWOORDEN = re.compile(
-    r"bouw|aannem|werf|werven|project|meiboom|hoogste punt|eerste steen|bouwheer|renov|restaur|architect|studiebureau|ingenieur|engineering|"
+    r"bouw|aannem|werf|werven|project|verkavel|meiboom|hoogste punt|eerste steen|bouwheer|renov|restaur|architect|studiebureau|ingenieur|engineering|"
     r"infra|vastgoed|ontwikkelaar|steenfabriek|baksteen|gevelsteen|fabriek|onderaannem|"
     r"investe|winst|omzet|verlies|overname|neemt over|fusie|dividend|ondernemingsrechtbank|"
     r"personeel|medewerker|vacature|uitstoot|duurza|circulai|offshore|windpark|haven|bagger|"
@@ -179,7 +179,7 @@ BEDRIJFSWOORDEN = re.compile(
 # Typische ruis: sport, overlijdens, verenigingsleven, leeftijden van personen.
 RUIS = re.compile(
     r"overleden|\b\d{2,3} jaar\b|\(\d{1,2}\)|voetbal|padel|wielren|bmx|topduif|duivensport|"
-    r"fotoclub|\bzege\b|\bwint\b|\bk[fv]c\b|\bfc\b|gt world",
+    r"fotoclub|overwinning|wedstrijd|\bvv\b|\bzege\b|\bwint\b|\bk[fv]c\b|\bfc\b|gt world",
     re.I)
 
 
@@ -293,6 +293,13 @@ def lijkt_persoonsnaam(tekst, start, einde):
         if w[:1].isupper() and w.lower() not in TOEGELATEN_NA:
             return True
     return False
+
+
+def onleesbaar_aanvaardbaar(bedrijf, titel):
+    """Artikel achter een muur: enkel aanvaarden als de titel zelf over bouw- of bedrijfsnieuws gaat
+    (een plaatsnaam uit de kolom context volstaat hier niet) en geen sport/persoonsbericht is."""
+    return (not RUIS.search(titel) and not titel_heeft_persoonsnaam(bedrijf, titel)
+            and bool(BEDRIJFSWOORDEN.search(titel)))
 
 
 def titel_heeft_persoonsnaam(bedrijf, titel):
@@ -673,7 +680,9 @@ def main():
     per_naam = {b["bedrijf"]: b for b in bedrijven}
     voor = len(archief)
     archief = [p for p in archief
-               if p.get("kanaal") != "Pers & nieuws" or p.get("vermelding") or (
+               if p.get("kanaal") != "Pers & nieuws" or (p.get("vermelding") and (
+                   "niet automatisch" not in p.get("samenvatting", "") or
+                   (p["bedrijf"] in per_naam and onleesbaar_aanvaardbaar(per_naam[p["bedrijf"]], p["titel"])))) or (
                    p["bedrijf"] in per_naam and
                    is_bedrijfsnieuws(per_naam[p["bedrijf"]], p["titel"], p.get("samenvatting", ""), p.get("medium", "")))]
     if len(archief) < voor:
@@ -736,8 +745,7 @@ def main():
                 if status_v == "onleesbaar":
                     # Tekst niet leesbaar: vertrouw op de zoekopdracht (naam + context), tenzij de titel
                     # de naam enkel als persoonsnaam bevat
-                    if titel_heeft_persoonsnaam(b, k["titel"]) or not heeft_bedrijfscontext(
-                            b, k["titel"] + " " + k["samenvatting"].replace(k["medium"], " ")):
+                    if not onleesbaar_aanvaardbaar(b, k["titel"]):
                         continue
                     teller["onleesbaar"] += 1
                     fragment = "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen)."
