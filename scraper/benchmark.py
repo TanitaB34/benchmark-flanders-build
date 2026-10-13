@@ -152,9 +152,11 @@ def bouw_query(bedrijf):
     namen = [n.strip() for n in bedrijf["zoeknamen"].split("|") if n.strip()]
     context = [c.strip() for c in bedrijf["context"].split("|") if c.strip()]
     q = " OR ".join(f'"{n}"' for n in namen)
+    if len(namen) > 1:
+        q = f"({q})"
     if context:
-        # In Google/Bing bindt OR sterker dan AND: (namen) EN (een van de contextwoorden)
-        q += " " + " OR ".join(f'"{c}"' if " " in c else c for c in context)
+        # (een van de namen) EN (een van de contextwoorden)
+        q += " (" + " OR ".join(f'"{c}"' if " " in c else c for c in context) + ")"
     return q
 
 
@@ -166,7 +168,7 @@ def naam_in_tekst(bedrijf, tekst):
 
 # Woorden die erop wijzen dat een artikel over een bedrijf of de bouwsector gaat.
 BEDRIJFSWOORDEN = re.compile(
-    r"bouw|aannem|werf|werven|project|renov|restaur|architect|studiebureau|ingenieur|engineering|"
+    r"bouw|aannem|werf|werven|project|meiboom|hoogste punt|eerste steen|bouwheer|renov|restaur|architect|studiebureau|ingenieur|engineering|"
     r"infra|vastgoed|ontwikkelaar|steenfabriek|baksteen|gevelsteen|fabriek|onderaannem|"
     r"investe|winst|omzet|verlies|overname|neemt over|fusie|dividend|ondernemingsrechtbank|"
     r"personeel|medewerker|vacature|uitstoot|duurza|circulai|offshore|windpark|haven|bagger|"
@@ -293,33 +295,65 @@ def lijkt_persoonsnaam(tekst, start, einde):
     return False
 
 
-def vermelding_in_artikel(bedrijf, url):
-    """Opent het artikel en zoekt of het bedrijf erin vermeld wordt in een zakelijke context.
-    Geeft het tekstfragment rond de vermelding terug, of None."""
-    echte = google_link_naar_bron(url)
-    if not echte:
-        return None, None
-    r = haal_op(echte, timeout=20)
-    if not r or "html" not in r.headers.get("Content-Type", "html"):
-        return None, echte
-    tekst = artikeltekst(r.text)
+def titel_heeft_persoonsnaam(bedrijf, titel):
     namen = [n.strip() for n in bedrijf["zoeknamen"].split("|") if n.strip()]
     for naam in namen:
+        for m in re.finditer(r"(?<![\w-])" + re.escape(naam) + r"(?![\w-])", titel, re.I):
+            if lijkt_persoonsnaam(titel, m.start(), m.end()):
+                return True
+    return False
+
+
+def vermelding_in_artikel(bedrijf, url):
+    """Opent het artikel en zoekt hoe het bedrijf erin vermeld wordt.
+    Geeft (status, fragment, echte_url) terug, met status:
+      "ja"         - bedrijf zakelijk vermeld in de tekst (fragment = tekst rond de vermelding)
+      "nee"        - de naam staat er wel, maar enkel als persoonsnaam of zonder zakelijke context
+      "onleesbaar" - de tekst kon niet gelezen worden (cookie- of betaalmuur bij o.a. HLN, Nieuwsblad,
+                     KW.be, De Standaard). Google heeft het artikel dan wel gevonden op de zoektermen."""
+    echte = google_link_naar_bron(url)
+    if not echte:
+        return "onleesbaar", None, None
+    r = haal_op(echte, timeout=20)
+    if not r or "html" not in r.headers.get("Content-Type", "html"):
+        return "onleesbaar", None, echte
+    tekst = artikeltekst(r.text)
+    namen = [n.strip() for n in bedrijf["zoeknamen"].split("|") if n.strip()]
+    gezien = False
+    for naam in namen:
         for m in re.finditer(r"(?<![\w-])" + re.escape(naam) + r"(?![\w-])", tekst, re.I):
+            gezien = True
             if lijkt_persoonsnaam(tekst, m.start(), m.end()):
                 continue
             venster = tekst[max(0, m.start() - 250):m.end() + 250]
-            if RUIS.search(venster) or not heeft_bedrijfscontext(bedrijf, venster):
+            if not heeft_bedrijfscontext(bedrijf, venster):
                 continue
             fragment = tekst[max(0, m.start() - 110):m.end() + 130]
-            return "…" + fragment.strip() + "…", echte
-    return None, echte
+            return "ja", "…" + fragment.strip() + "…", echte
+    return ("nee" if gezien else "onleesbaar"), None, echte
 
 
 # ---------------------------------------------------------------- bronnen
 
 def google_nieuws(bedrijf, dagen):
-    q = bouw_query(bedrijf) + f" when:{dagen}d"
+    """Zoekt op de zoeknamen (+ context) en daarnaast op elke extra zoekopdracht uit bedrijven.csv."""
+    vragen = [bouw_query(bedrijf)]
+    vragen += [v.strip() for v in bedrijf.get("extra_zoekopdracht", "").split("||") if v.strip()]
+    resultaten, gezien, gelukt = [], set(), False
+    for vraag in vragen:
+        deel = google_nieuws_vraag(vraag, dagen)
+        if deel is None:
+            continue
+        gelukt = True
+        for item in deel:
+            if item["url"] not in gezien:
+                gezien.add(item["url"])
+                resultaten.append(item)
+    return resultaten if gelukt else None
+
+
+def google_nieuws_vraag(vraag, dagen):
+    q = vraag + f" when:{dagen}d"
     url = ("https://news.google.com/rss/search?q=" + urllib.parse.quote(q)
            + "&hl=nl&gl=BE&ceid=BE:nl")
     r = haal_op(url)
@@ -588,7 +622,7 @@ def lees_bedrijven():
             continue
         r.setdefault("zoeknamen", r["bedrijf"])
         r["zoeknamen"] = r.get("zoeknamen") or r["bedrijf"]
-        for veld in ("groep", "website", "context", "extra_feeds", "linkedin"):
+        for veld in ("groep", "website", "context", "extra_feeds", "linkedin", "extra_zoekopdracht"):
             r.setdefault(veld, "")
         bedrijven.append(r)
     return bedrijven
@@ -625,12 +659,12 @@ def main():
     status_archief = json.loads(SITEMAP_STATUS.read_text("utf-8")) if SITEMAP_STATUS.exists() else {}
     eerste_run = not archief
     terugblik = TERUGBLIK_EERSTE_RUN if eerste_run else TERUGBLIK_NORMAAL
-    if not status_archief.get("versie_vermeldingen2"):
+    if not status_archief.get("versie_zoektermen3"):
         # Eenmalig opnieuw 4 maanden terugkijken nu ook vermeldingen in de artikeltekst meetellen
         terugblik = TERUGBLIK_EERSTE_RUN
-        status_archief["versie_vermeldingen2"] = [dt.date.today().isoformat()]
+        status_archief["versie_zoektermen3"] = [dt.date.today().isoformat()]
     artikels_geopend = {}
-    teller = {"geopend": 0, "vermeld": 0}
+    teller = {"geopend": 0, "vermeld": 0, "onleesbaar": 0}
     vandaag = dt.date.today()
     log(f"Start benchmark {vandaag} - terugblik {terugblik} dagen")
 
@@ -695,11 +729,20 @@ def main():
                 if RUIS.search(k["titel"]) or artikels_geopend.get(naam, 0) >= MAX_ARTIKELS_PER_BEDRIJF:
                     continue
                 artikels_geopend[naam] = artikels_geopend.get(naam, 0) + 1
-                fragment, echte = vermelding_in_artikel(b, k["url"])
+                status_v, fragment, echte = vermelding_in_artikel(b, k["url"])
                 teller["geopend"] += 1
-                if not fragment:
+                if status_v == "nee":
                     continue
-                teller["vermeld"] += 1
+                if status_v == "onleesbaar":
+                    # Tekst niet leesbaar: vertrouw op de zoekopdracht (naam + context), tenzij de titel
+                    # de naam enkel als persoonsnaam bevat
+                    if titel_heeft_persoonsnaam(b, k["titel"]) or not heeft_bedrijfscontext(
+                            b, k["titel"] + " " + k["samenvatting"].replace(k["medium"], " ")):
+                        continue
+                    teller["onleesbaar"] += 1
+                    fragment = "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen)."
+                else:
+                    teller["vermeld"] += 1
                 k["samenvatting"] = fragment
                 k["vermelding"] = True
                 if echte:
@@ -757,7 +800,7 @@ def main():
     }
     (DOCS_DIR / "data.js").write_text(
         "window.BENCHMARK = " + json.dumps(dashboard, ensure_ascii=False) + ";\n", "utf-8")
-    log(f"Artikels geopend om vermeldingen te zoeken: {teller['geopend']}, waarvan met vermelding: {teller['vermeld']}")
+    log(f"Artikels geopend om vermeldingen te zoeken: {teller['geopend']}, waarvan met vermelding: {teller['vermeld']}, onleesbaar maar via zoekopdracht aanvaard: {teller['onleesbaar']}")
     log(f"Klaar: {nieuw_totaal} nieuwe publicaties, {len(archief)} in archief.")
 
     if all(s["google"] == "fout" and s["bing"] == "fout" for s in run_status):
