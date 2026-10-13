@@ -269,6 +269,7 @@ footer{max-width:1400px;margin:0 auto;padding:0 28px 30px;color:var(--tekst-3);f
       <button type="button" data-d="28" aria-pressed="true">4 weken</button>
       <button type="button" data-d="91">Kwartaal</button>
       <button type="button" data-d="365">Jaar</button>
+      <button type="button" data-d="1095">3 jaar</button>
     </div>
     <div class="seg" id="kanaal" role="group" aria-label="Kanaal">
       <button type="button" data-k="" aria-pressed="true">Alles</button>
@@ -307,7 +308,7 @@ const fmt=n=>Number(n).toLocaleString("nl-BE",{maximumFractionDigits:1});
 const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
 const charts={};
-const PERIODE_TXT={7:"de laatste week",28:"de laatste 4 weken",91:"het laatste kwartaal",365:"het laatste jaar"};
+const PERIODE_TXT={7:"de laatste week",28:"de laatste 4 weken",91:"het laatste kwartaal",365:"het laatste jaar",1095:"de laatste 3 jaar"};
 
 /* ---------- thema (licht/donker) ---------- */
 try{const t=localStorage.getItem("vt-thema");if(t)document.documentElement.dataset.theme=t;}catch(e){}
