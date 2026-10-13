@@ -32,6 +32,56 @@
   "samenvatting": "Reality capture moved from laser scanners to 360 cameras to the Visual Intelligence Platform. See the data behind each era and where spatial AI goes next. The post From laser scanners to Visual Intelligence: Reality capture’s three eras…"
  },
  {
+  "id": "b3a4d5bb28984e00",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-13",
+  "week": "2026-W42",
+  "titel": "Twee Gentse AI bedrijven actief in de voeding bundelen hun krachten",
+  "url": "https://engineeringnet.be/nl/nieuws/item/25549",
+  "medium": "Engineeringnet",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "931cc98df3ee7308",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-10-13",
+  "week": "2026-W42",
+  "titel": "Kerncentrales, Voka, konijnen, CLdN, Tesla Semi en Deugro",
+  "url": "https://www.flows.be/varia/2026/10/kerncentrales-voka-konijnen-cldn-tesla-semi-en-deugro/",
+  "medium": "Flows",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "3250254f2a59dbf2",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-13",
+  "week": "2026-W42",
+  "titel": "Buildwise recherche un consortium !",
+  "url": "https://www.buildwise.be/fr/recherche-innovation/showroom-des-projets/etude-de-faisabilite-sur-les-cahiers-des-charges-type-spec/buildwise-recherche-un-consortium/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
   "id": "69c54b11756b3f22",
   "bedrijf": "OpenSpace",
   "datum": "2026-10-12",
@@ -276,6 +326,24 @@
   "samenvatting": "Explore the biggest data center construction challenges, from coordination and scheduling to quality and documentation, and learn how to address them. The post What are the data center construction challenges & how to overcome them…"
  },
  {
+  "id": "2de9cc685e72e5d8",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-06",
+  "week": "2026-W41",
+  "titel": "Infra Aanbestedingscongres 2026: we zijn begonnen!",
+  "url": "https://www.infrasite.nl/aanbesteden/2026/10/06/infra-aanbestedingscongres-2026-we-zijn-begonnen/",
+  "medium": "Infrasite",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "e6d43f6f3e477fd9",
   "bedrijf": "Embuild",
   "datum": "2026-10-05",
@@ -292,6 +360,57 @@
   "samenvatting": "Bijna 9.300 bouwbedrijven stopten dit jaar al: bouwfederatie Embuild vraagt “krachtige impuls om woningbouw te stimuleren” HLN"
  },
  {
+  "id": "4197278ca8698e4f",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-05",
+  "week": "2026-W41",
+  "titel": "Drone bereikt 29e verdieping in drie minuten: praktijktest toont potentie voor bouwlogistiek",
+  "url": "https://www.bouwmachines.nl/66432/29e-verdieping-in-drie-minuten-met-drone-test-toont-potentie-bouwlogistiek",
+  "medium": "BouwMachines",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "bd880239b92bcbbf",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-05",
+  "week": "2026-W41",
+  "titel": "Druk, druk, druk en toch geen winst: “Aannemers laten duizenden euro’s liggen door verloren uren niet aan te rekenen”",
+  "url": "https://www.standaard.be/economie/druk-druk-druk-en-toch-geen-winst-aannemers-laten-duizenden-euros-liggen-door-verloren-uren-niet-aan-te-rekenen/162260617.html",
+  "medium": "De Standaard",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "82389e4c3d26243b",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-03",
+  "week": "2026-W40",
+  "titel": "Meeuwen verliest uit met een doelpunt verschil van Houthalen VV",
+  "url": "https://www.hbvl.be/regio/limburg/houthalen-helchteren/meeuwen-verliest-uit-met-een-doelpunt-verschil-van-houthalen-vv/162548870.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "5e2607b61d5773f3",
   "bedrijf": "Embuild",
   "datum": "2026-10-02",
@@ -306,6 +425,59 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Bouwrobots maken hun intrede op vakbeurzen van Embuild Bouw & Wonen"
+ },
+ {
+  "id": "62147e4a5711a83a",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-02",
+  "week": "2026-W40",
+  "titel": "Leerlingen 6 Bouwtechnieken ontdekken innovatie en AI tijdens bezoek aan Tooli Connection Tour.",
+  "url": "https://denderjournaal.be/leerlingen-6-bouwtechnieken-ontdekken-innovatie-en-ai-tijdens-bezoek-aan-tooli-connection-tour/",
+  "medium": "Dender Journaal",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Projecten & werven",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "c9d592a29899786b",
+  "bedrijf": "Artes",
+  "datum": "2026-10-01",
+  "week": "2026-W40",
+  "titel": "Drie West-Vlaamse bedrijven mogen nieuwe Knokse casino bouwen",
+  "url": "https://www.made-in.be/west-vlaanderen/drie-west-vlaamse-bedrijven-mogen-nieuwe-knokse-casino-bouwen/",
+  "medium": "Made in",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "7abe2eda7d0eed64",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-10-01",
+  "week": "2026-W40",
+  "titel": "Bouwfirma trekt aanvraag voor opslag en verwerking puin in Terlanen zelf in",
+  "url": "https://www.nieuwsblad.be/regio/vlaams-brabant/oost-brabant/overijse/bouwfirma-trekt-aanvraag-voor-opslag-en-verwerking-puin-in-terlanen-zelf-in/162411756.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
  },
  {
   "id": "f7a968c1fa32949a",
@@ -356,6 +528,91 @@
   "samenvatting": "Inhoudingsplicht bij buitenlandse onderaannemers Embuild Antwerpen"
  },
  {
+  "id": "dd417551ee7299ae",
+  "bedrijf": "Dethier",
+  "datum": "2026-09-30",
+  "week": "2026-W40",
+  "titel": "Gevels van Alkense rijkswachtkazerne blijven behouden, maar inhoud van iconisch gebouw verandert compleet",
+  "url": "https://www.nieuwsblad.be/regio/limburg/alken/gevels-van-alkense-rijkswachtkazerne-blijven-behouden-maar-inhoud-van-iconisch-gebouw-verandert-compleet/162404481.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "be68c51777200d5e",
+  "bedrijf": "Mobble",
+  "datum": "2026-09-30",
+  "week": "2026-W40",
+  "titel": "Lokaal bouwbedrijf plaatst eerste ‘inschuifhuis’ in eigen stad: “Gloednieuwe woning op één dag”",
+  "url": "https://www.nieuwsblad.be/regio/oost-vlaanderen/regio-gent/eeklo/lokaal-bouwbedrijf-plaatst-eerste-inschuifhuis-in-eigen-stad-gloednieuwe-woning-op-een-dag/162354895.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "a273e108ca35b652",
+  "bedrijf": "Artes",
+  "datum": "2026-09-30",
+  "week": "2026-W40",
+  "titel": "Kostprijs nieuw casino in Knokke loopt op tot minstens 122 miljoen euro, maar bouw kan (in principe) snel starten: “Grootste project ooit gerealiseerd hier” (Krant van West-Vlaanderen)",
+  "url": "https://kw.be/nieuws/economie/bouw/kostprijs-nieuw-casino-in-knokke-loopt-op-tot-minstens-122-miljoen-euro-maar-bouw-kan-in-principe-snel-starten-grootste-project-ooit-gerealiseerd-hier/",
+  "medium": "KW.be",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "ced6ab29fcf9ca86",
+  "bedrijf": "Artes",
+  "datum": "2026-09-30",
+  "week": "2026-W40",
+  "titel": "Witte rook voor bouw van Casino Kursaal van 123 miljoen euro, “het meest uitdagende en complexe project ooit in de gemeente”",
+  "url": "https://www.nieuwsblad.be/regio/west-vlaanderen/regio-brugge/knokke-heist/witte-rook-voor-bouw-van-casino-kursaal-van-123-miljoen-euro-het-meest-uitdagende-en-complexe-project-ooit-in-de-gemeente/162311994.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "707cf629f1e2e60a",
+  "bedrijf": "Nelissen",
+  "datum": "2026-09-30",
+  "week": "2026-W40",
+  "titel": "Haskoning neemt Nelissen Ingenieursbureau over",
+  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRUpuV3hONzBrRjRhWDQ3eXNwcjZlTnNpU1RjLUo1dFNRaVQyOFkxMUphNzlBbUliaGdyc0U2NkVuQ2V1Wkw5ZFZMMDlmTlZaVlZnOUE3dG5haFEwLWVxc2NnZFd5b2JwaFg0VzJtbzFKWVdCZ1Njc19XVk1lWnNaQkY2UmRjMUxIQ2dINi0wSVJmbWRPTjc2YQ?oc=5",
+  "medium": "Infrasite",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Haskoning neemt Nelissen Ingenieursbureau over Infrasite"
+ },
+ {
   "id": "1d512a35db4b8f2c",
   "bedrijf": "Stadsbader",
   "datum": "2026-09-29",
@@ -387,6 +644,23 @@
   ],
   "naam_in_titel": true,
   "samenvatting": ""
+ },
+ {
+  "id": "cf739f7f8beb7f53",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-29",
+  "week": "2026-W40",
+  "titel": "Bouwfirma trekt aanvraag in om grond en puin te verwerken op Terlanenveld in Overijse: buurtbewoners voerden eerder nog protest op gemeenteraad",
+  "url": "https://www.hln.be/overijse/bouwfirma-trekt-aanvraag-in-om-grond-en-puin-te-verwerken-op-terlanenveld-in-overijse-buurtbewoners-voerden-eerder-nog-protest-op-gemeenteraad~ab540a6c/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
  },
  {
   "id": "12e52c0928b1d317",
@@ -440,6 +714,24 @@
   "samenvatting": "Cordeel Group stoot 19 procent minder CO2 uit: “Equivalent van bijna half miljoen liter brandstof” HLN"
  },
  {
+  "id": "d7929694fbf83956",
+  "bedrijf": "Embuild",
+  "datum": "2026-09-28",
+  "week": "2026-W40",
+  "titel": "LIFE BE FREE-project: versnelling van energie-efficiëntie",
+  "url": "https://www.vvsg.be/projecten/life-be-free-project",
+  "medium": "VVSG",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "c8483972e602ba84",
   "bedrijf": "Cordeel",
   "datum": "2026-09-27",
@@ -454,6 +746,23 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Cordeel Group halveert CO2-uitstoot sinds 2021 Made in"
+ },
+ {
+  "id": "1a519e0e33cdb06c",
+  "bedrijf": "Nelissen",
+  "datum": "2026-09-26",
+  "week": "2026-W39",
+  "titel": "Bourguignon leidt Lanaken VV B naar overwinning tegen Eigenbilzen",
+  "url": "https://www.nieuwsblad.be/regio/limburg/lanaken/bourguignon-leidt-lanaken-vv-b-naar-overwinning-tegen-eigenbilzen/162210369.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
  },
  {
   "id": "85c70914bdad0ae4",
@@ -537,6 +846,56 @@
   "vermelding": true
  },
  {
+  "id": "6abe27096b846999",
+  "bedrijf": "Denys",
+  "datum": "2026-09-24",
+  "week": "2026-W39",
+  "titel": "Leerlingen ruimen schoolwerf op",
+  "url": "https://www.nieuwsblad.be/regio/oost-vlaanderen/regio-gent/maldegem/leerlingen-ruimen-schoolwerf-op/162041378.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "9f59c828aebb9d9b",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-24",
+  "week": "2026-W39",
+  "titel": "Bouwconsortium van bij ons mag ‘zone Zaventem’ op Brusselse ring herinrichten",
+  "url": "https://www.nieuwsblad.be/regio/vlaams-brabant/halle-vilvoorde/zaventem/bouwconsortium-van-bij-ons-mag-zone-zaventem-op-brusselse-ring-herinrichten/162049963.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "68709fed0848b284",
+  "bedrijf": "Archipelago",
+  "datum": "2026-09-24",
+  "week": "2026-W39",
+  "titel": "archipelago architects",
+  "url": "https://www.architectura.be/nl/partners/archipelago-architects/",
+  "medium": "architectura",
+  "bron": "Bing Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Sinds de oprichting in 2016 is archipelago uitgegroeid tot een Europees architectenbureau met vestigingen in Brussel, Leuven, Parijs en Barcelona. Het bureau bundelt de vaardigheden en knowhow van ..."
+ },
+ {
   "id": "805f666849577b02",
   "bedrijf": "Bureau Bouwtechniek",
   "datum": "2026-09-23",
@@ -569,6 +928,75 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "CEO bouwfederatie Embuild geeft advies aan verbouwers: “Doe het snel en grondig” HLN"
+ },
+ {
+  "id": "43b1c408b8f11429",
+  "bedrijf": "Multi Engineering",
+  "datum": "2026-09-22",
+  "week": "2026-W39",
+  "titel": "Kom kennismaken met M.A.R.C. – een nieuwe aanpak voor plasticvervuiling in rivieren en havens",
+  "url": "https://www.vliz.be/nl/news/kom-kennismaken-met-marc-een-nieuwe-aanpak-voor-plasticvervuiling-rivieren-en-havens-0",
+  "medium": "Vlaams Instituut voor de Zee",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "11375c468448fc53",
+  "bedrijf": "Willemen Groep",
+  "datum": "2026-09-22",
+  "week": "2026-W39",
+  "titel": "Consortium van vier grote bouwbedrijven mag Brusselse Ring in zone Zaventem herinrichten",
+  "url": "https://www.hln.be/zaventem/consortium-van-vier-grote-bouwbedrijven-mag-brusselse-ring-in-zone-zaventem-herinrichten~ac2b4365/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "3af050950ea5f74b",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-22",
+  "week": "2026-W39",
+  "titel": "Consortium van vier grote bouwbedrijven mag Brusselse Ring in zone Zaventem herinrichten",
+  "url": "https://www.hln.be/zaventem/consortium-van-vier-grote-bouwbedrijven-mag-brusselse-ring-in-zone-zaventem-herinrichten~ac2b4365/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "c608539442d04aa3",
+  "bedrijf": "Embuild",
+  "datum": "2026-09-22",
+  "week": "2026-W39",
+  "titel": "Prijs van bouwmaterialen schiet omhoog: “Wie bouwt, moet rekening houden met stijgende kostprijs”",
+  "url": "https://www.nieuwsblad.be/regio/limburg/hasselt/prijs-van-bouwmaterialen-schiet-omhoog-wie-bouwt-moet-rekening-houden-met-stijgende-kostprijs/161906603.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
  },
  {
   "id": "03b1caec566ff203",
@@ -657,6 +1085,40 @@
   "vermelding": true
  },
  {
+  "id": "2af963a1c42cf639",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-16",
+  "week": "2026-W38",
+  "titel": "Actiegroep protesteert in gemeenteraad tegen mogelijke werfopslag langs Nijvelsebaan: “Puin tot 5 meter hoog”",
+  "url": "https://www.hln.be/overijse/actiegroep-protesteert-in-gemeenteraad-tegen-mogelijke-werfopslag-langs-nijvelsebaan-puin-tot-5-meter-hoog~a8e8ece9/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "2dbc633afb1ed324",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-16",
+  "week": "2026-W38",
+  "titel": "“Hier beton breken is een nachtmerrie”: buurt protesteert tegen tijdelijke werfopslag in Terlanen",
+  "url": "https://www.nieuwsblad.be/regio/vlaams-brabant/oost-brabant/overijse/hier-beton-breken-is-een-nachtmerrie-buurt-protesteert-tegen-tijdelijke-werfopslag-in-terlanen/161509249.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "f63992d97cde1d76",
   "bedrijf": "OpenSpace",
   "datum": "2026-09-15",
@@ -703,6 +1165,23 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "…erzicht (opkomende) wetgeving – door Embuild Vlaanderen 17:30 – Voorstelling themapagina milieu-impact – door Buildwise 17:45 – Inzichten rond milieu-impact van de werf – door Buildwise 18:00 – Testimonial In Diepenbeek: Bouwcampus 2.0 18:15 – Q&A 1…",
+  "vermelding": true
+ },
+ {
+  "id": "74007faa4fd3005b",
+  "bedrijf": "Willemen Groep",
+  "datum": "2026-09-15",
+  "week": "2026-W38",
+  "titel": "Symbolische eerste steen voor nieuwe GO!-campus in Sint-Amandsberg: “We bouwen hier aan de school van de toekomst”",
+  "url": "https://www.hln.be/gent/symbolische-eerste-steen-voor-nieuwe-go-campus-in-sint-amandsberg-we-bouwen-hier-aan-de-school-van-de-toekomst~a301313c/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
  },
  {
@@ -789,6 +1268,57 @@
   "samenvatting": "General contractors, trade contractors, and owners from around the globe tuned in to Waypoint 2026, our annual customer summit, to be the first to hear new product announcements and to see customer stories from active jobsites. This year,…"
  },
  {
+  "id": "05c047737488e175",
+  "bedrijf": "Verstraete.team",
+  "datum": "2026-09-11",
+  "week": "2026-W37",
+  "titel": "Meiboom geplaatst op Hof van Eloy in Sint-Eloois-Winkel: “Een speciaal moment vlak bij de plek waar ik zelf opgroeide”",
+  "url": "https://kw.be/nieuws/economie/bouw/meiboom-geplaatst-op-hof-van-eloy-in-sint-eloois-winkel-een-speciaal-moment-vlak-bij-de-plek-waar-ik-zelf-opgroeide/",
+  "medium": "KW.be",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "86396adf32672dad",
+  "bedrijf": "Bostoen",
+  "datum": "2026-09-11",
+  "week": "2026-W37",
+  "titel": "Poëzie in Park Kantvelde zet protest tegen bouwplannen kracht bij",
+  "url": "https://www.gva.be/regio/antwerpen/rivierenland/mechelen/poezie-in-park-kantvelde-zet-protest-tegen-bouwplannen-kracht-bij/161296743.html",
+  "medium": "GVA",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "2fe038a60cee43f3",
+  "bedrijf": "Wyckaert",
+  "datum": "2026-09-11",
+  "week": "2026-W37",
+  "titel": "Nieuwbouw voor Westdiep bereikt hoogste punt: nieuwe scholencampus krijgt bijenhotel in plaats van meiboom",
+  "url": "https://www.hln.be/oostende/nieuwbouw-voor-westdiep-bereikt-hoogste-punt-nieuwe-scholencampus-krijgt-bijenhotel-in-plaats-van-meiboom~a928f77e/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "daa4d0c29203de72",
   "bedrijf": "Derde Construct",
   "datum": "2026-09-10",
@@ -803,6 +1333,57 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Het bericht Oplossen van waterproblemen in ondergrondse parking – Residentie Xani (Lochristi) verscheen eerst op Derde Construct ."
+ },
+ {
+  "id": "6073f788e41182ce",
+  "bedrijf": "Verstraete.team",
+  "datum": "2026-09-10",
+  "week": "2026-W37",
+  "titel": "Meiboom op hoogste punt van Hof van Eloy: 22 appartementen en 4 penthouses moeten in 2027 klaar zijn",
+  "url": "https://www.hln.be/ledegem/meiboom-op-hoogste-punt-van-hof-van-eloy-22-appartementen-en-4-penthouses-moeten-in-2027-klaar-zijn~a86fd3b0/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "0f05997df6a75841",
+  "bedrijf": "Verstraete.team",
+  "datum": "2026-09-10",
+  "week": "2026-W37",
+  "titel": "Hoogste punt van bouw groots project in dorpskern bereikt",
+  "url": "https://www.nieuwsblad.be/regio/west-vlaanderen/midwest/ledegem/hoogste-punt-van-bouw-groots-project-in-dorpskern-bereikt/161244145.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "e9fc7cab0de604f9",
+  "bedrijf": "Nelissen",
+  "datum": "2026-09-10",
+  "week": "2026-W37",
+  "titel": "Minister van Energie Mathieu Bihet draait mee bij Nelissen Steenfabrieken tijdens Voka Zomerstage",
+  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQc2hwZVRVZUk2NEFIenlOcW1STmRIYzAyeGdGSVkwSkxDUy0zdWlEdFVKVTdHOVFrVEo2eGNOa21JWW1TQ3cta050bnV2aHZFZ055Q3N1S0J6aFdzNnRLU1ZQYnBmYTJLS2hXWmRZSjlsZk44T3kxcG5Ic08zV2JIRkc1R1JsbnJIYlR4SW56YXdsQnZ5WFpKUXg3VVFoeTA0X1RGVnpTaE53NUs4Z0FJOTNmQjFCWVYtVUpuWW9R?oc=5",
+  "medium": "Voka - Vlaams netwerk van ondernemingen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "HR & talent"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Minister van Energie Mathieu Bihet draait mee bij Nelissen Steenfabrieken tijdens Voka Zomerstage Voka - Vlaams netwerk van ondernemingen"
  },
  {
   "id": "9bc4e00979d96193",
@@ -838,6 +1419,23 @@
   "samenvatting": "Nelissen investeert 10 miljoen in groenere baksteen, maar botst op vol elektriciteitsnet HBVL"
  },
  {
+  "id": "d90a965e70ec649c",
+  "bedrijf": "Houben",
+  "datum": "2026-09-06",
+  "week": "2026-W36",
+  "titel": "Huis onbewoonbaar na zware brand in Hasselt: bewoner naar ziekenhuis",
+  "url": "https://www.hbvl.be/regio/limburg/hasselt/huis-onbewoonbaar-na-zware-brand-in-hasselt-bewoner-naar-ziekenhuis/161023851.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "6ff05e51065fcf58",
   "bedrijf": "Stadsbader",
   "datum": "2026-09-04",
@@ -855,6 +1453,23 @@
   "vermelding": true
  },
  {
+  "id": "62bd6d4c2acfaa64",
+  "bedrijf": "VDS Vanderstraeten",
+  "datum": "2026-09-04",
+  "week": "2026-W36",
+  "titel": "Eerste steen gelegd van nieuw Hopmarktproject: 55 boringen van 149 meter moet site koelen en verwarmen",
+  "url": "https://www.nieuwsblad.be/regio/vlaams-brabant/halle-vilvoorde/asse/eerste-steen-gelegd-van-nieuw-hopmarktproject-55-boringen-van-149-meter-moet-site-koelen-en-verwarmen/160965531.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "38438d280046e083",
   "bedrijf": "Embuild",
   "datum": "2026-09-03",
@@ -869,6 +1484,24 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "Vakantieregeling 2027 bouwsector Provincie Antwerpen Embuild Antwerpen"
+ },
+ {
+  "id": "35d96a0c313869d2",
+  "bedrijf": "Wally",
+  "datum": "2026-09-03",
+  "week": "2026-W36",
+  "titel": "Technologie van de toekomst: robot bouwt binnenmuren",
+  "url": "https://www.made-in.be/limburg/technologie-van-de-toekomst-robot-bouwt-binnenmuren/",
+  "medium": "Made in",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
  },
  {
   "id": "c7dc1f66cb279799",
@@ -919,6 +1552,40 @@
   "samenvatting": "Overname van DCA Infra en DC Recycling door Stadsbader Group is afgerond: “We kijken opnieuw vooruit” HLN"
  },
  {
+  "id": "ad62dcb1cd4d17f7",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-09-02",
+  "week": "2026-W36",
+  "titel": "Grote werf op Ninoofsesteenweg en Ring van start: afrit Kattebroek verdwijnt voorgoed in Dilbeek",
+  "url": "https://www.nieuwsblad.be/regio/vlaams-brabant/grote-werf-op-ninoofsesteenweg-en-ring-van-start-afrit-kattebroek-verdwijnt-voorgoed-in-dilbeek/160850530.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "ec55cc8cb4cb95a7",
+  "bedrijf": "Buildwise",
+  "datum": "2026-08-29",
+  "week": "2026-W35",
+  "titel": "Maak kennis met vapende Dora: zo zoekt men in Genk naar snelle en betaalbare renovatie van oude woningen",
+  "url": "https://www.nieuwsblad.be/regio/limburg/genk/maak-kennis-met-vapende-dora-zo-zoekt-men-in-genk-naar-snelle-en-betaalbare-renovatie-van-oude-woningen/160601722.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "cc9fa880228b5ce6",
   "bedrijf": "ARQ Architecten",
   "datum": "2026-08-27",
@@ -935,6 +1602,23 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "…voor houten buurtschool Hoedjes van Papier Joyce Robben 27 augustus 2026 Laatste update: 08 september 2026 © arQ Architecten © Isolteam © Isolteam © Isolteam © Isolteam © fermacell® © fermacell® Wie bij duurzaam bouwen alleen naar de draagstructuur en ge…",
+  "vermelding": true
+ },
+ {
+  "id": "27263212526fcc05",
+  "bedrijf": "Woestenborghs",
+  "datum": "2026-08-27",
+  "week": "2026-W35",
+  "titel": "Geen opvang voor asielzoekers, wel sociale woningen: Beerse verkoopt perceel Vrijwilligersstraat aan Woonboog",
+  "url": "https://www.gva.be/regio/antwerpen/kempen/beerse/geen-opvang-voor-asielzoekers-wel-sociale-woningen-beerse-verkoopt-perceel-vrijwilligersstraat-aan-woonboog/160621929.html",
+  "medium": "GVA",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
  },
  {
@@ -968,6 +1652,59 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "…de jaar volgens haar wel degelijk een belangrijke functie behoudt. Zes jaar beroepsonderwijs volstaat volgens Embuild niet altijd om leerlingen volledig klaar te stomen voor uitvoerend vakmanschap op de werf. Wie het specialisatiejaar overslaat, d…",
+  "vermelding": true
+ },
+ {
+  "id": "2419d313c8c5be7e",
+  "bedrijf": "Willemen Groep",
+  "datum": "2026-08-26",
+  "week": "2026-W35",
+  "titel": "Nieuwe fietstunnel maakt kruispunt Transportlaan-Hengelhoefstraat veiliger voor fietsers",
+  "url": "https://www.genk.be/nieuwe-fietstunnel-maakt-kruispunt-transportlaan-hengelhoefstraat-veiliger-voor-fietsers",
+  "medium": "Stad Genk",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…jkse verplaatsingen”, zegt Laura Olaerts, gedeputeerde van Mobiliteit. Kruispunt volledig afgesloten Aannemer Willemen Infra is op 4 augustus gestart met voorbereidende werken, zoals het rooien van bomen en grondwerken. Vanaf maandag 31 augustus to…",
+  "vermelding": true
+ },
+ {
+  "id": "122c1686aa5595e4",
+  "bedrijf": "Archipelago",
+  "datum": "2026-08-24",
+  "week": "2026-W35",
+  "titel": "Van poppodium tot natuurhotel: 88 nieuwbouwprojecten op longlist ARC27 Nieuwe Architectuur Award",
+  "url": "https://www.dearchitect.nl/319190/longlist-arc27-nieuwe-architectuur-award",
+  "medium": "de Architect",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "HR & talent",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…an Bergen Architectura Vogelbuurt, Rhoon - Team Paul de Vroom + Sputnik Archipelago Leuven kantoren, Leuven - Archipelago architects Malpertuisplein, Maastricht - Dreessen Willemse Architecten vlnr. Zwembadgebouw Eurowoningen, Huis in de bossingel, De…",
+  "vermelding": true
+ },
+ {
+  "id": "4b3efd1140099584",
+  "bedrijf": "Bostoen",
+  "datum": "2026-08-23",
+  "week": "2026-W34",
+  "titel": "Openbaar onderzoek naar verkaveling Kantvelde gestart: buurt wil open ruimte in plaats van beton",
+  "url": "https://www.hln.be/mechelen/openbaar-onderzoek-naar-verkaveling-kantvelde-gestart-buurt-wil-open-ruimte-in-plaats-van-beton~a12220c7/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
  },
  {
@@ -1057,6 +1794,58 @@
   "vermelding": true
  },
  {
+  "id": "f46bd568932ac148",
+  "bedrijf": "Verstraete.team",
+  "datum": "2026-08-21",
+  "week": "2026-W34",
+  "titel": "Meiboom gezet op Park RSL: tegen eind 2027 65 appartementen en 5 woningen op oude Van Marcke-site in Roeselare",
+  "url": "https://www.hln.be/roeselare/meiboom-gezet-op-park-rsl-tegen-eind-2027-65-appartementen-en-5-woningen-op-oude-van-marcke-site-in-roeselare~afbf3ae5/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "b5c742e330395789",
+  "bedrijf": "Houben",
+  "datum": "2026-08-21",
+  "week": "2026-W34",
+  "titel": "32 jonge Bouwrakkers ontdekken echte bouwwerf in Hasselt: “Misschien staat hier wel een toekomstige werfleider tussen”",
+  "url": "https://www.hln.be/hasselt/32-jonge-bouwrakkers-ontdekken-echte-bouwwerf-in-hasselt-misschien-staat-hier-wel-een-toekomstige-werfleider-tussen~a7d6ca3d/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "HR & talent"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "70e3a20e95806853",
+  "bedrijf": "Banimmo",
+  "datum": "2026-08-21",
+  "week": "2026-W34",
+  "titel": "Belgische vastgoedaandelen veren op: Inclusio koopwaardig na de dip",
+  "url": "https://belegger.tijd.be/technische-analyse/signalen/belgische-vastgoedaandelen-veren-op-inclusio-koopwaardig-na-de-dip/10683048.html",
+  "medium": "De Belegger",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "518b7712fecab6ec",
   "bedrijf": "Vandersanden",
   "datum": "2026-08-20",
@@ -1122,6 +1911,56 @@
   "samenvatting": "Herneming GRUP ‘Nelissen Steenfabrieken’ Lanaken: openbaar Departement Omgeving Vlaanderen"
  },
  {
+  "id": "1d0d6ae82344bdd3",
+  "bedrijf": "Houben",
+  "datum": "2026-08-20",
+  "week": "2026-W34",
+  "titel": "32 ‘Bouwrakkers’ ontdekken op PXL-werf aan Elfde Linie hoe een torenkraan werkt",
+  "url": "https://www.hbvl.be/regio/limburg/hasselt/32-bouwrakkers-ontdekken-op-pxl-werf-aan-elfde-linie-hoe-een-torenkraan-werkt/160270743.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "89c575f3d15271e2",
+  "bedrijf": "Nelissen",
+  "datum": "2026-08-20",
+  "week": "2026-W34",
+  "titel": "Nieuwe poging om uitbreiding Nelissen Steenfabrieken mogelijk te maken",
+  "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRjg4OWd4endNc3ktNmRCN3RDTU1xMzNYaURSbnpJRUd3NmNkQlN3M3pheGYyUDNxTnVVQmhWbFFQdnV6UDZhcW5HMTF0dVJJR2NNWjlESDFJeWhNN3VvTDBxNU1XMjJvRHJHLTg0SlpVRk05S2hrM2w3Q3pvZ1NZYnFGbDZzeFVLMXh4Uy1Ma0ZaZ0NsZFNJc1UtZVdOU2tpaTZ2aldR?oc=5",
+  "medium": "TV Limburg",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Nieuwe poging om uitbreiding Nelissen Steenfabrieken mogelijk te maken TV Limburg"
+ },
+ {
+  "id": "6d02186f36e0a513",
+  "bedrijf": "Embuild",
+  "datum": "2026-08-20",
+  "week": "2026-W34",
+  "titel": "32 ‘Bouwrakkers’ ontdekken op PXL-werf aan Elfde Linie hoe een torenkraan werkt",
+  "url": "https://www.nieuwsblad.be/regio/limburg/hasselt/32-bouwrakkers-ontdekken-op-pxl-werf-aan-elfde-linie-hoe-een-torenkraan-werkt/160302639.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "f3d2a1fb82c4750c",
   "bedrijf": "Stadsbader",
   "datum": "2026-08-19",
@@ -1137,6 +1976,56 @@
   "naam_in_titel": false,
   "samenvatting": "…en investeren immers in dit project. Verschillende aannemers uit Vlaanderen en Brussel toonden hun interesse. Stadsbader voerde reeds opdrachten uit voor meerdere sportclubs in Vlaanderen. Daartoe behoren de kunstgrasvelden van de jeugdacademie van S…",
   "vermelding": true
+ },
+ {
+  "id": "a04c8e1328144e2c",
+  "bedrijf": "Vanhout",
+  "datum": "2026-08-19",
+  "week": "2026-W34",
+  "titel": "Eerste werken bouw brandweerkazerne Minderhout gestart: “Modern en efficiënt gebouw”",
+  "url": "https://www.gva.be/regio/antwerpen/kempen/hoogstraten/eerste-werken-bouw-brandweerkazerne-minderhout-gestart-modern-en-efficient-gebouw/160247394.html",
+  "medium": "GVA",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "e800a989d39c9646",
+  "bedrijf": "Vanhout",
+  "datum": "2026-08-19",
+  "week": "2026-W34",
+  "titel": "Voorbereidende werken gestart voor bouw nieuwe brandweerkazerne in Minderhout",
+  "url": "https://www.hln.be/hoogstraten/voorbereidende-werken-gestart-voor-bouw-nieuwe-brandweerkazerne-in-minderhout~a0490c7b/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "c4504ee467b8b545",
+  "bedrijf": "Nelissen",
+  "datum": "2026-08-19",
+  "week": "2026-W34",
+  "titel": "Openbaar onderzoek over ruimtelijk plan voor Nelissen Steenfabrieken start op 25 augustus",
+  "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOanNISkZzcWFuRTJ6eVpKWlJIYmJXT0llMGE3RXpMS1U0WV9ZOUhPOGY0NzdWeWlOR05yOUh4aXFoNzlrd2JwNkh0Z1JSVDZETnlHM1hROXBrdkl4SWZrOXh2RGJTMWFscVJSQ3h4VEhZakNCTW1iYU5IWlJ2VjlJU2VGMHA0WDZYS09OaGxfelo4YmE1QXFSQ2tpcFdlSnhNVTFJUTdhUHNMdERaR0dOcUgxNFZCTnozTE9TQ2Qtc2duNUUzRUU1a3JZdkdMSldRWXNsWlFsUHd3cUZGYmRj?oc=5",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Openbaar onderzoek over ruimtelijk plan voor Nelissen Steenfabrieken start op 25 augustus HBVL"
  },
  {
   "id": "8f1745daa6b220d0",
@@ -1157,6 +2046,23 @@
   "vermelding": true
  },
  {
+  "id": "19945ce6b4e02921",
+  "bedrijf": "VDS Vanderstraeten",
+  "datum": "2026-08-12",
+  "week": "2026-W33",
+  "titel": "Zware afvalbrand in Lubbeek bij bouwbedrijf Celis",
+  "url": "https://www.hln.be/videos/productie/zware-afvalbrand-in-lubbeek-bij-bouwbedrijf-celis-14098130",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "d6e94226620ebf1b",
   "bedrijf": "Driesen",
   "datum": "2026-08-11",
@@ -1171,6 +2077,23 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "…ateriaal dat er nog ligt, wordt verwijderd. \"We gaan de huidige problemen zo goed mogelijk oplossen\", besluit Driesen. Gemaakte afspraken om problemen op te lossen, werden niet nageleefd Wim Driesen (Anders.Zaventem), schepen van Openbaar Domein D…",
+  "vermelding": true
+ },
+ {
+  "id": "5bade182a80e406e",
+  "bedrijf": "Driesen",
+  "datum": "2026-08-11",
+  "week": "2026-W33",
+  "titel": "Gemeente legt werken op Hoekplein stil na problemen met aannemer, omwonenden reageren: “Er loopt al maanden veel mis”",
+  "url": "https://www.hln.be/zaventem/gemeente-legt-werken-op-hoekplein-stil-na-problemen-met-aannemer-omwonenden-reageren-er-loopt-al-maanden-veel-mis~ad15f942/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
  },
  {
@@ -1245,6 +2168,40 @@
   "vermelding": true
  },
  {
+  "id": "87bc4853980dbc4c",
+  "bedrijf": "Embuild",
+  "datum": "2026-08-09",
+  "week": "2026-W32",
+  "titel": "Bouwsector waarschuwt: slechts 5% van de ziekenhuizen en woonzorgcentra is klaar voor de toekomst",
+  "url": "https://www.hln.be/binnenland/bouwsector-waarschuwt-slechts-5-van-de-ziekenhuizen-en-woonzorgcentra-is-klaar-voor-de-toekomst~aaa7f46f/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "53632d462131a21b",
+  "bedrijf": "Willemen Groep",
+  "datum": "2026-08-07",
+  "week": "2026-W32",
+  "titel": "Bouwbedrijven in de problemen door droogte op de Rijn: “Schip moet voor dezelfde lading rijnzand vier keer varen”",
+  "url": "https://www.gva.be/regio/antwerpen/regio-antwerpen/schoten/bouwbedrijven-in-de-problemen-door-droogte-op-de-rijn-schip-moet-voor-dezelfde-lading-rijnzand-vier-keer-varen/159685991.html",
+  "medium": "GVA",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "3e6c39ba6878b12c",
   "bedrijf": "Houben",
   "datum": "2026-08-06",
@@ -1298,6 +2255,75 @@
   "vermelding": true
  },
  {
+  "id": "23168039548f5118",
+  "bedrijf": "Houben",
+  "datum": "2026-08-06",
+  "week": "2026-W32",
+  "titel": "1/3 bouwbedrijven heeft te weinig werk",
+  "url": "https://www.made-in.be/limburg/1-3-bouwbedrijven-heeft-te-weinig-werk/",
+  "medium": "Made in",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "259b790c0843b8d2",
+  "bedrijf": "Dethier",
+  "datum": "2026-08-05",
+  "week": "2026-W32",
+  "titel": "Twintig huizen in amper vier maanden: is deze techniek oplossing voor tekort aan sociale woningen?",
+  "url": "https://www.hbvl.be/regio/limburg/tessenderlo-ham/twintig-huizen-in-amper-vier-maanden-is-deze-techniek-oplossing-voor-tekort-aan-sociale-woningen/159345590.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "711ca8d0c0c53241",
+  "bedrijf": "Houben",
+  "datum": "2026-08-05",
+  "week": "2026-W32",
+  "titel": "94 procent van Limburgse bouwbedrijven vreest impact van geopolitieke spanningen",
+  "url": "https://www.nieuwsblad.be/regio/limburg/genk/94-procent-van-limburgse-bouwbedrijven-vreest-impact-van-geopolitieke-spanningen/159637817.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "30425c0f67ee48ce",
+  "bedrijf": "Embuild",
+  "datum": "2026-08-05",
+  "week": "2026-W32",
+  "titel": "94 procent van Limburgse bouwbedrijven vreest impact van geopolitieke spanningen",
+  "url": "https://www.nieuwsblad.be/regio/limburg/genk/94-procent-van-limburgse-bouwbedrijven-vreest-impact-van-geopolitieke-spanningen/159637817.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "d01a480bf30f7353",
   "bedrijf": "Embuild",
   "datum": "2026-08-03",
@@ -1347,6 +2373,42 @@
   "vermelding": true
  },
  {
+  "id": "70f766141de7d579",
+  "bedrijf": "Archipelago",
+  "datum": "2026-08-03",
+  "week": "2026-W32",
+  "titel": "STEEN & BEEN. Opwarmer (Filip Canfyn)",
+  "url": "https://www.architectura.be/nl/nieuws/steen-been-opwarmer-filip-canfyn/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…nclusie van Hitte alarm voor woningen – Hoe kunnen we het hoofd koel houden? , een onderzoek van KU Leuven en Archipelago (23/12/25), kan niet duidelijker zijn: “De klimaatverandering zal de hittebelasting en het risico op oververhitting van woningen…",
+  "vermelding": true
+ },
+ {
+  "id": "ee200adedb4e8b97",
+  "bedrijf": "Antea Group",
+  "datum": "2026-08-01",
+  "week": "2026-W31",
+  "titel": "Vier bedrijven investeren in herstel Springbos: project moet regio beschermen tegen droogte en wateroverlast",
+  "url": "https://www.gva.be/regio/antwerpen/rivierenland/duffel/vier-bedrijven-investeren-in-herstel-springbos-project-moet-regio-beschermen-tegen-droogte-en-wateroverlast/159485931.html",
+  "medium": "GVA",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "a82477b8ee199cb7",
   "bedrijf": "OpenSpace",
   "datum": "2026-07-30",
@@ -1361,6 +2423,74 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "OpenSpace geeft AI ‘ogen’ op de bouwplaats ABN Amro"
+ },
+ {
+  "id": "0e2f86ea01f38684",
+  "bedrijf": "Verstraete.team",
+  "datum": "2026-07-30",
+  "week": "2026-W31",
+  "titel": "Team Verstraete wil 37 woningen realiseren in Assebroek: “Parc Ruzette op plek van voormalige schietstand en boksclub”",
+  "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNeWtrdWpwak95YTRwMmJaLUdzclVmdWZuNkJyX2xvUTdaWWpzOW5jVkVjd09lTGJ0eVgtcGpMM3FaZUhWX0dxUUcwdlM5Q2RfTnJEaDBERzNxTGIzaEM1ZzRUeDdDdWs1UXRPbzVpQ25HTGIybXptR1BONWVONHNMOHBwMFYwMjEtWFN2RldKSnNVeUFxejh3UTVLV3VUMlJmdDM4V0FvS3BqYnlhbERJZ3ZzdkltRUtlSlY4U3RnY1ppajhyOW9zUUJ5QzVZWTg0ZFUzSTczRmF2cGM?oc=5",
+  "medium": "KW.be",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "HR & talent"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Team Verstraete wil 37 woningen realiseren in Assebroek: “Parc Ruzette op plek van voormalige schietstand en boksclub” KW.be"
+ },
+ {
+  "id": "c8349fb02138a37a",
+  "bedrijf": "Embuild",
+  "datum": "2026-07-27",
+  "week": "2026-W31",
+  "titel": "Bouwsector in Vlaams-Brabant onder zware druk: zes op de tien aannemers zien winstmarge dalen",
+  "url": "https://www.hln.be/leuven/bouwsector-in-vlaams-brabant-onder-zware-druk-zes-op-de-tien-aannemers-zien-winstmarge-dalen~ad2349af/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "4b2ad7232f513589",
+  "bedrijf": "Archipelago",
+  "datum": "2026-07-25",
+  "week": "2026-W30",
+  "titel": "In beeld: 12 sterke staaltjes van recente Belgische architectuur",
+  "url": "https://weekend.knack.be/lifestyle/design/architectuur/recente-belgische-architectuur/",
+  "medium": "Weekend Knack",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "8d0b7ae8cfeec6a3",
+  "bedrijf": "Houben",
+  "datum": "2026-07-24",
+  "week": "2026-W30",
+  "titel": "Materiaal wordt al decennia niet meer gemaakt, toch is Harrie fervent meccano-bouwer",
+  "url": "https://www.hbvl.be/regio/limburg/hasselt/materiaal-wordt-al-decennia-niet-meer-gemaakt-toch-is-harrie-fervent-meccano-bouwer/158635771.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
  },
  {
   "id": "0602900cb774e8f2",
@@ -1378,6 +2508,56 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "…dat Fluvius met Lubbeek de beste keuze heeft gemaakt voor de uitbouw van zijn netwerken van morgen.’ Aannemer Willemen Bouw, onderdeel van Willemen Groep, is aangesteld om de werken uit te voeren. ‘We zijn trots dat we dit gebouw mogen bouwen’, ver…",
+  "vermelding": true
+ },
+ {
+  "id": "995b1826dd476095",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-07-22",
+  "week": "2026-W30",
+  "titel": "De baksteen in de maag van de Belg wordt kleiner",
+  "url": "https://www.hbvl.be/nieuws/de-baksteen-in-de-maag-van-de-belg-wordt-kleiner/159055365.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "f7bde26d1a705c5d",
+  "bedrijf": "Nelissen",
+  "datum": "2026-07-22",
+  "week": "2026-W30",
+  "titel": "Nu toch geen njet voor Nelissen",
+  "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4tZWdnWHFNN01tVHQtS0U4R3dyVTcwUVVMZTRENnV5Q2U0d3pySzZXZ3JuQmNYa0JMdnhldU5heGRtYUViSzU4Y0ZYb2Y5cURXOTVOX1lOSVFuOVJpWWdfWFFqaE1jVDhmeEN3R1JaN0I?oc=5",
+  "medium": "Made in",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Nu toch geen njet voor Nelissen Made in"
+ },
+ {
+  "id": "4c52354fd502eb0c",
+  "bedrijf": "Nelissen",
+  "datum": "2026-07-22",
+  "week": "2026-W30",
+  "titel": "De baksteen in de maag van de Belg wordt kleiner",
+  "url": "https://www.hbvl.be/nieuws/de-baksteen-in-de-maag-van-de-belg-wordt-kleiner/159055365.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
  },
  {
@@ -1415,6 +2595,40 @@
   "samenvatting": "DEME installeert funderingen voor offshore windpark Zeevonk Schuttevaer.nl"
  },
  {
+  "id": "0679522a0fbe1d8e",
+  "bedrijf": "Artes",
+  "datum": "2026-07-18",
+  "week": "2026-W29",
+  "titel": "Van buitenlandse defensie tot een Gents advocatenkantoor: hier gaan de 180 miljard aan federale toelagen naartoe",
+  "url": "https://www.hln.be/binnenland/van-buitenlandse-defensie-tot-een-gents-advocatenkantoor-hier-gaan-de-180-miljard-aan-federale-toelagen-naartoe~af4fe607/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "3c46fe5d2a8e95dc",
+  "bedrijf": "Artes",
+  "datum": "2026-07-17",
+  "week": "2026-W29",
+  "titel": "Belfort van Aalst staat straks maanden zonder rood torentje: “Het wordt voor restauratie naar de begane grond gehesen op de Grote Markt”",
+  "url": "https://www.hln.be/aalst/belfort-van-aalst-staat-straks-maanden-zonder-rood-torentje-het-wordt-voor-restauratie-naar-de-begane-grond-gehesen-op-de-grote-markt~ad573d94/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "1915c38e640dfa45",
   "bedrijf": "Willemen Groep",
   "datum": "2026-07-14",
@@ -1429,6 +2643,23 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Diependaele trapt recordeditie Voka Zomerstages af bij Mechelse bouwgroep Willemen Voka - Vlaams netwerk van ondernemingen"
+ },
+ {
+  "id": "0ce8050657c6cfe9",
+  "bedrijf": "Cordeel",
+  "datum": "2026-07-14",
+  "week": "2026-W29",
+  "titel": "Hoofdaannemer zegt ‘volledige medewerking’ toe aan onderzoek na dodelijke brand",
+  "url": "https://www.hln.be/brussel/hoofdaannemer-zegt-volledige-medewerking-toe-aan-onderzoek-na-dodelijke-brand~ae8a1a42/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
  },
  {
   "id": "23cd5ffa9a4c962a",
@@ -1480,6 +2711,74 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "…l en bezoekers veiligheidskledij dragen op werf Artikel luisteren | 3min Meer info De Limburgse bouwbedrijven Houben en Vanderstraeten hebben op een werf in Sint-Truiden getest of een camera met AI in kaart kan brengen hoeveel personeelsleden en…",
+  "vermelding": true
+ },
+ {
+  "id": "c3e6fccd99237ea1",
+  "bedrijf": "Dethier",
+  "datum": "2026-07-09",
+  "week": "2026-W28",
+  "titel": "Woontrots vernieuwt Acaciawijk met unieke inschuifmethode: “Ondertussen krijgen bewoners onderdak in verplaatsbare woningen”",
+  "url": "https://www.hln.be/zaventem/woontrots-vernieuwt-acaciawijk-met-unieke-inschuifmethode-ondertussen-krijgen-bewoners-onderdak-in-verplaatsbare-woningen~a17109e8/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "75a7073246499522",
+  "bedrijf": "Dethier",
+  "datum": "2026-07-09",
+  "week": "2026-W28",
+  "titel": "Hier komt eerste ‘inschuifwijk’ van Vlaanderen: “Bewoners moeten tijdens renovaties niet uit hun vertrouwde omgeving verdwijnen”",
+  "url": "https://www.nieuwsblad.be/binnenland/hier-komt-eerste-inschuifwijk-van-vlaanderen-bewoners-moeten-tijdens-renovaties-niet-uit-hun-vertrouwde-omgeving-verdwijnen/158474977.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "edf42895db5a9560",
+  "bedrijf": "Vanhout",
+  "datum": "2026-07-08",
+  "week": "2026-W28",
+  "titel": "Nieuw woonproject in Geel op plaats van oude bloemmolens: \"Alles is klaar voor een nieuw dorpshartje\"",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/07/08/geel-ten-aard-bloemmolens-woonproject-vanhout/",
+  "medium": "VRT",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…t project is het renoveren van de bestaande bloemmolens\", klinkt het bij Ward Peeters van projectontwikkelaar Vanhout. In de gerenoveerde molens en omgeving zullen er in totaal 22 woningen en 104 appartementen komen. Verder komt er op de site ook…",
+  "vermelding": true
+ },
+ {
+  "id": "4f1058fe316ac063",
+  "bedrijf": "Vanhout",
+  "datum": "2026-07-08",
+  "week": "2026-W28",
+  "titel": "Iconische Bloemmolens in Ten Aard worden omgetoverd tot appartementen en lofts: \"Het uitzicht zoals dat al sinds het begin van de vorige eeuw is, was een belangrijke voorwaarde\"",
+  "url": "https://www.hln.be/geel/iconische-bloemmolens-in-ten-aard-worden-omgetoverd-tot-appartementen-en-lofts-het-uitzicht-zoals-dat-al-sinds-het-begin-van-de-vorige-eeuw-is-was-een-belangrijke-voorwaarde~ace9dfad/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
  },
  {
@@ -1565,6 +2864,40 @@
   "vermelding": true
  },
  {
+  "id": "cd4e51e340f58b2f",
+  "bedrijf": "Wyckaert",
+  "datum": "2026-06-30",
+  "week": "2026-W27",
+  "titel": "Zoo Antwerpen start bouw van enorm dierengebouw: beren, roofdieren en kwallen",
+  "url": "https://zooflits.nl/zoo-antwerpen-start-bouw-van-enorm-dierengebouw-beren-roofdieren-en-kwallen/",
+  "medium": "ZooFlits",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…over de komst van soorten als brilberen en sneeuwpanters.</p> <p data-start=\"414\" data-end=\"747\">Bouwbedrijf Wyckaert is verantwoordelijk voor de ruwbouw, afwerking, technieken en omgevingsaanleg van het complex, dat eerder werd geraamd op ongevee…",
+  "vermelding": true
+ },
+ {
+  "id": "416553e0765ad98f",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-06-30",
+  "week": "2026-W27",
+  "titel": "VACATURE. HLN zoekt freelance regiojournalist voor het Meetjesland",
+  "url": "https://www.hln.be/lievegem/vacature-hln-zoekt-freelance-regiojournalist-voor-het-meetjesland~a9a1e593/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "HR & talent"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "bec99168048b2544",
   "bedrijf": "Embuild",
   "datum": "2026-06-29",
@@ -1633,6 +2966,42 @@
   "vermelding": true
  },
  {
+  "id": "2ed047f2fcb59433",
+  "bedrijf": "Houben",
+  "datum": "2026-06-29",
+  "week": "2026-W27",
+  "titel": "Eerste ‘steen’ gelegd in Hasselt voor nieuw Jessa Ziekenhuis, met kostprijs van 1 miljard (!) euro",
+  "url": "https://www.hbvl.be/regio/limburg/hasselt/eerste-steen-gelegd-in-hasselt-voor-nieuw-jessa-ziekenhuis-met-kostprijs-van-1-miljard-euro/157963957.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "3b69ad7452edcdcf",
+  "bedrijf": "Archipelago",
+  "datum": "2026-06-29",
+  "week": "2026-W27",
+  "titel": "Met prijskaartje van 105 miljoen euro: Defensie bouwt nieuw pantservoertuigencomplex in Leopoldsburg",
+  "url": "https://www.nieuwsblad.be/regio/limburg/leopoldsburg/met-prijskaartje-van-105-miljoen-euro-defensie-bouwt-nieuw-pantservoertuigencomplex-in-leopoldsburg/157997442.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "69d480c8a7b96f1c",
   "bedrijf": "EEG",
   "datum": "2026-06-25",
@@ -1648,6 +3017,40 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Wanneer we denken aan de technologische infrastructuur van een modern ziekenhuis, gaan onze gedachten vaak naar medische beeldvorming, robotchirurgie of hoogtechnologische operatiekwartieren. Veel minder zichtbaar, maar minstens even…"
+ },
+ {
+  "id": "55398a1a4d9b8288",
+  "bedrijf": "Embuild",
+  "datum": "2026-06-24",
+  "week": "2026-W26",
+  "titel": "Bouwsector kreunt onder crisissen: \"Nood aan verlaagde btw-tarieven\"",
+  "url": "https://www.made-in.be/oost-vlaanderen/bouwsector-kreunt-onder-crisissen-nood-aan-verlaagde-btw-tarieven/",
+  "medium": "Made in",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "f6f541b2848a3de9",
+  "bedrijf": "Embuild",
+  "datum": "2026-06-24",
+  "week": "2026-W26",
+  "titel": "Bouwsector in Vlaams-Brabant onder druk mede door verkeersproblemen op Ring: “Wake-upcall voor alle overheden”",
+  "url": "https://www.nieuwsblad.be/regio/vlaams-brabant/halle-vilvoorde/vilvoorde/bouwsector-in-vlaams-brabant-onder-druk-mede-door-verkeersproblemen-op-ring-wake-upcall-voor-alle-overheden/157705169.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
  },
  {
   "id": "8a5d8d4ae9f834f3",
@@ -1682,6 +3085,40 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "…ing tot de Oostflank inzichtelijk te maken. In een notitie het door hen opgestelde notitie. Samenvattend komt Antea Group tot het volgende oordeel De achterliggende jaren zijn afspraken gemaakt over de Oostflank van Purmerend en de realisatie van woni…",
+  "vermelding": true
+ },
+ {
+  "id": "8a974df646e8f155",
+  "bedrijf": "Houben",
+  "datum": "2026-06-23",
+  "week": "2026-W26",
+  "titel": "EXCLUSIEF. “Een van de meest beveiligde plekken van België”: een kijkje op de F-35-werf in Kleine-Brogel",
+  "url": "https://www.hbvl.be/regio/limburg/peer/exclusief.-een-van-de-meest-beveiligde-plekken-van-belgie-een-kijkje-op-de-f-35-werf-in-kleine-brogel/153743316.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "a6115b56c25a85b3",
+  "bedrijf": "Derde Construct",
+  "datum": "2026-06-22",
+  "week": "2026-W26",
+  "titel": "Bouwbedrijf breidt bedrijfssite fors uit: \"De bouwcrisis voelen we weinig of niet\"",
+  "url": "https://www.made-in.be/oost-vlaanderen/bouwbedrijf-breidt-bedrijfssite-fors-uit-de-bouwcrisis-voelen-we-weinig-of-niet/",
+  "medium": "Made in",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
  },
  {
@@ -1800,6 +3237,144 @@
   "vermelding": true
  },
  {
+  "id": "f178ad13bd29ef58",
+  "bedrijf": "Wyckaert",
+  "datum": "2026-06-19",
+  "week": "2026-W25",
+  "titel": "KIJK. Zo ziet het nieuwe rusthuis Ter Caele in Evergem eruit: “Na 8 jaar voorbereiden, kan bouw deze zomer eindelijk starten”",
+  "url": "https://www.hln.be/evergem/kijk-zo-ziet-het-nieuwe-rusthuis-ter-caele-in-evergem-eruit-na-8-jaar-voorbereiden-kan-bouw-deze-zomer-eindelijk-starten~a36f17c0/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "3f52d933516b130a",
+  "bedrijf": "Archipelago",
+  "datum": "2026-06-19",
+  "week": "2026-W25",
+  "titel": "AZ Diest bekroond met Europese award: “Ziekenhuis in een middelgrote stad kan een voorbeeld zijn voor de toekomst van de gezondheidszorg”",
+  "url": "https://www.nieuwsblad.be/regio/vlaams-brabant/az-diest-bekroond-met-europese-award-ziekenhuis-in-een-middelgrote-stad-kan-een-voorbeeld-zijn-voor-de-toekomst-van-de-gezondheidszorg/157504819.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "8217330f2b8a4d83",
+  "bedrijf": "Embuild",
+  "datum": "2026-06-19",
+  "week": "2026-W25",
+  "titel": "Bouwbedrijven grijpen vaker naar dagprijzen door stijgende materiaalkosten sinds oorlog in Midden-Oosten",
+  "url": "https://www.nieuwsblad.be/binnenland/bouwbedrijven-grijpen-vaker-naar-dagprijzen-door-stijgende-materiaalkosten-sinds-oorlog-in-midden-oosten/157450899.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "5708781b3cd1db93",
+  "bedrijf": "Buildwise",
+  "datum": "2026-06-19",
+  "week": "2026-W25",
+  "titel": "Dit zijn de gesteunde COOCK-projecten oproep 2026",
+  "url": "https://www.vlaio.be/nl/nieuws/dit-zijn-de-gesteunde-coock-projecten-oproep-2026",
+  "medium": "VLAIO",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "77dd3b63ac214381",
+  "bedrijf": "BATO",
+  "datum": "2026-06-18",
+  "week": "2026-W25",
+  "titel": "Waarom de prijs van je huis (veel) hoger kan zijn dan afgesproken: “2 op de 3 bouwbedrijven gebruiken al prijsclausule om zich in te dekken”",
+  "url": "https://www.hln.be/binnenland/waarom-de-prijs-van-je-huis-veel-hoger-kan-zijn-dan-afgesproken-2-op-de-3-bouwbedrijven-gebruiken-al-prijsclausule-om-zich-in-te-dekken~a2d67e74/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Events & awards"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "090c04d96094faa9",
+  "bedrijf": "Archipelago",
+  "datum": "2026-06-18",
+  "week": "2026-W25",
+  "titel": "De Ladder van Koeling toont de weg naar hittebestendige gebouwen",
+  "url": "https://bouwkroniek.be/duurzaamheid/de-ladder-van-koeling-toont-de-weg-naar-hittebestendige-gebouwen-53085",
+  "medium": "Bouwkroniek",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…Oververhitting in woningen is niet langer een probleem voor later. Uit een recente studie van KU Leuven en archipelago architects blijkt dat bij een verdere klimaatopwarming van 3°C vanaf 2063 bijna alle Belgische woningen met oververhitting te mak…",
+  "vermelding": true
+ },
+ {
+  "id": "ae51d0f8024228a2",
+  "bedrijf": "Nelissen",
+  "datum": "2026-06-18",
+  "week": "2026-W25",
+  "titel": "Lanakenaar maakt wijn zonder wijngaard: “We zijn niet afhankelijk van het weer”",
+  "url": "https://www.hbvl.be/lifestyle/eten-en-drinken/lanakenaar-maakt-wijn-zonder-wijngaard-we-zijn-niet-afhankelijk-van-het-weer/152362526.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "d3c75cdffa1db7d4",
+  "bedrijf": "Antea Group",
+  "datum": "2026-06-18",
+  "week": "2026-W25",
+  "titel": "Minder woningen in Oostflank kost Purmerend mogelijk jaren vertraging én dreigt uit te lopen op conflict met ontwikkelaar",
+  "url": "https://regiopurmerend.nl/minder-woningen-in-oostflank-kost-purmerend-mogelijk-jaren-vertraging-en-dreigt-uit-te-lopen-op-conflict-met-ontwikkelaar/",
+  "medium": "RegioPurmerend",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "87320209e96ae4ab",
   "bedrijf": "DEME",
   "datum": "2026-06-17",
@@ -1814,5 +3389,21 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "DEME haalt verdiepingswerken nieuwe Indiase haven Ramayapatnam binnen Flows"
+ },
+ {
+  "id": "b1ec88141e798233",
+  "bedrijf": "VDS Vanderstraeten",
+  "datum": "2026-06-17",
+  "week": "2026-W25",
+  "titel": "Thijs Martens (Vanderstraeten): “Het lijkt een grote legodoos, maar achter die eenvoud schuilt een strak stappenplan”",
+  "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVWpidm02ZkZLLXNsdGNvZXIwcTdtdWdLTER3aUpzV1BCcnFObkdPRWRlTVhYa1JWSW5YSTVVWlJyUzNjSl9UYWh3bG1qQk96cWRUS25GblhvWHl0NDVhdzZybWh2MUhLNUZ5QVZWby12eE1fR1pRMDhrSVBnR2tYOS12ZHVJQXM5MVlsMVRhSHZsbmtIY0R3V1lnMEpZTnkxV1M0TFVzR1FLLUxDdU5QcW5VNWlBMlg3eXJzc3hRUER0bHo2eUtZSmg1Nm9DbFluV0xCQl9hT1RaNGtPX3hKS3RjSzg?oc=5",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Thijs Martens (Vanderstraeten): “Het lijkt een grote legodoos, maar achter die eenvoud schuilt een strak stappenplan” Architectura"
  }
 ]
