@@ -163,6 +163,43 @@ def naam_in_tekst(bedrijf, tekst):
     return any(n in t for n in namen)
 
 
+# Woorden die erop wijzen dat een artikel over een bedrijf of de bouwsector gaat.
+BEDRIJFSWOORDEN = re.compile(
+    r"bouw|aannem|werf|werven|project|renov|restaur|architect|studiebureau|ingenieur|engineering|"
+    r"infra|vastgoed|ontwikkelaar|steenfabriek|baksteen|gevelsteen|fabriek|onderaannem|"
+    r"investe|winst|omzet|verlies|overname|neemt over|fusie|dividend|ondernemingsrechtbank|"
+    r"personeel|medewerker|vacature|uitstoot|duurza|circulai|offshore|windpark|haven|bagger|"
+    r"order|contract|aanbesteding|gegund|oplevering|woning|appartement|woonzorg|ziekenhuis|"
+    r"kantoor|campus|schoolsite|technisch advies|digitaal|software|modulai|prefab|robot|"
+    r"veiligheid|federatie|sector|voka|\bnv\b|\bbv\b|\bceo\b|\bco2\b|\bco₂\b|\bbim\b|\bai\b",
+    re.I)
+# Typische ruis: sport, overlijdens, verenigingsleven, leeftijden van personen.
+RUIS = re.compile(
+    r"overleden|\b\d{2,3} jaar\b|\(\d{1,2}\)|voetbal|padel|wielren|bmx|topduif|duivensport|"
+    r"fotoclub|\bzege\b|\bwint\b|\bk[fv]c\b|\bfc\b|gt world",
+    re.I)
+
+
+def is_bedrijfsnieuws(bedrijf, titel, samenvatting, medium):
+    """Houdt een persartikel enkel als het echt over het bedrijf gaat:
+    1. de bedrijfsnaam staat in de titel of samenvatting (of het is een publicatie van het bedrijf zelf),
+    2. er staat een woord in dat op bedrijfs- of bouwnieuws wijst (of een woord uit de kolom context),
+    3. het is geen sport-, overlijdens- of verenigingsbericht."""
+    if medium:  # Google Nieuws plakt de naam van het medium achter de samenvatting
+        samenvatting = samenvatting.replace(medium, " ")
+    tekst = f"{titel} {samenvatting}"
+    eigen_medium = naam_in_tekst(bedrijf, medium or "")
+    if not (naam_in_tekst(bedrijf, tekst) or eigen_medium):
+        return False
+    if RUIS.search(titel):
+        return False
+    if eigen_medium:
+        return True
+    context = [c.strip().lower() for c in bedrijf.get("context", "").split("|") if c.strip()]
+    t = tekst.lower()
+    return any(c in t for c in context) or bool(BEDRIJFSWOORDEN.search(tekst))
+
+
 # ---------------------------------------------------------------- bronnen
 
 def google_nieuws(bedrijf, dagen):
@@ -475,9 +512,18 @@ def main():
     vandaag = dt.date.today()
     log(f"Start benchmark {vandaag} - terugblik {terugblik} dagen")
 
+    bedrijven = lees_bedrijven()
+    # Ruim ook eerder verzamelde persartikels op die niet over het bedrijf gaan
+    per_naam = {b["bedrijf"]: b for b in bedrijven}
+    voor = len(archief)
+    archief = [p for p in archief
+               if p.get("kanaal") != "Pers & nieuws" or (
+                   p["bedrijf"] in per_naam and
+                   is_bedrijfsnieuws(per_naam[p["bedrijf"]], p["titel"], p.get("samenvatting", ""), p.get("medium", "")))]
+    if len(archief) < voor:
+        log(f"Opgeruimd: {voor - len(archief)} persartikels die niet over het bedrijf gingen")
     bekende_ids = {p["id"] for p in archief}
     bekende_titels = {(p["bedrijf"], normaliseer_titel(p["titel"])) for p in archief}
-    bedrijven = lees_bedrijven()
     run_status = []
     nieuw_totaal = 0
 
@@ -522,6 +568,8 @@ def main():
             if pid in bekende_ids or tkey in bekende_titels:
                 continue
             is_pers = k["bron"] in ("Google Nieuws", "Bing Nieuws")
+            if is_pers and not is_bedrijfsnieuws(b, k["titel"], k["samenvatting"], k["medium"]):
+                continue
             archief.append({
                 "id": pid,
                 "bedrijf": naam,
