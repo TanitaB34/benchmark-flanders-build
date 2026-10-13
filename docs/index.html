@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digitale benchmark Flanders Build · Verstraete.team</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --oranje:#E84E0F; --oranje-2:#F58A5C; --oranje-zacht:#FDEEE6;
+  --bg:#EEEEEB; --vlak:#FFFFFF; --vlak-2:#F7F7F5; --tekst:#1E1F21; --tekst-2:#5E6164; --tekst-3:#8A8D90;
+  --lijn:#DCDDD8; --steen:#B3B6B8; --steen-donker:#7D8184; --grafiet:#26282B;
+  --v1:#2F5F8F; --v2:#6E8B3D; --v3:#8C5A9E;
+  --pos:#2E7D4F; --neg:#B3261E;
+  --kop:#26282B; --kop-tekst:#FFFFFF;
+  --schaduw:0 1px 2px rgba(20,20,20,.06), 0 8px 24px -12px rgba(20,20,20,.18);
+  --r:10px;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --oranje-zacht:#3A2218; --bg:#141517; --vlak:#1D1F22; --vlak-2:#24272A; --tekst:#ECECEA; --tekst-2:#B2B4B6; --tekst-3:#85888B;
+    --lijn:#33363A; --steen:#5C6064; --steen-donker:#8B8F93; --grafiet:#E6E6E3; --v1:#6FA3D6; --v2:#9DBB68; --v3:#C08ED3;
+    --pos:#5FBF84; --neg:#F07A72; --kop:#0F1012; --schaduw:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --oranje-zacht:#3A2218; --bg:#141517; --vlak:#1D1F22; --vlak-2:#24272A; --tekst:#ECECEA; --tekst-2:#B2B4B6; --tekst-3:#85888B;
+  --lijn:#33363A; --steen:#5C6064; --steen-donker:#8B8F93; --grafiet:#E6E6E3; --v1:#6FA3D6; --v2:#9DBB68; --v3:#C08ED3;
+  --pos:#5FBF84; --neg:#F07A72; --kop:#0F1012; --schaduw:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6); color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+html,body{margin:0}
+body{background:var(--bg);color:var(--tekst);font-family:"Archivo",Arial,"Helvetica Neue",sans-serif;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+button,select,input{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--oranje);outline-offset:2px;border-radius:4px}
+.num{font-variant-numeric:tabular-nums}
+
+/* demo-balk */
+.demo{background:var(--oranje);color:#fff;text-align:center;font-size:12.5px;padding:6px 14px;font-weight:600}
+
+/* kop */
+.kop{background:var(--kop);color:var(--kop-tekst)}
+.kop-in{max-width:1400px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.logo-wit{height:30px;width:auto;display:block;margin-right:6px}
+.logo-wit+div{border-left:1px solid rgba(255,255,255,.18);padding-left:20px}
+@media (max-width:640px){.logo-wit{height:24px}.logo-wit+div{padding-left:14px}}
+.kop h1{margin:0;font-size:19px;font-weight:700;letter-spacing:-.2px}
+.kop .sub{font-size:12.5px;color:#B9BBBD;margin-top:1px}
+.kop .rechts{margin-left:auto;display:flex;align-items:center;gap:10px}
+.pulse{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:#C9CBCD}
+.pulse i{width:8px;height:8px;border-radius:50%;background:#4CC37A;box-shadow:0 0 0 0 rgba(76,195,122,.6);animation:puls 2.4s infinite}
+@keyframes puls{70%{box-shadow:0 0 0 8px rgba(76,195,122,0)}100%{box-shadow:0 0 0 0 rgba(76,195,122,0)}}
+.ikoon{width:38px;height:38px;border-radius:8px;border:1px solid rgba(255,255,255,.18);background:transparent;color:#fff;display:grid;place-items:center;cursor:pointer}
+.ikoon:hover{background:rgba(255,255,255,.08)}
+.ikoon svg{width:18px;height:18px}
+.knop-oranje{background:var(--oranje);color:#fff;border:0;border-radius:8px;padding:10px 16px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.knop-oranje:hover{filter:brightness(1.08)}
+.knop-oranje[disabled]{opacity:.55;cursor:wait}
+.knop-oranje svg{width:16px;height:16px}
+
+/* filterbalk */
+.filters{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--lijn);top:env(safe-area-inset-top,0px)}
+.filters-in{max-width:1400px;margin:0 auto;padding:10px 28px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.seg{display:inline-flex;background:var(--vlak);border:1px solid var(--lijn);border-radius:9px;padding:3px;gap:2px}
+.seg button{border:0;background:transparent;padding:6px 11px;border-radius:6px;cursor:pointer;color:var(--tekst-2);font-weight:600;font-size:13px;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--grafiet);color:var(--vlak)}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+.chips::-webkit-scrollbar{display:none}
+.chip{border:1px solid var(--lijn);background:var(--vlak);border-radius:999px;padding:5px 11px;font-size:12.5px;cursor:pointer;white-space:nowrap;color:var(--tekst-2);font-weight:500}
+.chip[aria-pressed="true"]{border-color:var(--grafiet);background:var(--grafiet);color:var(--vlak)}
+.toggle{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--tekst-2);cursor:pointer;user-select:none}
+.toggle input{appearance:none;width:30px;height:18px;border-radius:999px;background:var(--steen);position:relative;cursor:pointer;transition:background .2s;margin:0}
+.toggle input::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;transition:transform .2s}
+.toggle input:checked{background:var(--grafiet)}
+.toggle input:checked::after{transform:translateX(12px)}
+.vergelijk{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.vergelijk select{border:1px dashed var(--steen-donker);background:var(--vlak);border-radius:999px;padding:5px 10px;font-size:12.5px;cursor:pointer;max-width:190px}
+.segsel{border:1px solid var(--lijn);background:var(--vlak);border-radius:9px;padding:7px 10px;font-size:13px;font-weight:600;color:var(--tekst-2);cursor:pointer}
+.knop-licht{border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;border-radius:8px;padding:9px 13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.knop-licht:hover{background:rgba(255,255,255,.08)}.knop-licht svg{width:16px;height:16px}.knop-licht[hidden]{display:none}
+.vchip{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 6px 4px 10px;font-size:12.5px;font-weight:600;color:#fff}
+.vchip button{border:0;background:rgba(255,255,255,.25);color:#fff;width:18px;height:18px;border-radius:50%;cursor:pointer;line-height:1;font-size:12px;padding:0}
+
+main{max-width:1400px;margin:0 auto;padding:22px 28px 60px}
+.kaart{background:var(--vlak);border:1px solid var(--lijn);border-radius:var(--r);box-shadow:var(--schaduw);padding:18px 20px}
+.kaart h2{margin:0;font-size:15px;font-weight:700;letter-spacing:-.1px}
+.kaart .uitleg{margin:3px 0 14px;color:var(--tekst-3);font-size:12.5px}
+.kaart-kop{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.link{border:0;background:none;color:var(--tekst-2);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0;font-size:12.5px}
+
+/* held */
+.held{display:grid;grid-template-columns:minmax(300px,.9fr) minmax(0,2.1fr);gap:18px;margin-bottom:18px}
+.positie{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:340px;
+  background-image:linear-gradient(var(--lijn) 1px,transparent 1px),linear-gradient(90deg,var(--lijn) 1px,transparent 1px);background-size:28px 28px;background-position:-1px -1px}
+.positie::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,var(--vlak) 35%,color-mix(in srgb,var(--vlak) 70%,transparent));pointer-events:none}
+.positie>*{position:relative}
+.positie .label{font-size:13px;font-weight:600;color:var(--tekst-2)}
+.rang{display:flex;align-items:baseline;gap:10px;margin-top:6px}
+.rang b{font-size:112px;line-height:.9;font-weight:800;color:var(--oranje);letter-spacing:-5px}
+.rang span{font-size:20px;color:var(--tekst-2);font-weight:500}
+.delta{display:inline-flex;align-items:center;gap:4px;font-weight:700;font-size:13px;border-radius:999px;padding:3px 9px}
+.delta.op{color:var(--pos);background:color-mix(in srgb,var(--pos) 14%,transparent)}
+.delta.neer{color:var(--neg);background:color-mix(in srgb,var(--neg) 14%,transparent)}
+.delta.gelijk{color:var(--tekst-2);background:var(--vlak-2)}
+.positie p{font-size:15.5px;color:var(--tekst);margin:14px 0 0;max-width:42ch}
+.race-wrap{position:relative;height:330px}
+.race-legende{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px;font-size:12px;color:var(--tekst-2)}
+.race-legende span{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.race-legende i{width:14px;height:3px;border-radius:2px;display:inline-block}
+
+/* kpi */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-bottom:18px}
+.kpi{padding:16px 18px}
+.kpi .t{font-size:12.5px;color:var(--tekst-2);font-weight:600}
+.kpi .w{display:flex;align-items:baseline;gap:8px;margin:6px 0 2px}
+.kpi .w b{font-size:32px;font-weight:800;letter-spacing:-1px}
+.kpi svg{width:100%;height:34px;display:block;margin-top:6px}
+
+.rij{display:grid;gap:18px;margin-bottom:18px}
+.rij-2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.rij-3{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+.grafiek{position:relative;height:280px}
+
+/* rangschikking */
+.rlijst{display:flex;flex-direction:column;gap:3px}
+.rregel{display:grid;grid-template-columns:30px minmax(110px,170px) 1fr 40px 46px;align-items:center;gap:10px;padding:5px 6px;border-radius:7px;cursor:pointer;border:0;background:transparent;text-align:left;width:100%}
+.rregel:hover{background:var(--vlak-2)}
+.rregel .nr{color:var(--tekst-3);font-size:12px;font-weight:600;text-align:right}
+.rregel .nm{font-weight:600;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.balk{height:12px;background:var(--vlak-2);border-radius:999px;overflow:hidden}
+.balk i{display:block;height:100%;width:0;background:var(--steen);border-radius:999px;transition:width .7s cubic-bezier(.2,.8,.2,1)}
+.rregel.eigen{background:var(--oranje-zacht)}
+.rregel.eigen .nm{color:var(--oranje)}
+.rregel.eigen .balk i{background:var(--oranje)}
+.rregel .ct{font-weight:700;text-align:right}
+.rregel .dl{font-size:11.5px;font-weight:700;text-align:right}
+.dl.op{color:var(--pos)}.dl.neer{color:var(--neg)}.dl.gelijk{color:var(--tekst-3)}
+
+/* sociaal */
+.srij{display:grid;grid-template-columns:minmax(120px,1.4fr) 1fr 74px 54px 96px;gap:10px;align-items:center;padding:7px 6px;border-radius:7px;font-size:13px;border:0;background:transparent;width:100%;text-align:left;cursor:pointer}
+.srij:not(.skop):hover{background:var(--vlak-2)}
+.srij.skop{cursor:default;font-size:11.5px;color:var(--tekst-3);font-weight:600;border-bottom:1px solid var(--lijn);border-radius:0}
+.srij.eigen{background:var(--oranje-zacht)}.srij.eigen .nm{color:var(--oranje)}
+.srij .nm{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.srij .vb{display:flex;align-items:center;gap:8px}.srij .vb .balk{flex:1}
+.srij .r{text-align:right}
+.soc-leeg{padding:26px 6px;color:var(--tekst-2);font-size:13.5px;max-width:70ch}
+.kanalen{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.kanalen a{font-size:12px;border:1px solid var(--lijn);border-radius:999px;padding:3px 10px;text-decoration:none;color:var(--tekst-2)}
+.kanalen a:hover{border-color:var(--grafiet);color:var(--tekst)}
+@media (max-width:640px){.srij{grid-template-columns:minmax(90px,1fr) 80px 56px 40px 0;font-size:12px}.srij>:last-child{display:none}}
+
+/* heatmap */
+.tabel-wrap{overflow-x:auto}
+.heat{border-collapse:separate;border-spacing:3px;width:100%;font-size:12.5px}
+.heat th{font-weight:600;color:var(--tekst-2);font-size:11.5px;text-align:center;padding:4px;white-space:nowrap}
+.heat th:first-child{text-align:left}
+.heat td.nm{white-space:nowrap;font-weight:600;padding-right:8px;cursor:pointer}
+.heat td.c{text-align:center;border-radius:6px;min-width:52px;height:30px;cursor:pointer;font-weight:600;transition:transform .12s}
+.heat td.c:hover{transform:scale(1.08);outline:2px solid var(--grafiet)}
+.heat tr.eigen td.nm{color:var(--oranje)}
+
+/* media / momentum */
+.mlijst{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.mregel{display:grid;grid-template-columns:minmax(0,1fr) 34px;gap:8px;align-items:center;font-size:13px}
+.mregel .mb{height:6px;border-radius:999px;background:var(--vlak-2);margin-top:4px;overflow:hidden}
+.mregel .mb i{display:block;height:100%;background:var(--steen-donker);border-radius:999px;transition:width .6s}
+.mom{display:flex;flex-direction:column;gap:6px}
+.momr{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:8px;background:var(--vlak-2);cursor:pointer;border:0;width:100%;text-align:left}
+.momr.eigen{background:var(--oranje-zacht)}
+.momr b{font-size:13px}
+.split{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;align-items:center}
+.donut{position:relative;height:150px}
+.donut .mid{position:absolute;inset:0;display:grid;place-items:center;text-align:center;pointer-events:none}
+.donut .mid b{font-size:24px;font-weight:800;display:block;line-height:1}
+.donut .mid span{font-size:11px;color:var(--tekst-3)}
+
+/* feed */
+.feed-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;align-items:center}
+.feed-filters input,.feed-filters select{border:1px solid var(--lijn);background:var(--vlak-2);border-radius:8px;padding:8px 10px;font-size:13px}
+.feed-filters input{min-width:240px;flex:1;max-width:380px}
+.actief-filter{display:inline-flex;gap:6px;align-items:center;background:var(--grafiet);color:var(--vlak);border-radius:999px;padding:4px 6px 4px 11px;font-size:12px;font-weight:600}
+.actief-filter button{border:0;background:rgba(127,127,127,.35);color:inherit;border-radius:50%;width:18px;height:18px;cursor:pointer;padding:0}
+.post{display:grid;grid-template-columns:86px minmax(0,1fr);gap:14px;padding:12px 4px;border-top:1px solid var(--lijn);animation:in .35s ease both}
+@keyframes in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.post .dt{font-size:12px;color:var(--tekst-3);font-weight:600}
+.post .bd{font-size:12.5px;font-weight:700;border:0;background:none;padding:0;cursor:pointer;color:var(--tekst-2)}
+.post.eigen .bd{color:var(--oranje)}
+.post a.tt{display:block;font-weight:600;font-size:14.5px;text-decoration:none;margin:2px 0 4px;line-height:1.35}
+.post a.tt:hover{text-decoration:underline}
+.post .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;color:var(--tekst-3)}
+.tag{background:var(--vlak-2);border:1px solid var(--lijn);border-radius:999px;padding:1px 8px;font-size:11.5px;color:var(--tekst-2)}
+.nieuw{background:var(--oranje);color:#fff;border-radius:999px;padding:1px 7px;font-size:10.5px;font-weight:700}
+
+details.kaart{margin-bottom:12px;padding:14px 20px}
+details.kaart summary{cursor:pointer;font-weight:700}
+.st{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:10px}
+.st th{text-align:left;color:var(--tekst-2);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--lijn)}
+.st td{padding:6px 8px;border-bottom:1px solid var(--lijn)}
+.ok{color:var(--pos)}.fout{color:var(--neg)}
+
+/* lade */
+.sluier{position:fixed;inset:0;background:rgba(10,10,10,.35);opacity:0;pointer-events:none;transition:opacity .25s;z-index:40}
+.sluier.open{opacity:1;pointer-events:auto}
+.lade{position:fixed;top:0;right:0;height:100%;width:min(520px,100%);background:var(--vlak);z-index:41;transform:translateX(102%);transition:transform .32s cubic-bezier(.2,.8,.2,1);
+  overflow-y:auto;box-shadow:-20px 0 40px -20px rgba(0,0,0,.35);padding:calc(env(safe-area-inset-top,0px) + 22px) 24px calc(env(safe-area-inset-bottom,0px) + 30px)}
+.lade.open{transform:none}
+.lade .sluit{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);right:14px;border:1px solid var(--lijn);background:var(--vlak);width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:18px}
+.lade h3{margin:0 40px 2px 0;font-size:24px;font-weight:800;letter-spacing:-.5px}
+.lade .web{font-size:12.5px;color:var(--tekst-2)}
+.lade .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.lade .mini div{background:var(--vlak-2);border-radius:8px;padding:10px 12px}
+.lade .mini b{display:block;font-size:22px;font-weight:800}
+.lade .mini span{font-size:11.5px;color:var(--tekst-3)}
+.lade h4{font-size:13px;margin:20px 0 8px;color:var(--tekst-2)}
+.lade .grafiek{height:160px}
+.lade .post{grid-template-columns:76px minmax(0,1fr)}
+
+.leeg{text-align:center;padding:60px 20px}
+.leeg h2{font-size:22px}
+.leeg ol{display:inline-block;text-align:left;color:var(--tekst-2)}
+footer{max-width:1400px;margin:0 auto;padding:0 28px 30px;color:var(--tekst-3);font-size:12px}
+
+@media (max-width:1100px){.held,.rij-2,.rij-3{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){
+  .kop-in,.filters-in,main{padding-left:16px;padding-right:16px}
+  .kpis{grid-template-columns:1fr 1fr;gap:10px}.kpi .w b{font-size:26px}
+  .rang b{font-size:84px}.rregel{grid-template-columns:24px minmax(90px,1fr) 70px 30px 38px}
+  .split{grid-template-columns:1fr}.post{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="kop">
+  <div class="kop-in">
+    <img class="logo-wit" src="data:image/png;base64,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" alt="Verstraete.team">
+    <div>
+      <h1>Digitale benchmark</h1>
+      <div class="sub" id="sub">Flanders Build</div>
+    </div>
+    <div class="rechts">
+      <span class="pulse" id="update"><i></i>Laden…</span>
+      <button class="knop-licht" id="laad" type="button" hidden title="Kies docs/data.js uit je GitHub-project">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 21V9m0 0-5 5m5-5 5 5M4 3h16"/></svg><span>Gegevens laden</span></button>
+      <input type="file" id="laad-bestand" accept=".js,text/javascript" hidden>
+      <button class="ikoon" id="thema-knop" type="button" aria-label="Wissel licht of donker thema">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="knop-oranje" id="excel" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>Download Excel
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="filters">
+  <div class="filters-in">
+    <div class="seg" id="periode" role="group" aria-label="Periode">
+      <button type="button" data-d="7">Week</button>
+      <button type="button" data-d="28" aria-pressed="true">4 weken</button>
+      <button type="button" data-d="91">Kwartaal</button>
+      <button type="button" data-d="365">Jaar</button>
+    </div>
+    <div class="seg" id="kanaal" role="group" aria-label="Kanaal">
+      <button type="button" data-k="" aria-pressed="true">Alles</button>
+      <button type="button" data-k="Pers & nieuws">Pers</button>
+      <button type="button" data-k="Eigen kanalen">Website</button>
+    </div>
+    <select id="segment" class="segsel" aria-label="Segment" hidden></select>
+    <div class="chips" id="themas" role="group" aria-label="Thema"></div>
+    <div class="vergelijk" id="vergelijk"></div>
+    <label class="toggle"><input type="checkbox" id="strikt"> Naam in titel</label>
+    <label class="toggle"><input type="checkbox" id="orgs"> Embuild &amp; Buildwise</label>
+  </div>
+</div>
+
+<main id="app"></main>
+<footer>Bronnen: Google Nieuws, Bing Nieuws, websites en nieuwspagina's van de bedrijven, en manueel ingevulde LinkedIn-cijfers. Thema's worden automatisch toegekend op basis van trefwoorden.</footer>
+
+<div class="sluier" id="sluier"></div>
+<aside class="lade" id="lade" aria-hidden="true" aria-label="Bedrijfsprofiel"></aside>
+
+<script src="data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
+<script>
+window.startDashboard=function(){
+"use strict";
+const LOGO="data:image/png;base64,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";
+const D=window.BENCHMARK||{publicaties:[],bedrijven:[],status:[],themas:[],linkedin:[]};
+const EIGEN=(D.bedrijven.find(b=>b.groep==="Eigen bedrijf")||{naam:"Verstraete.team"}).naam;
+const DAG=864e5;
+const NU=D.bijgewerkt?new Date(D.bijgewerkt.replace(" ","T")):new Date();
+const S={segment:"",dagen:28,kanaal:"",thema:"",strikt:false,orgs:false,vergelijk:[],alleRang:false,feedN:25,zoek:"",feedBedrijf:"",feedThema:"",lade:null};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>Number(n).toLocaleString("nl-BE",{maximumFractionDigits:1});
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const charts={};
+const PERIODE_TXT={7:"de laatste week",28:"de laatste 4 weken",91:"het laatste kwartaal",365:"het laatste jaar"};
+
+/* ---------- thema (licht/donker) ---------- */
+try{const t=localStorage.getItem("vt-thema");if(t)document.documentElement.dataset.theme=t;}catch(e){}
+$("#thema-knop").onclick=()=>{
+  const donker=document.documentElement.dataset.theme?document.documentElement.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
+  const nieuw=donker?"light":"dark"; document.documentElement.dataset.theme=nieuw;
+  try{localStorage.setItem("vt-thema",nieuw);}catch(e){}
+  Object.values(charts).forEach(c=>c.destroy()); for(const k in charts) delete charts[k]; render();
+};
+
+/* ---------- data-hulp ---------- */
+const leeftijd=p=>(NU-new Date(p.datum+"T12:00"))/DAG;
+const ORG=g=>g==="Organisatie"||g==="Sectororganisatie";
+const telt=n=>{if(n===EIGEN)return true;const b=D.bedrijven.find(x=>x.naam===n);if(!b)return true;if(ORG(b.groep)&&!S.orgs)return false;if(S.segment&&b.groep!==S.segment)return false;return true;};
+const basis=(p,o={})=>telt(p.bedrijf)&&(o.kanaal===false||!S.kanaal||p.kanaal===S.kanaal)&&(o.thema===false||!S.thema||p.themas.includes(S.thema))&&(!S.strikt||p.naam_in_titel!==false);
+function periode(i=0,o){const a=S.dagen*i,b=S.dagen*(i+1);return D.publicaties.filter(p=>{const l=leeftijd(p);return (i===0?l>-2:l>=a)&&l<b&&basis(p,o);});}
+const namen=()=>D.bedrijven.filter(b=>telt(b.naam)).map(b=>b.naam);
+function ranking(lijst){
+  const t=Object.fromEntries(namen().map(n=>[n,{naam:n,totaal:0,pers:0,eigen:0,sociaal:0}]));
+  lijst.forEach(p=>{const x=t[p.bedrijf];if(!x)return;x.totaal++;if(p.kanaal==="Pers & nieuws")x.pers++;else if(p.kanaal==="Sociale media")x.sociaal++;else x.eigen++;});
+  const r=Object.values(t).sort((a,b)=>b.totaal-a.totaal||a.naam.localeCompare(b.naam));
+  r.forEach((x,i)=>x.rang=i&&x.totaal===r[i-1].totaal?r[i-1].rang:i+1);
+  return r;
+}
+function isoWeek(d){const t=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));const g=t.getUTCDay()||7;t.setUTCDate(t.getUTCDate()+4-g);const j=new Date(Date.UTC(t.getUTCFullYear(),0,1));return t.getUTCFullYear()+"-W"+String(Math.ceil(((t-j)/DAG+1)/7)).padStart(2,"0");}
+function laatsteWeken(n){const w=[];const ref=new Date(NU-DAG);for(let i=n-1;i>=0;i--){const d=new Date(ref);d.setDate(d.getDate()-7*i);w.push(isoWeek(d));}return w;}
+function perWeek(weken,filter){const m={};D.publicaties.forEach(p=>{if(!basis(p)||!filter(p))return;m[p.week]=(m[p.week]||0)+1;});return weken.map(w=>m[w]||0);}
+const kleurVergelijk=i=>css(["--v1","--v2","--v3"][i]);
+function kleurVan(n){if(n===EIGEN)return css("--oranje");const i=S.vergelijk.indexOf(n);return i>=0?kleurVergelijk(i):css("--steen");}
+
+/* ---------- animaties ---------- */
+function telOp(el,naar,dec=0){
+  if(!el)return; if(RM){el.textContent=fmt(naar);return;}
+  const van=parseFloat(el.dataset.v||0),t0=performance.now(),dur=650;el.dataset.v=naar;
+  const stap=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3),v=van+(naar-van)*e;el.textContent=dec?fmt(Math.round(v*10)/10):fmt(Math.round(v));if(k<1)requestAnimationFrame(stap);};
+  requestAnimationFrame(stap);
+}
+function deltaHTML(nu,voor,eenheid="",omgekeerd=false){
+  const d=nu-voor; if(!d)return `<span class="delta gelijk">= vorige periode</span>`;
+  const goed=omgekeerd?d<0:d>0;
+  return `<span class="delta ${goed?"op":"neer"}">${goed?"▲":"▼"} ${fmt(Math.abs(d))}${eenheid}</span>`;
+}
+function spark(waarden,kleur){
+  const w=200,h=34,max=Math.max(1,...waarden),st=w/(waarden.length-1||1);
+  const pts=waarden.map((v,i)=>[i*st,h-3-(v/max)*(h-8)]);
+  const d=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><path d="${d} L${w} ${h} L0 ${h}Z" fill="${kleur}" opacity=".12"/><path d="${d}" fill="none" stroke="${kleur}" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>`;
+}
+function grafiek(id,cfg){
+  const el=document.getElementById(id); if(!el)return;
+  if(charts[id]&&charts[id].canvas===el){charts[id].data=cfg.data;charts[id].options=cfg.options;charts[id].update();return charts[id];}
+  if(charts[id])charts[id].destroy();
+  return charts[id]=new Chart(el,cfg);
+}
+
+/* ---------- opbouw ---------- */
+const app=$("#app");
+function skelet(){
+  app.innerHTML=`
+  <section class="held">
+    <div class="kaart positie" id="positie"></div>
+    <div class="kaart">
+      <div class="kaart-kop"><div><h2>Rangrace</h2><p class="uitleg">Positie per week (telkens over de 4 weken ervoor) van de huidige top 10, ${esc(EIGEN)} en je vergelijkingen. Klik op een lijn voor het bedrijfsprofiel.</p></div></div>
+      <div class="race-wrap"><canvas id="race" aria-label="Positie per week"></canvas></div>
+      <div class="race-legende" id="race-legende"></div>
+    </div>
+  </section>
+  <section class="kpis" id="kpis"></section>
+  <section class="rij rij-3">
+    <div class="kaart"><div class="kaart-kop"><div><h2>Rangschikking</h2><p class="uitleg">Publicaties in ${PERIODE_TXT[S.dagen]}, met verschil tegenover de periode ervoor.</p></div><button class="link" id="alle" type="button"></button></div><div class="rlijst" id="rang"></div></div>
+    <div style="display:grid;gap:18px;align-content:start">
+      <div class="kaart"><h2>Zichtbaarheid per week</h2><p class="uitleg">${esc(EIGEN)}, het groepsgemiddelde en je vergelijkingen.</p><div class="grafiek" style="height:230px"><canvas id="trend"></canvas></div></div>
+      <div class="kaart"><h2>Themaprofiel</h2><p class="uitleg">Aandeel van de publicaties per thema.</p><div class="grafiek" style="height:300px"><canvas id="radar"></canvas></div></div>
+    </div>
+  </section>
+  <section class="rij rij-2">
+    <div class="kaart"><h2>Waar verschijnt ${esc(EIGEN)}?</h2><p class="uitleg">Media met artikels over ${esc(EIGEN)}, naast de media die het vaakst over de groep schrijven.</p><div class="split"><div class="donut"><canvas id="media"></canvas><div class="mid"><div><b id="media-n">0</b><span>artikels</span></div></div></div><div class="mlijst" id="media-groep"></div></div></div>
+    <div class="kaart"><h2>Momentum</h2><p class="uitleg">Grootste stijgers tegenover de vorige periode.</p><div class="mom" id="momentum"></div></div>
+  </section>
+  <section class="kaart" style="margin-bottom:18px" id="linkedin-sectie"><div class="kaart-kop"><div><h2>LinkedIn</h2><p class="uitleg" id="li-uitleg"></p></div><button class="link" id="li-invul-knop" type="button">Cijfers invullen</button></div>
+    <div class="rij rij-3" style="margin:0" id="li-inhoud"><div><div class="srij skop"><span>Bedrijf</span><span>Volgers</span><span>Groei</span><span>Posts</span><span>Reacties per post</span></div><div id="soc-lijst"></div></div>
+    <div><div class="grafiek" style="height:300px"><canvas id="soc-graf"></canvas></div></div></div>
+    <div id="li-invul" hidden></div></section>
+  <section class="kaart" style="margin-bottom:18px"><h2>Thema's per bedrijf</h2><p class="uitleg">Klik op een vakje om de publicaties van dat bedrijf over dat thema te zien.</p><div class="tabel-wrap" id="heat"></div></section>
+  <section class="kaart" style="margin-bottom:18px" id="feed-sectie"><div class="kaart-kop"><div><h2>Publicaties</h2><p class="uitleg" id="feed-uitleg"></p></div></div>
+    <div class="feed-filters">
+      <input type="search" id="zoek" placeholder="Zoek in titels en media" value="${esc(S.zoek)}">
+      <select id="feed-bedrijf"><option value="">Alle bedrijven</option></select>
+      <select id="feed-thema"><option value="">Alle thema's</option></select>
+      <span id="actief"></span>
+    </div>
+    <div id="feed"></div></section>
+  <div id="extra"></div>`;
+  $("#zoek").oninput=e=>{S.zoek=e.target.value;S.feedN=25;renderFeed();};
+  $("#feed-bedrijf").onchange=e=>{S.feedBedrijf=e.target.value;S.feedN=25;renderFeed();};
+  $("#feed-thema").onchange=e=>{S.feedThema=e.target.value;S.feedN=25;renderFeed();};
+  $("#alle").onclick=()=>{S.alleRang=!S.alleRang;renderRang();};
+}
+
+function render(){
+  if(!D.publicaties.length){
+    app.innerHTML=`<div class="kaart leeg"><h2>Nog geen gegevens</h2><p>Het dashboard vult zich zodra de eerste verzameling gedraaid heeft.</p>
+    <ol><li>Open je project op GitHub en ga naar <b>Actions</b>.</li><li>Kies <b>Wekelijkse benchmark</b> en klik op <b>Run workflow</b>.</li><li>Wacht op het groene vinkje en vernieuw deze pagina.</li></ol></div>`;
+    $("#excel").disabled=true;return;
+  }
+  if(!$("#positie"))skelet();
+  $("#excel").disabled=false;
+  document.querySelector("#rang").closest(".kaart").querySelector(".uitleg").textContent=`Publicaties in ${PERIODE_TXT[S.dagen]}, met verschil tegenover de periode ervoor.`;
+  renderVergelijk();renderPositie();renderRace();renderKpis();renderRang();renderTrend();renderRadar();renderMedia();renderMomentum();renderSociaal();renderHeat();vulFeedFilters();renderFeed();renderExtra();
+}
+
+/* ---------- positie ---------- */
+function renderPositie(){
+  const nu=ranking(periode(0)),voor=ranking(periode(1));
+  const w=nu.find(r=>r.naam===EIGEN)||{rang:"–",totaal:0},wv=voor.find(r=>r.naam===EIGEN)||{rang:0,totaal:0};
+  const top=nu[0],gem=nu.reduce((s,r)=>s+r.totaal,0)/nu.length;
+  let zin;
+  if(!w.totaal)zin=`Geen publicaties over ${esc(EIGEN)} in ${PERIODE_TXT[S.dagen]}.`;
+  else if(w.rang===1)zin=`${esc(EIGEN)} is het meest zichtbare bedrijf van de groep, met ${w.totaal} publicaties.`;
+  else zin=`${w.totaal} publicaties in ${PERIODE_TXT[S.dagen]}. ${esc(top.naam)} leidt met ${top.totaal}, het gemiddelde bedrijf haalt ${fmt(gem)}.`;
+  const rd=(wv.totaal&&w.totaal)?wv.rang-w.rang:0;
+  const deltaRang=!wv.totaal||!w.totaal?`<span class="delta gelijk">geen vergelijking</span>`:rd===0?`<span class="delta gelijk">zelfde plaats als vorige periode</span>`:`<span class="delta ${rd>0?"op":"neer"}">${rd>0?"▲":"▼"} ${Math.abs(rd)} ${Math.abs(rd)===1?"plaats":"plaatsen"}</span>`;
+  $("#positie").innerHTML=`<div><div class="label">Positie van ${esc(EIGEN)} in zichtbaarheid</div>
+    <div class="rang"><b class="num" id="rang-nr">${w.totaal?w.rang:"–"}</b><span>van ${nu.length}</span></div>${deltaRang}</div><p>${zin}</p>`;
+  if(w.totaal&&!RM){const el=$("#rang-nr");const doel=w.rang;let v=Math.min(nu.length,doel+12);const t=setInterval(()=>{el.textContent=v;if(v<=doel)clearInterval(t);v--;},28);}
+}
+
+/* ---------- rangrace ---------- */
+function renderRace(){
+  const alleW=laatsteWeken(15),weken=alleW.slice(3),nm=namen();
+  const tellingen=weken.map((w,i)=>{const venster=new Set(alleW.slice(i,i+4));const t=Object.fromEntries(nm.map(n=>[n,0]));D.publicaties.forEach(p=>{if(venster.has(p.week)&&basis(p)&&t[p.bedrijf]!==undefined)t[p.bedrijf]++;});return t;});
+  const rangen=tellingen.map(t=>{const r=Object.entries(t).sort((a,b)=>b[1]-a[1]);const o={};r.forEach(([n,v],i)=>o[n]=i&&v===r[i-1][1]?o[r[i-1][0]]:i+1);return o;});
+  const tot=ranking(periode(0)).slice(0,10).map(r=>r.naam);
+  const sel=[...new Set([...tot,...S.vergelijk,EIGEN])];
+  const MAX=20;
+  const ds=sel.map(n=>{const accent=n===EIGEN||S.vergelijk.includes(n);return{label:n,data:rangen.map((r,i)=>tellingen[i][n]?Math.min(r[n],MAX+1):null),
+    borderColor:kleurVan(n),backgroundColor:kleurVan(n),borderWidth:n===EIGEN?4:accent?3:1.5,pointRadius:n===EIGEN?4:accent?3:2,pointHoverRadius:6,cubicInterpolationMode:"monotone",spanGaps:true,order:n===EIGEN?0:accent?1:2};});
+  grafiek("race",{type:"line",data:{labels:weken.map(w=>"W"+w.split("-W")[1]),datasets:ds},
+    options:{maintainAspectRatio:false,animation:{duration:RM?0:700},interaction:{mode:"nearest",intersect:false},
+      onClick:(e,els)=>{if(els.length)openLade(ds[els[0].datasetIndex].label);},
+      onHover:(e,els,c)=>{const h=els.length?els[0].datasetIndex:-1;c.data.datasets.forEach((d,i)=>{const basisK=kleurVan(d.label);d.borderColor=h<0||i===h||d.label===EIGEN?basisK:basisK+"40";});c.update("none");e.native.target.style.cursor=els.length?"pointer":"default";},
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: plaats ${c.raw>MAX?">"+MAX:c.raw}`}}},
+      scales:{y:{reverse:true,min:1,max:MAX+1,ticks:{stepSize:1,color:css("--tekst-3"),callback:v=>v>MAX?">"+MAX:(v===1||v%5===0?v:"")},grid:{color:css("--lijn")}},x:{grid:{display:false},ticks:{color:css("--tekst-3")}}}}});
+  $("#race-legende").innerHTML=sel.filter(n=>n===EIGEN||S.vergelijk.includes(n)).map(n=>`<span data-n="${esc(n)}"><i style="background:${kleurVan(n)}"></i>${esc(n)}</span>`).join("")+`<span style="cursor:default"><i style="background:${css("--steen")}"></i>Overige top 10</span>`;
+  document.querySelectorAll("#race-legende [data-n]").forEach(s=>s.onclick=()=>openLade(s.dataset.n));
+}
+
+/* ---------- kpi's ---------- */
+function renderKpis(){
+  const nu=periode(0),voor=periode(1),weken=laatsteWeken(12);
+  const wN=nu.filter(p=>p.bedrijf===EIGEN),wV=voor.filter(p=>p.bedrijf===EIGEN);
+  const pers=l=>l.filter(p=>p.kanaal==="Pers & nieuws").length,eig=l=>l.filter(p=>p.kanaal!=="Pers & nieuws").length;
+  const aandeel=(a,b)=>b.length?Math.round(1000*a.length/b.length)/10:0;
+  const O=css("--oranje"),G=css("--steen-donker");
+  const k=[
+    {t:`Pers & nieuws over ${EIGEN}`,v:pers(wN),vv:pers(wV),s:perWeek(weken,p=>p.bedrijf===EIGEN&&p.kanaal==="Pers & nieuws"),c:O},
+    {t:`Eigen publicaties (website)`,v:eig(wN),vv:eig(wV),s:perWeek(weken,p=>p.bedrijf===EIGEN&&p.kanaal!=="Pers & nieuws"),c:O},
+    {t:`Share of voice`,v:aandeel(wN,nu),vv:aandeel(wV,voor),s:weken.map(w=>{const a=D.publicaties.filter(p=>p.week===w&&basis(p));return a.length?a.filter(p=>p.bedrijf===EIGEN).length/a.length*100:0;}),c:O,e:"%",dec:1},
+    {t:`Publicaties in de hele groep`,v:nu.length,vv:voor.length,s:perWeek(weken,()=>true),c:G}];
+  if(!$("#kpis").children.length)$("#kpis").innerHTML=k.map((x,i)=>`<div class="kaart kpi"><div class="t"></div><div class="w"><b class="num" id="kpi${i}">0</b><span></span></div><div class="sp"></div></div>`).join("");
+  k.forEach((x,i)=>{const el=$("#kpis").children[i];el.querySelector(".t").textContent=x.t;telOp(el.querySelector("b"),x.v,x.dec);
+    el.querySelector(".w span").innerHTML=(x.e?`<b style="font-size:20px;margin-left:-6px">${x.e}</b> `:"")+deltaHTML(x.v,x.vv,x.e?" pt":"");el.querySelector(".sp").innerHTML=spark(x.s,x.c);});
+}
+
+/* ---------- rangschikking ---------- */
+function renderRang(){
+  const nu=ranking(periode(0)),voorM=Object.fromEntries(ranking(periode(1)).map(r=>[r.naam,r]));
+  let toon=S.alleRang?nu:nu.slice(0,15);
+  [EIGEN,...S.vergelijk].forEach(n=>{if(!toon.find(r=>r.naam===n)){const r=nu.find(x=>x.naam===n);if(r)toon=[...toon,r];}});
+  const max=Math.max(1,...nu.map(r=>r.totaal));
+  $("#alle").textContent=S.alleRang?"Toon top 15":`Toon alle ${nu.length}`;
+  $("#rang").innerHTML=toon.map(r=>{const v=voorM[r.naam]||{totaal:0},d=r.totaal-v.totaal,vi=S.vergelijk.indexOf(r.naam);
+    return `<button type="button" class="rregel ${r.naam===EIGEN?"eigen":""}" data-n="${esc(r.naam)}" title="Open profiel van ${esc(r.naam)}">
+      <span class="nr num">${r.rang}</span><span class="nm"${vi>=0?` style="color:${kleurVergelijk(vi)}"`:""}>${esc(r.naam)}</span>
+      <span class="balk"><i data-w="${(r.totaal/max*100).toFixed(1)}"${vi>=0?` style="background:${kleurVergelijk(vi)}"`:""}></i></span>
+      <span class="ct num">${r.totaal}</span><span class="dl num ${d>0?"op":d<0?"neer":"gelijk"}">${d>0?"+"+d:d<0?d:"="}</span></button>`;}).join("");
+  requestAnimationFrame(()=>document.querySelectorAll("#rang .balk i").forEach(i=>i.style.width=i.dataset.w+"%"));
+  document.querySelectorAll("#rang .rregel").forEach(b=>b.onclick=()=>openLade(b.dataset.n));
+}
+
+/* ---------- trend ---------- */
+function renderTrend(){
+  const weken=laatsteWeken(12),n=namen().length;
+  const ds=[{label:EIGEN,data:perWeek(weken,p=>p.bedrijf===EIGEN),borderColor:css("--oranje"),backgroundColor:css("--oranje")+"22",fill:true,borderWidth:3,cubicInterpolationMode:"monotone",pointRadius:3}];
+  S.vergelijk.forEach((v,i)=>ds.push({label:v,data:perWeek(weken,p=>p.bedrijf===v),borderColor:kleurVergelijk(i),backgroundColor:kleurVergelijk(i),borderWidth:2.5,cubicInterpolationMode:"monotone",pointRadius:2}));
+  ds.push({label:"Gemiddeld bedrijf",data:perWeek(weken,()=>true).map(x=>+(x/n).toFixed(2)),borderColor:css("--steen-donker"),borderDash:[5,4],borderWidth:1.5,pointRadius:0,cubicInterpolationMode:"monotone"});
+  grafiek("trend",{type:"line",data:{labels:weken.map(w=>"W"+w.split("-W")[1]),datasets:ds},options:{maintainAspectRatio:false,animation:{duration:RM?0:600},interaction:{mode:"index",intersect:false},
+    plugins:{legend:{position:"bottom",labels:{boxWidth:12,boxHeight:3,color:css("--tekst-2"),font:{family:"Archivo"}}}},
+    scales:{y:{beginAtZero:true,ticks:{precision:0,color:css("--tekst-3")},grid:{color:css("--lijn")}},x:{grid:{display:false},ticks:{color:css("--tekst-3")}}}}});
+}
+
+/* ---------- radar ---------- */
+function renderRadar(){
+  const th=D.themas||[],l=periode(0,{thema:false});
+  const aandeel=f=>{const x=l.filter(f);return th.map(t=>x.length?Math.round(100*x.filter(p=>p.themas.includes(t)).length/x.length):0);};
+  const ds=[{label:EIGEN,data:aandeel(p=>p.bedrijf===EIGEN),borderColor:css("--oranje"),backgroundColor:css("--oranje")+"30",borderWidth:2.5,pointRadius:3},
+    {label:"Hele groep",data:aandeel(()=>true),borderColor:css("--steen-donker"),backgroundColor:css("--steen")+"30",borderWidth:1.5,pointRadius:2}];
+  S.vergelijk.forEach((v,i)=>ds.push({label:v,data:aandeel(p=>p.bedrijf===v),borderColor:kleurVergelijk(i),backgroundColor:"transparent",borderWidth:2,pointRadius:2}));
+  grafiek("radar",{type:"radar",data:{labels:th,datasets:ds},options:{maintainAspectRatio:false,animation:{duration:RM?0:600},
+    plugins:{legend:{position:"bottom",labels:{boxWidth:12,boxHeight:3,color:css("--tekst-2"),font:{family:"Archivo"}}},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.raw}%`}}},
+    scales:{r:{beginAtZero:true,ticks:{display:false},grid:{color:css("--lijn")},angleLines:{color:css("--lijn")},pointLabels:{color:css("--tekst-2"),font:{family:"Archivo",size:11}}}}}});
+}
+
+/* ---------- media ---------- */
+function renderMedia(){
+  const l=periode(0).filter(p=>p.kanaal==="Pers & nieuws");
+  const tel=x=>{const m={};x.forEach(p=>m[p.medium]=(m[p.medium]||0)+1);return Object.entries(m).sort((a,b)=>b[1]-a[1]);};
+  const wij=tel(l.filter(p=>p.bedrijf===EIGEN)),groep=tel(l).slice(0,6);
+  const top=wij.slice(0,5),rest=wij.slice(5).reduce((s,x)=>s+x[1],0);if(rest)top.push(["Overige",rest]);
+  const tints=["#E84E0F","#F0743F","#F59A6F","#F8BC9E","#FBD9C8","#D7D9DB"];
+  telOp($("#media-n"),wij.reduce((s,x)=>s+x[1],0));
+  grafiek("media",{type:"doughnut",data:{labels:top.length?top.map(x=>x[0]):["Geen artikels"],datasets:[{data:top.length?top.map(x=>x[1]):[1],backgroundColor:top.length?tints:[css("--lijn")],borderColor:css("--vlak"),borderWidth:2}]},
+    options:{maintainAspectRatio:false,cutout:"70%",animation:{duration:RM?0:700},plugins:{legend:{display:false},tooltip:{enabled:!!top.length}}}});
+  const mx=Math.max(1,...groep.map(x=>x[1]));
+  $("#media-groep").innerHTML=`<div style="font-size:12px;color:var(--tekst-3);font-weight:600">Meest actieve media in de groep</div>`+groep.map(([m,n])=>{const w=wij.find(x=>x[0]===m);
+    return `<div class="mregel"><div><div style="display:flex;justify-content:space-between;gap:8px"><span>${esc(m)}</span>${w?`<span style="color:var(--oranje);font-size:11.5px;font-weight:700">${w[1]}× over ons</span>`:""}</div><div class="mb"><i style="width:${n/mx*100}%"></i></div></div><b class="num" style="text-align:right">${n}</b></div>`;}).join("");
+}
+
+/* ---------- momentum ---------- */
+function renderMomentum(){
+  const nu=ranking(periode(0)),v=Object.fromEntries(ranking(periode(1)).map(r=>[r.naam,r.totaal]));
+  const d=nu.map(r=>({...r,d:r.totaal-(v[r.naam]||0)})).sort((a,b)=>b.d-a.d||b.totaal-a.totaal);
+  const top=d.filter(x=>x.d>0).slice(0,5),wij=d.find(x=>x.naam===EIGEN);
+  const regel=x=>`<button type="button" class="momr ${x.naam===EIGEN?"eigen":""}" data-n="${esc(x.naam)}"><span><b>${esc(x.naam)}</b><br><span style="font-size:12px;color:var(--tekst-3)">${x.totaal} publicaties, was ${v[x.naam]||0}</span></span>${deltaHTML(x.totaal,v[x.naam]||0)}</button>`;
+  $("#momentum").innerHTML=(top.length?top.map(regel).join(""):`<p class="uitleg">Geen stijgers tegenover de vorige periode.</p>`)+(wij&&!top.includes(wij)?`<div style="height:4px"></div>`+regel(wij):"");
+  document.querySelectorAll("#momentum .momr").forEach(b=>b.onclick=()=>openLade(b.dataset.n));
+}
+
+/* ---------- LinkedIn ---------- */
+const liRijen=()=>(D.linkedin||[]).filter(x=>x.bedrijf&&telt(x.bedrijf));
+function liOverzicht(){
+  const rij=liRijen();if(!rij.length)return[];
+  const weken=[...new Set(rij.map(x=>x.week))].sort(),stap=Math.max(1,Math.round(S.dagen/7));
+  const recent=new Set(weken.slice(-stap)),refWeek=weken[Math.max(0,weken.length-1-stap)];
+  return [...new Set(rij.map(x=>x.bedrijf))].map(n=>{
+    const r=rij.filter(x=>x.bedrijf===n).sort((a,b)=>a.week<b.week?1:-1);
+    const nu=r.find(x=>x.volgers!=null)||r[0];
+    const ref=r.find(x=>x!==nu&&x.week<=refWeek&&x.volgers!=null);
+    const rec=r.filter(x=>recent.has(x.week)),posts=rec.reduce((t,x)=>t+(x.posts||0),0),reac=rec.reduce((t,x)=>t+(x.reacties||0),0);
+    return{naam:n,week:nu.week,volgers:nu.volgers,groei:ref&&nu.volgers!=null?nu.volgers-ref.volgers:null,
+      pct:ref&&ref.volgers&&nu.volgers!=null?Math.round(1000*(nu.volgers-ref.volgers)/ref.volgers)/10:null,posts,reacties:reac,inter:posts?Math.round(10*reac/posts)/10:null};
+  }).sort((a,b)=>(b.volgers||0)-(a.volgers||0));
+}
+function renderSociaal(){
+  const ov=liOverzicht(),inh=$("#li-inhoud");
+  $("#li-invul-knop").onclick=()=>{const v=$("#li-invul");v.hidden=!v.hidden;if(!v.hidden)renderInvul();$("#li-invul-knop").textContent=v.hidden?"Cijfers invullen":"Invullen sluiten";};
+  if(!ov.length){
+    $("#li-uitleg").textContent="";inh.style.display="none";
+    if($("#li-invul").hidden){$("#li-invul").hidden=false;renderInvul(true);$("#li-invul-knop").textContent="Invullen sluiten";}
+    if(charts["soc-graf"]){charts["soc-graf"].destroy();delete charts["soc-graf"];}return;}
+  inh.style.display="";
+  const laatste=[...new Set(liRijen().map(x=>x.week))].sort().pop();
+  $("#li-uitleg").textContent=`Volgers bij de laatste meting (${laatste}), procentuele groei, posts en reacties per post over de laatste ${Math.max(1,Math.round(S.dagen/7))} ingevulde weken. ${ov.length} bedrijven met cijfers.`;
+  const mx=Math.max(1,...ov.map(r=>r.volgers||0));
+  let toon=ov.slice(0,15);[EIGEN,...S.vergelijk].forEach(n=>{const r=ov.find(x=>x.naam===n);if(r&&!toon.includes(r))toon.push(r);});
+  $("#soc-lijst").innerHTML=toon.map(r=>{const vi=S.vergelijk.indexOf(r.naam);return `<button type="button" class="srij ${r.naam===EIGEN?"eigen":""}" data-n="${esc(r.naam)}">
+    <span class="nm"${vi>=0?` style="color:${kleurVergelijk(vi)}"`:""}>${esc(r.naam)}</span>
+    <span class="vb"><span class="balk"><i data-w="${((r.volgers||0)/mx*100).toFixed(1)}" style="${r.naam===EIGEN?"background:var(--oranje)":vi>=0?"background:"+kleurVergelijk(vi):""}"></i></span><b class="num">${r.volgers!=null?fmt(r.volgers):"–"}</b></span>
+    <span class="r num dl ${r.groei>0?"op":r.groei<0?"neer":"gelijk"}" title="${r.groei==null?"":(r.groei>0?"+":"")+fmt(r.groei)+" volgers"}">${r.pct==null?"–":(r.pct>0?"+":"")+fmt(r.pct)+"%"}</span>
+    <span class="r num">${r.posts}</span><span class="r num">${r.inter!=null?fmt(r.inter):"–"}</span></button>`;}).join("");
+  requestAnimationFrame(()=>document.querySelectorAll("#soc-lijst .balk i").forEach(i=>i.style.width=i.dataset.w+"%"));
+  document.querySelectorAll("#soc-lijst .srij").forEach(b=>b.onclick=()=>openLade(b.dataset.n));
+  const rij=liRijen(),weken=[...new Set(rij.map(x=>x.week))].sort().slice(-26);
+  const sel=[EIGEN,...S.vergelijk].filter(n=>ov.find(r=>r.naam===n)),top=ov.filter(r=>!sel.includes(r.naam)).slice(0,3).map(r=>r.naam);
+  const ds=[...sel,...top].map(n=>{const reeks=weken.map(w=>{const x=rij.find(y=>y.bedrijf===n&&y.week===w);return x&&x.volgers!=null?x.volgers:null;});const basisV=reeks.find(v=>v);
+    return {label:n,data:reeks.map(v=>v&&basisV?Math.round(1000*v/basisV)/10:null),
+    borderColor:kleurVan(n),backgroundColor:kleurVan(n),borderWidth:n===EIGEN?3:sel.includes(n)?2.5:1.5,borderDash:sel.includes(n)?[]:[4,3],pointRadius:weken.length<3?4:0,cubicInterpolationMode:"monotone",spanGaps:true};});
+  grafiek("soc-graf",{type:"line",data:{labels:weken.map(w=>"W"+w.split("-W")[1]),datasets:ds},options:{maintainAspectRatio:false,animation:{duration:RM?0:600},interaction:{mode:"index",intersect:false},
+    plugins:{legend:{position:"bottom",labels:{boxWidth:12,boxHeight:3,color:css("--tekst-2"),font:{family:"Archivo"}}},title:{display:true,text:"Groei van de volgers (eerste week = 100)",color:css("--tekst-2"),font:{family:"Archivo",weight:"600"},align:"start"},
+      tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${fmt(c.raw)} (${c.raw>=100?"+":""}${fmt(Math.round((c.raw-100)*10)/10)}%)`}}},
+    scales:{y:{ticks:{color:css("--tekst-3"),callback:v=>fmt(v)},grid:{color:css("--lijn")}},x:{grid:{display:false},ticks:{color:css("--tekst-3")}}}}});
+}
+/* invulhulp: genereert een nieuwe linkedin_manueel.csv voor GitHub */
+function renderInvul(leeg){
+  const wk=isoWeek(new Date());
+  const metLink=D.bedrijven.filter(b=>(b.kanalen||{}).linkedin&&!ORG(b.groep)||b.naam===EIGEN);
+  const vorig=n=>(D.linkedin||[]).filter(x=>x.bedrijf===n).sort((a,b)=>a.week<b.week?1:-1)[0];
+  const lijst=[...metLink].sort((a,b)=>a.naam===EIGEN?-1:b.naam===EIGEN?1:a.naam.localeCompare(b.naam));
+  $("#li-invul").innerHTML=`<div style="border-top:1px solid var(--lijn);margin-top:14px;padding-top:14px">
+    ${leeg?`<p class="soc-leeg" style="padding:0 0 10px">Nog geen LinkedIn-cijfers. LinkedIn laat geen automatisch ophalen toe, dus de cijfers worden wekelijks ingevuld. Open per bedrijf de LinkedIn-pagina, neem het aantal volgers over en, als je ze hebt, de posts en reacties van die week. Laat leeg wat je niet weet.</p>`:`<p class="uitleg" style="margin:0 0 10px">Open per bedrijf de LinkedIn-pagina en neem het aantal volgers over; posts en reacties zijn optioneel. Lege regels worden overgeslagen.</p>`}
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px"><label style="font-size:13px;font-weight:600">Week <input id="li-week" value="${wk}" style="border:1px solid var(--lijn);background:var(--vlak-2);border-radius:8px;padding:6px 8px;width:100px"></label>
+      <button class="knop-oranje" id="li-download" type="button">Download linkedin_manueel.csv</button><span class="uitleg" style="margin:0">Vervang daarna het bestand met dezelfde naam in je GitHub-project.</span></div>
+    <div class="tabel-wrap" style="max-height:420px;overflow-y:auto"><table class="st"><thead><tr><th>Bedrijf</th><th>Pagina</th><th>Volgers</th><th>Posts deze week</th><th>Reacties deze week</th></tr></thead><tbody>
+    ${lijst.map(b=>{const v=vorig(b.naam),inp=(k,ph)=>`<input inputmode="numeric" data-n="${esc(b.naam)}" data-k="${k}" placeholder="${ph??""}" style="width:96px;border:1px solid var(--lijn);background:var(--vlak);border-radius:6px;padding:5px 7px">`;
+      return `<tr${b.naam===EIGEN?' style="background:var(--oranje-zacht)"':""}><td style="font-weight:600">${esc(b.naam)}</td><td>${(b.kanalen||{}).linkedin?`<a href="${esc(b.kanalen.linkedin)}" target="_blank" rel="noopener">open ↗</a>`:"–"}</td><td>${inp("volgers",v&&v.volgers!=null?fmt(v.volgers):"")}</td><td>${inp("posts","")}</td><td>${inp("reacties","")}</td></tr>`;}).join("")}
+    </tbody></table></div></div>`;
+  $("#li-download").onclick=async()=>{
+    const week=$("#li-week").value.trim();if(!/^\d{4}-W\d{2}$/.test(week)){alert("Geef de week in als bv. "+wk+".");return;}
+    const nieuw={};document.querySelectorAll("#li-invul input[data-n]").forEach(i=>{const v=i.value.replace(/[.\s]/g,"").replace(",",".");if(v==="")return;(nieuw[i.dataset.n]=nieuw[i.dataset.n]||{})[i.dataset.k]=v;});
+    if(!Object.keys(nieuw).length){alert("Vul minstens één cijfer in.");return;}
+    const oud=(D.linkedin||[]).filter(x=>!(x.week===week&&nieuw[x.bedrijf]));
+    const regels=[["week","bedrijf","volgers","posts","reacties","opmerking"],...oud.map(x=>[x.week,x.bedrijf,...[x.volgers,x.posts,x.reacties].map(v=>v==null?"":Math.round(v)),x.opmerking||""]),
+      ...Object.entries(nieuw).map(([n,x])=>[week,n,x.volgers||"",x.posts||"",x.reacties||"",""])];
+    const tekst="\ufeff"+regels.map(r=>r.map(c=>/[;"\n]/.test(String(c))?`"${String(c).replace(/"/g,'""')}"`:c).join(";")).join("\r\n")+"\r\n";
+    const dl=window.claude&&window.claude.use?await window.claude.use("downloads"):null;
+    if(dl){try{await dl.save({filename:"linkedin_manueel.csv",data:tekst});}catch(e){if(e&&e.code!=="declined")alert("Downloaden lukt hier niet: "+(e.message||e.code));}}
+    else{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([tekst],{type:"text/csv"}));a.download="linkedin_manueel.csv";document.body.appendChild(a);a.click();a.remove();}
+  };
+}
+function kanaalLinks(b){
+  const l=(b.kanalen||{}).linkedin;if(!l)return "";const auto=(b.kanalen_auto||[]).includes("linkedin");
+  return `<div class="kanalen"><a href="${esc(l)}" target="_blank" rel="noopener"${auto?' title="Automatisch gevonden op de website van het bedrijf"':""}>LinkedIn${auto?" ✓":""}</a></div>`;
+}
+function socLade(n){
+  const r=liOverzicht().find(x=>x.naam===n);if(!r)return "";
+  return `<h4>LinkedIn</h4><div class="mini" style="margin-top:0"><div><b class="num">${r.volgers!=null?fmt(r.volgers):"–"}</b><span>volgers (${esc(r.week)})</span></div><div><b class="num">${r.pct==null?"–":(r.pct>0?"+":"")+fmt(r.pct)+"%"}</b><span>groei</span></div><div><b class="num">${r.posts}</b><span>posts</span></div></div>`;
+}
+
+/* ---------- heatmap ---------- */
+function renderHeat(){
+  const th=D.themas||[],l=periode(0,{thema:false}),r=ranking(l);
+  let rij=r.slice(0,15);[EIGEN,...S.vergelijk].forEach(n=>{if(!rij.find(x=>x.naam===n)){const x=r.find(y=>y.naam===n);if(x)rij.push(x);}});
+  const m=rij.map(x=>({n:x.naam,v:th.map(t=>l.filter(p=>p.bedrijf===x.naam&&p.themas.includes(t)).length)}));
+  const mx=Math.max(1,...m.flatMap(x=>x.v));
+  const donker=css("--bg").toLowerCase()==="#141517";
+  const kl=(v,eigen)=>{if(!v)return `background:var(--vlak-2);color:transparent`;const a=.14+.86*(v/mx);const base=eigen?"232,78,15":donker?"230,230,227":"38,40,43";return `background:rgba(${base},${a.toFixed(2)});color:${a>.5?(eigen||!donker?"#fff":"#111"):"var(--tekst)"}`;};
+  $("#heat").innerHTML=`<table class="heat"><thead><tr><th>Bedrijf</th>${th.map(t=>`<th>${esc(t)}</th>`).join("")}</tr></thead><tbody>${m.map(x=>`<tr class="${x.n===EIGEN?"eigen":""}"><td class="nm" data-n="${esc(x.n)}">${esc(x.n)}</td>${x.v.map((v,i)=>`<td class="c num" style="${kl(v,x.n===EIGEN)}" data-n="${esc(x.n)}" data-t="${esc(th[i])}" title="${esc(x.n)}: ${v} over ${esc(th[i])}">${v||"·"}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  document.querySelectorAll("#heat td.c").forEach(c=>c.onclick=()=>{S.feedBedrijf=c.dataset.n;S.feedThema=c.dataset.t;S.feedN=25;vulFeedFilters();renderFeed();$("#feed-sectie").scrollIntoView({behavior:RM?"auto":"smooth"});});
+  document.querySelectorAll("#heat td.nm").forEach(c=>c.onclick=()=>openLade(c.dataset.n));
+}
+
+/* ---------- feed ---------- */
+function vulFeedFilters(){
+  const fb=$("#feed-bedrijf"),ft=$("#feed-thema");
+  fb.innerHTML=`<option value="">Alle bedrijven</option>`+namen().sort((a,b)=>a.localeCompare(b)).map(n=>`<option ${n===S.feedBedrijf?"selected":""}>${esc(n)}</option>`).join("");
+  ft.innerHTML=`<option value="">Alle thema's</option>`+(D.themas||[]).map(t=>`<option ${t===S.feedThema?"selected":""}>${esc(t)}</option>`).join("");
+}
+function postHTML(p,metBedrijf=true){
+  const nieuw=leeftijd(p)<=7;
+  return `<article class="post ${p.bedrijf===EIGEN?"eigen":""}"><div class="dt num">${new Date(p.datum).toLocaleDateString("nl-BE",{day:"numeric",month:"short"})}</div><div>
+    ${metBedrijf?`<button type="button" class="bd" data-n="${esc(p.bedrijf)}">${esc(p.bedrijf)}</button>`:""}
+    <a class="tt" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.titel)}</a>
+    <div class="meta">${nieuw?`<span class="nieuw">Nieuw</span>`:""}<span>${esc(p.medium)}</span><span>${esc(p.kanaal)}</span>${p.interacties!=null?`<span>${p.bron==="YouTube"?"▶ "+fmt(p.interacties)+" weergaven":"♥ "+fmt(p.interacties)+" interacties"}</span>`:""}${p.themas.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div></div></article>`;
+}
+function renderFeed(){
+  const z=S.zoek.trim().toLowerCase();
+  const l=periode(0,{thema:S.feedThema?false:undefined}).filter(p=>(!S.feedBedrijf||p.bedrijf===S.feedBedrijf)&&(!S.feedThema||p.themas.includes(S.feedThema))&&(!z||p.titel.toLowerCase().includes(z)||p.medium.toLowerCase().includes(z)));
+  $("#feed-uitleg").textContent=`${l.length} publicaties in ${PERIODE_TXT[S.dagen]}.`;
+  const act=[];if(S.feedBedrijf)act.push(["b",S.feedBedrijf]);if(S.feedThema)act.push(["t",S.feedThema]);
+  $("#actief").innerHTML=act.map(([k,v])=>`<span class="actief-filter">${esc(v)}<button type="button" data-k="${k}" aria-label="Filter wissen">×</button></span>`).join(" ");
+  document.querySelectorAll("#actief button").forEach(b=>b.onclick=()=>{if(b.dataset.k==="b")S.feedBedrijf="";else S.feedThema="";vulFeedFilters();renderFeed();});
+  $("#feed").innerHTML=l.length?l.slice(0,S.feedN).map(p=>postHTML(p)).join("")+(l.length>S.feedN?`<div style="padding-top:12px"><button class="knop-oranje" id="meer" type="button" style="background:var(--grafiet);color:var(--vlak)">Toon meer (${l.length-S.feedN})</button></div>`:""):`<p class="uitleg" style="padding:20px 0">Geen publicaties voor deze selectie.</p>`;
+  const m=$("#meer");if(m)m.onclick=()=>{S.feedN+=25;renderFeed();};
+  document.querySelectorAll("#feed .bd").forEach(b=>b.onclick=()=>openLade(b.dataset.n));
+}
+
+/* ---------- extra ---------- */
+function renderExtra(){
+  const S2=D.status||[];
+  const okv=v=>/^(ok|feed|sitemap)/.test(v||"");
+  const st=`<details class="kaart"><summary>Status van de bronnen bij de laatste verzameling</summary><div class="tabel-wrap"><table class="st"><thead><tr><th>Bedrijf</th><th>Nieuw</th><th>Google</th><th>Bing</th><th>Website</th></tr></thead><tbody>${S2.map(s=>`<tr><td>${esc(s.bedrijf)}</td><td class="num">${s.nieuw}</td><td class="${okv(s.google)?"ok":"fout"}">${esc(s.google)}</td><td class="${okv(s.bing)?"ok":"fout"}">${esc(s.bing)}</td><td class="${okv(s.website)?"ok":"fout"}">${esc(s.website)}</td></tr>`).join("")}</tbody></table></div></details>`;
+  $("#extra").innerHTML=st;
+}
+
+/* ---------- vergelijken ---------- */
+function renderVergelijk(){
+  const opties=namen().filter(n=>n!==EIGEN&&!S.vergelijk.includes(n)).sort((a,b)=>a.localeCompare(b));
+  $("#vergelijk").innerHTML=S.vergelijk.map((n,i)=>`<span class="vchip" style="background:${kleurVergelijk(i)}">${esc(n)}<button type="button" data-n="${esc(n)}" aria-label="Verwijder ${esc(n)}">×</button></span>`).join("")+
+    (S.vergelijk.length<3?`<select id="vsel" aria-label="Vergelijk met een bedrijf"><option value="">+ Vergelijk met…</option>${opties.map(n=>`<option>${esc(n)}</option>`).join("")}</select>`:"");
+  const vs=$("#vsel");if(vs)vs.onchange=e=>{if(e.target.value){S.vergelijk.push(e.target.value);render();}};
+  document.querySelectorAll("#vergelijk .vchip button").forEach(b=>b.onclick=()=>{S.vergelijk=S.vergelijk.filter(x=>x!==b.dataset.n);render();});
+}
+function toggleVergelijk(n){if(n===EIGEN)return;if(S.vergelijk.includes(n))S.vergelijk=S.vergelijk.filter(x=>x!==n);else if(S.vergelijk.length<3)S.vergelijk.push(n);render();if(S.lade)openLade(S.lade);}
+
+/* ---------- bedrijfsprofiel ---------- */
+function openLade(n){
+  S.lade=n;const b=D.bedrijven.find(x=>x.naam===n)||{};
+  const nu=ranking(periode(0)),r=nu.find(x=>x.naam===n)||{rang:"–",totaal:0},vr=ranking(periode(1)).find(x=>x.naam===n)||{totaal:0};
+  const l=periode(0).filter(p=>p.bedrijf===n),alle=D.publicaties.filter(p=>p.bedrijf===n&&basis(p));
+  const th=(D.themas||[]).map(t=>[t,l.filter(p=>p.themas.includes(t)).length]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);
+  const media={};l.filter(p=>p.kanaal==="Pers & nieuws").forEach(p=>media[p.medium]=(media[p.medium]||0)+1);
+  const st=(D.status||[]).find(s=>s.bedrijf===n);
+  const kleur=kleurVan(n),inV=S.vergelijk.includes(n);
+  const mx=Math.max(1,...th.map(x=>x[1]));
+  $("#lade").innerHTML=`<button class="sluit" type="button" aria-label="Sluiten">×</button>
+    <div style="width:44px;height:5px;border-radius:3px;background:${kleur};margin-bottom:14px"></div>
+    <h3>${esc(n)}</h3><div class="web">${b.website?`<a href="${esc(b.website)}" target="_blank" rel="noopener">${esc(b.website.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>`:"Geen website ingevuld"}${st?` · bron: ${esc(st.website)}`:""}</div>
+    ${kanaalLinks(b)}
+    <div class="mini"><div><b class="num">${r.totaal?r.rang:"–"}</b><span>positie</span></div><div><b class="num">${r.totaal}</b><span>publicaties</span></div><div><b class="num" style="color:${r.totaal-vr.totaal>=0?"var(--pos)":"var(--neg)"}">${r.totaal-vr.totaal>0?"+":""}${r.totaal-vr.totaal}</b><span>t.o.v. vorige periode</span></div></div>
+    ${n!==EIGEN?`<button type="button" class="knop-oranje" id="lade-v" style="${inV?"background:var(--grafiet);color:var(--vlak)":""}" ${!inV&&S.vergelijk.length>=3?"disabled":""}>${inV?"Verwijder uit vergelijking":`Vergelijk met ${esc(EIGEN)}`}</button>`:""}
+    <h4>Publicaties per week (12 weken)</h4><div class="grafiek"><canvas id="lade-g"></canvas></div>
+    <h4>Thema's in ${PERIODE_TXT[S.dagen]}</h4>${th.length?`<div class="mlijst">`+th.map(([t,v])=>`<div class="mregel"><div><div>${esc(t)}</div><div class="mb"><i style="width:${v/mx*100}%;background:${kleur}"></i></div></div><b class="num" style="text-align:right">${v}</b></div>`).join("")+`</div>`:`<p class="uitleg">Geen publicaties in deze periode.</p>`}
+    ${socLade(n)}
+    <h4>Media</h4>${Object.keys(media).length?Object.entries(media).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([m,v])=>`<span class="tag" style="display:inline-block;margin:0 6px 6px 0">${esc(m)} · ${v}</span>`).join(""):`<p class="uitleg">Geen persartikels in deze periode.</p>`}
+    <h4>Recentste publicaties</h4>${alle.slice(0,8).map(p=>postHTML(p,false)).join("")||`<p class="uitleg">Nog geen publicaties.</p>`}`;
+  $("#lade").classList.add("open");$("#sluier").classList.add("open");$("#lade").setAttribute("aria-hidden","false");
+  $("#lade .sluit").onclick=sluitLade;$("#lade .sluit").focus({preventScroll:true});
+  const lv=$("#lade-v");if(lv)lv.onclick=()=>toggleVergelijk(n);
+  const weken=laatsteWeken(12);
+  grafiek("lade-g",{type:"bar",data:{labels:weken.map(w=>"W"+w.split("-W")[1]),datasets:[{data:perWeek(weken,p=>p.bedrijf===n),backgroundColor:kleur,borderRadius:4}]},
+    options:{maintainAspectRatio:false,animation:{duration:RM?0:500},plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{precision:0,color:css("--tekst-3")},grid:{color:css("--lijn")}},x:{grid:{display:false},ticks:{color:css("--tekst-3"),font:{size:10}}}}}});
+}
+function sluitLade(){S.lade=null;$("#lade").classList.remove("open");$("#sluier").classList.remove("open");$("#lade").setAttribute("aria-hidden","true");if(charts["lade-g"]){charts["lade-g"].destroy();delete charts["lade-g"];}}
+$("#sluier").onclick=sluitLade;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&S.lade)sluitLade();});
+
+/* ---------- filters ---------- */
+function segment(id,attr,cb){document.querySelectorAll(id+" button").forEach(b=>b.onclick=()=>{document.querySelectorAll(id+" button").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");cb(b.dataset[attr]);render();});}
+segment("#periode","d",v=>S.dagen=+v);
+segment("#kanaal","k",v=>S.kanaal=v);
+$("#themas").innerHTML=[["","Alle thema's"],...(D.themas||[]).map(t=>[t,t])].map(([v,l])=>`<button type="button" class="chip" data-t="${esc(v)}" aria-pressed="${v===""}">${esc(l)}</button>`).join("");
+document.querySelectorAll("#themas .chip").forEach(c=>c.onclick=()=>{document.querySelectorAll("#themas .chip").forEach(x=>x.setAttribute("aria-pressed","false"));c.setAttribute("aria-pressed","true");S.thema=c.dataset.t;render();});
+$("#strikt").onchange=e=>{S.strikt=e.target.checked;render();};
+$("#orgs").onchange=e=>{S.orgs=e.target.checked;render();};
+
+/* ---------- kop ---------- */
+$("#sub").textContent=`Flanders Build, ${D.bedrijven.filter(b=>!ORG(b.groep)).length} bedrijven`;
+const segmenten={};D.bedrijven.forEach(b=>{if(b.naam!==EIGEN&&!ORG(b.groep)&&b.groep)segmenten[b.groep]=(segmenten[b.groep]||0)+1;});
+const segNamen=Object.keys(segmenten).filter(g=>g!=="Bedrijf").sort((a,b)=>segmenten[b]-segmenten[a]||a.localeCompare(b));
+if(segNamen.length>1){$("#segment").hidden=false;$("#segment").innerHTML=`<option value="">Alle segmenten</option>`+segNamen.map(g=>`<option value="${esc(g)}">${esc(g)} (${segmenten[g]})</option>`).join("");
+  $("#segment").onchange=e=>{S.segment=e.target.value;S.vergelijk=S.vergelijk.filter(telt);render();};}
+$("#update").innerHTML=`<i></i>${D.bijgewerkt?"Bijgewerkt "+NU.toLocaleDateString("nl-BE",{day:"numeric",month:"long"})+" om "+NU.toLocaleTimeString("nl-BE",{hour:"2-digit",minute:"2-digit"}):"Nog niet bijgewerkt"}`;
+
+/* ---------- Excel-export (huisstijl) ---------- */
+$("#excel").onclick=async()=>{
+  const knop=$("#excel");knop.disabled=true;
+  try{
+    const wb=new ExcelJS.Workbook();wb.creator="Verstraete.team";
+    const F={name:"Arial",size:9,color:{argb:"FF1A1A1A"}},vul=a=>({type:"pattern",pattern:"solid",fgColor:{argb:a}});
+    const kop=(ws,r,k)=>{k.forEach((t,i)=>{const c=ws.getCell(r,i+1);c.value=t;c.font={name:"Arial",size:9,bold:true,color:{argb:"FFFFFFFF"}};c.fill=vul("FFE84E0F");c.alignment={vertical:"middle",wrapText:true};});ws.getRow(r).height=22;};
+    const zebra=(ws,r,n)=>{for(let i=1;i<=n;i++){const c=ws.getCell(r,i);if(!(c.font&&c.font.bold))c.font=F;if(r%2===0)c.fill=vul("FFF6F6F6");}};
+    const titel=(ws,t,sub,br)=>{const img=wb.addImage({base64:LOGO,extension:"png"});ws.addImage(img,{tl:{col:.1,row:.2},ext:{width:140,height:32}});ws.getRow(1).height=30;
+      ws.getCell("A3").value=t;ws.getCell("A3").font={name:"Arial",size:14,bold:true,color:{argb:"FFE84E0F"}};for(let i=1;i<=br;i++)ws.getCell(3,i).border={bottom:{style:"medium",color:{argb:"FFE84E0F"}}};
+      ws.getCell("A4").value=sub;ws.getCell("A4").font={name:"Arial",size:9,color:{argb:"FF666666"}};};
+    const lijst=periode(0),rang=ranking(lijst),th=D.themas||[];
+    const sub=`Selectie: ${PERIODE_TXT[S.dagen]}, ${S.kanaal||"alle kanalen"}, ${S.thema||"alle thema's"}${S.strikt?", enkel naam in titel":""}. Gegevens van ${D.bijgewerkt||"onbekend"}.`;
+    const ws=wb.addWorksheet("Rangschikking",{views:[{state:"frozen",ySplit:9,showGridLines:false}]});
+    titel(ws,"Digitale benchmark Flanders Build",sub,5+th.length);
+    const wij=rang.find(r=>r.naam===EIGEN)||{rang:"-",totaal:0};
+    [["Positie "+EIGEN,wij.totaal?wij.rang:"-"],["Publicaties "+EIGEN,wij.totaal],["Share of voice",lijst.length?+(100*wij.totaal/lijst.length).toFixed(1)+"%":"-"]].forEach(([l,v],i)=>{
+      const a=ws.getCell(6,1+i*2),b=ws.getCell(7,1+i*2);a.value=l;a.font={name:"Arial",size:9,color:{argb:"FF666666"}};b.value=v;b.font={name:"Arial",size:14,bold:true,color:{argb:"FFE84E0F"}};b.alignment={horizontal:"left"};
+      [a,b,ws.getCell(6,2+i*2),ws.getCell(7,2+i*2)].forEach(c=>c.fill=vul("FFFDF0EB"));});
+    const kols=["Rang","Bedrijf","Pers & nieuws","Website","Totaal",...th];kop(ws,9,kols);const s0=10,s1=s0+rang.length-1;
+    rang.forEach((r,i)=>{const x=s0+i;ws.getCell(x,2).value=r.naam;ws.getCell(x,3).value=r.pers;ws.getCell(x,4).value=r.eigen;ws.getCell(x,5).value={formula:`C${x}+D${x}`,result:r.totaal};
+      ws.getCell(x,1).value={formula:`RANK(E${x},$E$${s0}:$E$${s1})`,result:r.rang};th.forEach((t,j)=>ws.getCell(x,6+j).value=lijst.filter(p=>p.bedrijf===r.naam&&p.themas.includes(t)).length);
+      zebra(ws,x,kols.length);if(r.naam===EIGEN)for(let k=1;k<=kols.length;k++){const c=ws.getCell(x,k);c.fill=vul("FFFDF0EB");c.font={...F,bold:true};}});
+    const tr=s1+1;ws.getCell(tr,2).value="Totaal groep";for(let k=3;k<=kols.length;k++){const L=ws.getColumn(k).letter;ws.getCell(tr,k).value={formula:`SUM(${L}${s0}:${L}${s1})`};}
+    for(let k=1;k<=kols.length;k++){const c=ws.getCell(tr,k);c.fill=vul("FF2D2D2D");c.font={name:"Arial",size:9,bold:true,color:{argb:k<=2?"FFFFFFFF":"FFE84E0F"}};}
+    ws.columns.forEach((c,i)=>c.width=i===0?8:i===1?26:i<5?14:16);ws.autoFilter={from:{row:9,column:1},to:{row:s1,column:kols.length}};
+    const wp=wb.addWorksheet("Publicaties",{views:[{state:"frozen",ySplit:6,showGridLines:false}]});titel(wp,"Publicaties",sub,7);kop(wp,6,["Datum","Week","Bedrijf","Titel","Medium","Kanaal","Thema's"]);
+    lijst.forEach((p,i)=>{const r=7+i;wp.getCell(r,1).value=new Date(p.datum);wp.getCell(r,1).numFmt="dd/mm/yyyy";wp.getCell(r,2).value=p.week;wp.getCell(r,3).value=p.bedrijf;
+      wp.getCell(r,4).value={text:p.titel,hyperlink:p.url};wp.getCell(r,5).value=p.medium;wp.getCell(r,6).value=p.kanaal;wp.getCell(r,7).value=p.themas.join(", ");zebra(wp,r,7);wp.getCell(r,4).font={...F,underline:true};
+      if(p.bedrijf===EIGEN)for(let k=1;k<=7;k++)wp.getCell(r,k).fill=vul("FFFDF0EB");});
+    [11,10,22,70,22,15,34].forEach((w,i)=>wp.getColumn(i+1).width=w);wp.autoFilter={from:{row:6,column:1},to:{row:6+Math.max(1,lijst.length),column:7}};
+    const wt=wb.addWorksheet("Trend per week",{views:[{state:"frozen",ySplit:6,xSplit:1,showGridLines:false}]});
+    const weken=laatsteWeken(26),bed=rang.map(r=>r.naam);titel(wt,"Publicaties per week (laatste 26 weken)",sub,bed.length+1);kop(wt,6,["Week",...bed]);
+    weken.forEach((w,i)=>{const r=7+i;wt.getCell(r,1).value=w;bed.forEach((b,j)=>wt.getCell(r,2+j).value=D.publicaties.filter(p=>p.week===w&&p.bedrijf===b&&basis(p)).length);zebra(wt,r,bed.length+1);});
+    wt.getColumn(1).width=11;bed.forEach((b,j)=>{wt.getColumn(2+j).width=Math.max(10,Math.min(20,b.length+2));if(b===EIGEN)wt.getCell(6,2+j).fill=vul("FF2D2D2D");});
+    const LO=liOverzicht();if(LO.length){const wsS=wb.addWorksheet("LinkedIn",{views:[{state:"frozen",ySplit:6,showGridLines:false}]});titel(wsS,"LinkedIn-benchmark (laatste meting)",sub,7);
+      kop(wsS,6,["Bedrijf","Week","Volgers","Groei","Groei %","Posts","Reacties per post"]);
+      LO.forEach((r,i)=>{const x=7+i;[r.naam,r.week,r.volgers,r.groei,r.pct,r.posts,r.inter].forEach((v,k)=>wsS.getCell(x,k+1).value=v??null);zebra(wsS,x,7);if(r.naam===EIGEN)for(let k=1;k<=7;k++){wsS.getCell(x,k).fill=vul("FFFDF0EB");wsS.getCell(x,k).font={...F,bold:true};}});
+      [26,11,12,10,10,10,16].forEach((w,i)=>wsS.getColumn(i+1).width=w);
+      const wl=wb.addWorksheet("LinkedIn per week",{views:[{state:"frozen",ySplit:6,showGridLines:false}]});titel(wl,"LinkedIn-cijfers per week (manueel ingevuld)","Bron: linkedin_manueel.csv",6);
+      kop(wl,6,["Week","Bedrijf","Volgers","Posts","Reacties","Opmerking"]);liRijen().forEach((r,i)=>{const x=7+i;[r.week,r.bedrijf,r.volgers,r.posts,r.reacties,r.opmerking].forEach((v,k)=>wl.getCell(x,k+1).value=v??null);zebra(wl,x,6);});[10,24,12,10,12,40].forEach((w,i)=>wl.getColumn(i+1).width=w);}
+    const buf=await wb.xlsx.writeBuffer(),naam=`VT_Benchmark_FlandersBuild_${isoWeek(NU)}.xlsx`;
+    const dl=window.claude&&window.claude.use?await window.claude.use("downloads"):null;
+    if(dl){try{await dl.save({filename:naam,data:new Blob([buf])});}catch(e){if(e&&e.code!=="declined")alert("Downloaden lukt hier niet: "+(e.message||e.code));}}
+    else{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=naam;document.body.appendChild(a);a.click();a.remove();}
+  }catch(e){alert("De Excel kon niet gemaakt worden: "+e.message);console.error(e);}
+  finally{knop.disabled=false;}
+};
+
+/* ---------- start ---------- */
+if(!window.Chart){app.innerHTML=`<div class="kaart leeg"><h2>Grafieken laden niet</h2><p>Deze pagina heeft een internetverbinding nodig. Controleer je verbinding en vernieuw de pagina.</p></div>`;return;}
+Chart.defaults.font.family="Archivo, Arial, sans-serif";
+if(RM)Chart.defaults.animation=false;
+render();
+};
+</script>
+<script>
+(async function(){
+  const ARTIFACT=false;
+  const balk=document.getElementById("demo");
+  if(!ARTIFACT){window.startDashboard();return;}
+  const wacht=ms=>new Promise(r=>setTimeout(r,ms));
+  const metTijd=(p,ms)=>Promise.race([p,wacht(ms).then(()=>null)]);
+  for(let i=0;i<20&&!(window.claude&&window.claude.use);i++)await wacht(50);
+  let db=null,assets=null;
+  if(window.claude&&window.claude.use){[db,assets]=await Promise.all([metTijd(window.claude.use("db"),6000),metTijd(window.claude.use("assets"),6000)]);}
+  let echt=false,vorig=null;
+  if(db){try{const snap=await db.doc("config/gegevens").get();const d=snap.exists?snap.data():null;
+    if(d&&d.asset){vorig=d.asset;await new Promise((ok,nok)=>{const sc=document.createElement("script");sc.src="/_blob/"+d.asset;sc.onload=ok;sc.onerror=nok;document.head.appendChild(sc);});echt=!!window.BENCHMARK;}}catch(e){console.warn("Gegevens niet geladen",e);}}
+  if(!echt)window.BENCHMARK=window.BENCHMARK_DEMO;else if(balk)balk.remove();
+  window.startDashboard();
+  if(assets&&db){
+    const k=document.getElementById("laad"),inp=document.getElementById("laad-bestand"),lbl=k.querySelector("span");
+    k.hidden=false;k.onclick=()=>inp.click();
+    inp.onchange=async()=>{
+      const f=inp.files[0];if(!f)return;k.disabled=true;lbl.textContent="Laden…";
+      try{
+        const t=await f.text();
+        if(!/window\.BENCHMARK\s*=/.test(t))throw new Error("Dit is geen gegevensbestand van de benchmark-tool. Kies het bestand docs/data.js uit je GitHub-project.");
+        const r=await assets.upload(new Blob([t],{type:"text/javascript"}),{type:"text/javascript"});
+        const m=t.match(/"bijgewerkt":\s*"([^"]*)"/);
+        await db.doc("config/gegevens").set({asset:r.id,bijgewerkt:m?m[1]:"",bestand:f.name,geladen:new Date().toISOString()});
+        if(vorig&&vorig!==r.id){try{await assets.delete(vorig);}catch(e){}}
+        location.reload();
+      }catch(e){alert(e.message||e.code||"Laden mislukt.");k.disabled=false;lbl.textContent="Gegevens laden";inp.value="";}
+    };
+  }
+})();
+</script>
+</body>
+</html>
