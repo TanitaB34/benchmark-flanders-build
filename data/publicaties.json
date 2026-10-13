@@ -246,6 +246,40 @@
   "samenvatting": "Visienota 2026 Embuild Vlaanderen"
  },
  {
+  "id": "5bc33e314bbd54a9",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-09",
+  "week": "2026-W41",
+  "titel": "Vlaanderen reserveert na negen maanden al meer geld voor sociale woningen dan in heel 2025",
+  "url": "https://www.hbvl.be/binnenland/vlaanderen-reserveert-na-negen-maanden-al-meer-geld-voor-sociale-woningen-dan-in-heel-2025/162814484.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "1e837137a0977146",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-08",
+  "week": "2026-W41",
+  "titel": "Anton Nelis is Jonge Aannemer van het Jaar",
+  "url": "https://www.made-in.be/limburg/anton-nelis-is-jonge-aannemer-van-het-jaar/",
+  "medium": "Made in",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "8b9f37bfc3deefcf",
   "bedrijf": "Driesen",
   "datum": "2026-10-07",
@@ -344,6 +378,25 @@
   "vermelding": true
  },
  {
+  "id": "6e2a83c694b53e44",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-06",
+  "week": "2026-W41",
+  "titel": "Energiedata en artificiële intelligentie omzetten in concrete bedrijfswaarde",
+  "url": "https://engineeringnet.be/nl/nieuws/item/25527/energiedata-en-artificiele-intelligentie-omzetten-in-concrete-bedrijfswaarde",
+  "medium": "Engineeringnet",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Duurzaamheid",
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
   "id": "e6d43f6f3e477fd9",
   "bedrijf": "Embuild",
   "datum": "2026-10-05",
@@ -394,20 +447,20 @@
   "vermelding": true
  },
  {
-  "id": "82389e4c3d26243b",
-  "bedrijf": "Vandersanden",
-  "datum": "2026-10-03",
-  "week": "2026-W40",
-  "titel": "Meeuwen verliest uit met een doelpunt verschil van Houthalen VV",
-  "url": "https://www.hbvl.be/regio/limburg/houthalen-helchteren/meeuwen-verliest-uit-met-een-doelpunt-verschil-van-houthalen-vv/162548870.html",
-  "medium": "HBVL",
+  "id": "85c47484d757c63f",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-05",
+  "week": "2026-W41",
+  "titel": "Belgische bouwsector verliest in eerste helft 2026 al 1725 ondernemingen",
+  "url": "https://batibouw.com/nl/articles/1720/belgische-bouwsector-verliest-in-eerste-helft-2026-al-1725-ondernemingen",
+  "medium": "BATIBOUW",
   "bron": "Google Nieuws",
   "kanaal": "Pers & nieuws",
   "themas": [
-   "Overige"
+   "Projecten & werven"
   ],
   "naam_in_titel": false,
-  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "samenvatting": "…ongeziene netto daling van 1725 bouwbedrijven en dat op amper 6 maanden tijd. Dat blijkt uit een analyse van Embuild op basis van cijfers van handelsinformatiekantoor Trends Business Information. Vooral de forse toename van het aantal stopzetting…",
   "vermelding": true
  },
  {
@@ -746,23 +799,6 @@
   ],
   "naam_in_titel": true,
   "samenvatting": "Cordeel Group halveert CO2-uitstoot sinds 2021 Made in"
- },
- {
-  "id": "1a519e0e33cdb06c",
-  "bedrijf": "Nelissen",
-  "datum": "2026-09-26",
-  "week": "2026-W39",
-  "titel": "Bourguignon leidt Lanaken VV B naar overwinning tegen Eigenbilzen",
-  "url": "https://www.nieuwsblad.be/regio/limburg/lanaken/bourguignon-leidt-lanaken-vv-b-naar-overwinning-tegen-eigenbilzen/162210369.html",
-  "medium": "Nieuwsblad",
-  "bron": "Google Nieuws",
-  "kanaal": "Pers & nieuws",
-  "themas": [
-   "Overige"
-  ],
-  "naam_in_titel": false,
-  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
-  "vermelding": true
  },
  {
   "id": "85c70914bdad0ae4",
@@ -3338,23 +3374,6 @@
   ],
   "naam_in_titel": false,
   "samenvatting": "…Oververhitting in woningen is niet langer een probleem voor later. Uit een recente studie van KU Leuven en archipelago architects blijkt dat bij een verdere klimaatopwarming van 3°C vanaf 2063 bijna alle Belgische woningen met oververhitting te mak…",
-  "vermelding": true
- },
- {
-  "id": "ae51d0f8024228a2",
-  "bedrijf": "Nelissen",
-  "datum": "2026-06-18",
-  "week": "2026-W25",
-  "titel": "Lanakenaar maakt wijn zonder wijngaard: “We zijn niet afhankelijk van het weer”",
-  "url": "https://www.hbvl.be/lifestyle/eten-en-drinken/lanakenaar-maakt-wijn-zonder-wijngaard-we-zijn-niet-afhankelijk-van-het-weer/152362526.html",
-  "medium": "HBVL",
-  "bron": "Google Nieuws",
-  "kanaal": "Pers & nieuws",
-  "themas": [
-   "Overige"
-  ],
-  "naam_in_titel": false,
-  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
  },
  {
