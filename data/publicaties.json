@@ -1,5 +1,1503 @@
 [
  {
+  "id": "99d50135f88e0b0a",
+  "bedrijf": "aiar",
+  "datum": "2026-10-26",
+  "week": "2026-W44",
+  "titel": "Hazee | Projecten | A1AR-architecten",
+  "url": "https://www.a1ar.be/projecten/hazee",
+  "medium": "a1ar.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "8e8ccfe382b75aa3",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-26",
+  "week": "2026-W44",
+  "titel": "Bouwend Nederland wil meer ruimte voor drones bij bouwtransport",
+  "url": "https://www.aannemervak.nl/bouwpraktijk/bouwtrends/datagedreven-bouwen/bouwend-nederland-wil-meer-ruimte-voor-drones-bij-bouwtransport/",
+  "medium": "Aannemervak.nl",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Projecten & werven",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…jn proeven uitgevoer d. Daarbij zijn drones ingezet met diverse laadvermogens. De testen zijn uitgevoerd door Antea Group, in opdracht van Topsector Logistiek en Bouwend Nederland. Vergunningen en veiligheid Volgens de onderzoekers vormt niet de techn…",
+  "vermelding": true
+ },
+ {
+  "id": "7e12f6f95e60afbe",
+  "bedrijf": "ARQ Architecten",
+  "datum": "2026-10-26",
+  "week": "2026-W44",
+  "titel": "Politie, kinderopvang, jeugdhuis en gemeentelijke dienstverlening in 1 nieuw gebouw in Kieldrecht",
+  "url": "https://www.vrt.be/vrtnws/nl/2026/10/26/politie-kinderopvang-jeugdhuis-en-dienstverlening-in-1-nieuw-g/",
+  "medium": "VRT",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "396409c4961c8138",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-26",
+  "week": "2026-W44",
+  "titel": "Lees meer",
+  "url": "https://embuild.be/nl/nieuws/marketing-voor-bouwbedrijven-krijg-meer-naambekendheid-en-genereer-leads-online",
+  "medium": "embuild.be",
+  "bron": "Nieuwspagina",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "bf0506ff1d52963f",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-26",
+  "week": "2026-W44",
+  "titel": "Buildwise • Het innovatiecentrum van de Bouwsector",
+  "url": "https://www.buildwise.be/fr/agenda/formation-construction-durable-zaventem-18022027/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c8a3429c68f6e997",
+  "bedrijf": "Multi Engineering",
+  "datum": "2026-10-25",
+  "week": "2026-W43",
+  "titel": "Nieuwpoort test een gordijn van luchtbellen dat plastic uit de IJzer vist",
+  "url": "https://www.lokaalnieuws.online/2026/10/25/nieuwpoort-marc-plasticvanger-luchtbellen-ijzer/",
+  "medium": "Lokaalnieuws.online",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…ijn van luchtbellen dat plastic uit de IJzer vist Visualisatie van de plasticvanger M.A.R.C. in de IJzer. (C) MULTI.engineering / VLIZ Meer uit Nieuwpoort Drie ploegen van TTC Knokke-Heist winnen thuis, alleen leider Nieuwpoort B is te sterk Nieuwpoortse ha…",
+  "vermelding": true
+ },
+ {
+  "id": "4c3d2878a33e6f09",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-25",
+  "week": "2026-W43",
+  "titel": "Nieuw zwembad voor miljoenen in Meppel: meer waterpret mogelijk, maar buitenbad valt af",
+  "url": "https://www.rtvfocuszwolle.nl/ieuw-zwembad-meppel-glijbanen-buitenbad/",
+  "medium": "RTV Focus",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…t dat zelfs het hele jaar door. Die mogelijkheid dreigt bij de nieuwbouw te verdwijnen. Volgens onderzoek van Antea Group zou de aanleg van een nieuw buitenbad, vergelijkbaar met De Slenken in De Wijk, al snel meer dan 7 miljoen euro kosten. Daarboven…",
+  "vermelding": true
+ },
+ {
+  "id": "f4b2565403344cc9",
+  "bedrijf": "ARQ Architecten",
+  "datum": "2026-10-25",
+  "week": "2026-W43",
+  "titel": "Van dj-booth tot wijkagent: nieuw multifunctioneel gebouw in Kieldrecht bundelt jeugdhuis, kinderopvang en gemeentelijke diensten",
+  "url": "https://www.hln.be/beveren-kruibeke-zwijndrecht/van-dj-booth-tot-wijkagent-nieuw-multifunctioneel-gebouw-in-kieldrecht-bundelt-jeugdhuis-kinderopvang-en-gemeentelijke-diensten~a649fb5d/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "b9c104c4d1b580ba",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-25",
+  "week": "2026-W43",
+  "titel": "Bouwsector roept regering op tot verlaging btw op nieuwbouw",
+  "url": "https://www.tijd.be/politiek-economie/belgie/federaal/bouwsector-roept-regering-op-tot-verlaging-btw-op-nieuwbouw/10697106.html",
+  "medium": "De Tijd",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "ec86d9df8f16caac",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-25",
+  "week": "2026-W43",
+  "titel": "Marketing voor bouwbedrijven krijg meer naambekendheid en genereer leads online",
+  "url": "http://default/nl/nieuws/marketing-voor-bouwbedrijven-krijg-meer-naambekendheid-en-genereer-leads-online",
+  "medium": "embuild.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "4fd003555b7000d3",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-25",
+  "week": "2026-W43",
+  "titel": "Btw verlaging moet gelden voor minstens 70 van de nieuwbouw",
+  "url": "http://default/nl/btw-verlaging-moet-gelden-voor-minstens-70-van-de-nieuwbouw",
+  "medium": "embuild.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "19d29b68e62d9c56",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-25",
+  "week": "2026-W43",
+  "titel": "La baisse de la tva doit concerner au moins 70 des logements neufs",
+  "url": "http://default/fr/la-baisse-de-la-tva-doit-concerner-au-moins-70-des-logements-neufs",
+  "medium": "embuild.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "db8c4612978d1ac5",
+  "bedrijf": "Archipelago",
+  "datum": "2026-10-24",
+  "week": "2026-W43",
+  "titel": "Brucargo Centraal",
+  "url": "https://www.architectura.be/nl/projecten/brucargo-centraal/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…gemene duurzaamheid, flexibiliteit en een doordachte inrichting van de beschikbare ruimte. Betrokken partijen archipelago architects Architect Cordeel Aannemer Artikels Nieuwe blauwdruk voor toekomstgerichte luchthavenlogistiek (archipelago) 22 oktobe…",
+  "vermelding": true
+ },
+ {
+  "id": "f7028d2170822bb9",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-24",
+  "week": "2026-W43",
+  "titel": "Beleidsplan Ruimte Vlaanderen onderschat woonopgave, waarschuwt Embuild: “600.000 extra woningen nodig tegen 2050”",
+  "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOS2dmUUVFam9oVHRPeTlGUXk5S3dIWmcyUTN3SlJnZlhLZ0d2NmcyN1Zabk9jbFhSVXFORFhYek1QeHNXdXZJY21jU0dvTmpPdzByWTdCOE1McGN5VmxwRXRMbmY0RWdqcTgyV3IyRkRIY3Z6NVBmS2F4T3piREItVDN5SHQwbS05anR3Vk5zUkxUV0t6RkN4VzcxU18zaHJRX1hGcUpsQWRrX1F6VzZCcENjMERRME1IQ0hsb25BMVBUR1p6cVQ4UXZwZ3dkaWVGSERoSGE3ZGN5WU1NSE9aTU04U3I?oc=5",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Beleidsplan Ruimte Vlaanderen onderschat woonopgave, waarschuwt Embuild: “600.000 extra woningen nodig tegen 2050” HLN"
+ },
+ {
+  "id": "fb21add61ac8fbd2",
+  "bedrijf": "Tectum Group",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Win een gratis technische controle of dakonderhoud | Tectum Group",
+  "url": "https://www.tectumgroup.be/campagne/wedstrijd-technische-controle",
+  "medium": "tectumgroup.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "778090933f659e96",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Deze twee Limburgse steenfabrieken met eeuw geschiedenis krijgen zicht op uitbreiding: “Ze exporteren stenen naar wel 50 landen”",
+  "url": "https://www.hln.be/lanaken/deze-twee-limburgse-steenfabrieken-met-eeuw-geschiedenis-krijgen-zicht-op-uitbreiding-ze-exporteren-stenen-naar-wel-50-landen~ae149338/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "16969fd63443818b",
+  "bedrijf": "Mobble",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "BIM-tekenaar - Mobble",
+  "url": "https://www.mobble.be/blog/bim-tekenaar",
+  "medium": "mobble.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "BIM & digitaal"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "4fd6be6d7aa507e9",
+  "bedrijf": "Mobble",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Projectleider - Mobble",
+  "url": "https://www.mobble.be/blog/projectleider",
+  "medium": "mobble.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven",
+   "HR & talent"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c8de3bb7b0a177b1",
+  "bedrijf": "Mobble",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Marketing & administratief medewerker - Mobble",
+  "url": "https://www.mobble.be/blog/vacature-administratief-medewerker",
+  "medium": "mobble.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "HR & talent"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "3b54b0ced7d5ae42",
+  "bedrijf": "Willemen Groep",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Consortium ‘r0q’van jan de nul, besix, stadsbader, willemen en i4b aangeduid als voorkeursbieder voor herinrichting r0 in zone zaventem",
+  "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQRWp2WnBMUk5nU1RNdndtMmtjclh1SGxRUzVEY3hfZ2pVaE5QcXFQa0pUNG13YlU3MGk5VmFSVEVfdllFb1BYTTJqaWZZRGRtZm5WTXJUb2dsZkE0WlZCVUhtYnBVOUNObHRXX0JxZUpWWDZCS2pWRTRMV0lhRERlRTM2Y0s3ZmhWeExhZTQ4Vzgxa2hXQi1TX3VBU1pSc3h6ZFdpcXVJaFMzbmJRa3hOMnRqWXBYN0NFOHZ0Q3BnWHkwSnlHRWFqOHEzbTZrM3RMQ3M1UWw2U01PMjB4bTFpNUNyOTNDU1JLcThpc2huWWZoZkZxZWdQN1duSzFwaTNsVzdrcQ?oc=5",
+  "medium": "Bouwkroniek",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Consortium ‘r0q’van jan de nul, besix, stadsbader, willemen en i4b aangeduid als voorkeursbieder voor herinrichting r0 in zone zaventem Bouwkroniek"
+ },
+ {
+  "id": "8f174a14ed2ec151",
+  "bedrijf": "EEG",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Multitechnieken voor het nieuwe hartkatheterisatielabo van AZ Alma Eeklo – EEG Group",
+  "url": "https://eeg.be/reference/multitechnieken-voor-het-nieuwe-hartkatheterisatielabo-van-az-alma-eeklo/",
+  "medium": "eeg.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "bcf9e75cb03d39a9",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Consortium ‘r0q’van jan de nul, besix, stadsbader, willemen en i4b aangeduid als voorkeursbieder voor herinrichting r0 in zone zaventem",
+  "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQRWp2WnBMUk5nU1RNdndtMmtjclh1SGxRUzVEY3hfZ2pVaE5QcXFQa0pUNG13YlU3MGk5VmFSVEVfdllFb1BYTTJqaWZZRGRtZm5WTXJUb2dsZkE0WlZCVUhtYnBVOUNObHRXX0JxZUpWWDZCS2pWRTRMV0lhRERlRTM2Y0s3ZmhWeExhZTQ4Vzgxa2hXQi1TX3VBU1pSc3h6ZFdpcXVJaFMzbmJRa3hOMnRqWXBYN0NFOHZ0Q3BnWHkwSnlHRWFqOHEzbTZrM3RMQ3M1UWw2U01PMjB4bTFpNUNyOTNDU1JLcThpc2huWWZoZkZxZWdQN1duSzFwaTNsVzdrcQ?oc=5",
+  "medium": "Bouwkroniek",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Consortium ‘r0q’van jan de nul, besix, stadsbader, willemen en i4b aangeduid als voorkeursbieder voor herinrichting r0 in zone zaventem Bouwkroniek"
+ },
+ {
+  "id": "433648729d7629ec",
+  "bedrijf": "Stadsbader",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Hoe Stadsbader omgaat met ruimteschaarste in de industriebouw | Stadsbader",
+  "url": "https://www.stadsbader.com/nl/nieuws/hoe-stadsbader-omgaat-met-ruimteschaarste-de-industriebouw",
+  "medium": "stadsbader.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "016cacef3b5336c2",
+  "bedrijf": "Archipelago",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Permit granted for phases 1 and 2 of AZ Glorieux Ronse | Archipelago",
+  "url": "https://www.archipelago.eu/news-events/news/permit-granted-for-phases-1-and-2-of-az-glorieux-ronse",
+  "medium": "archipelago.eu",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c0b4b21b5becc1be",
+  "bedrijf": "Archipelago",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Vergunning binnen voor fase 1 en 2 van AZ Glorieux Ronse | Archipelago",
+  "url": "https://www.archipelago.eu/nl/nieuws-evenementen/nieuws/vergunning-binnen-voor-fase-1-en-2-van-az-glorieux-ronse",
+  "medium": "archipelago.eu",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "50c155f9dd17db60",
+  "bedrijf": "Archipelago",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Permis accordÃ© pour les phases 1 et 2 de lâAZ Glorieux Ã Renaix | Archipelago",
+  "url": "https://www.archipelago.eu/fr/actualites-evenements/actualites/permis-octroye-pour-les-phases-1-et-2-de-l-az-glorieux-a-renaix",
+  "medium": "archipelago.eu",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "4cca4cd89cd23995",
+  "bedrijf": "Nelissen",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Deze twee Limburgse steenfabrieken met eeuw geschiedenis krijgen zicht op uitbreiding: “Ze exporteren stenen naar wel 50 landen”",
+  "url": "https://www.hln.be/lanaken/deze-twee-limburgse-steenfabrieken-met-eeuw-geschiedenis-krijgen-zicht-op-uitbreiding-ze-exporteren-stenen-naar-wel-50-landen~ae149338/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "6169ffffe86116c1",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "83 Vlaamse bedrijven krijgen internationale erkenning voor duurzaam ondernemerschap",
+  "url": "https://www.voka.be/nieuws/83-vlaamse-bedrijven-krijgen-internationale-erkenning-voor-duurzaam-ondernemerschap",
+  "medium": "Voka - Vlaams netwerk van ondernemingen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…iveau van SDG Ambassador. DNS Belgium wordt als eerste Belgische onderneming herbevestigd als SDG Ambassador. Antea Group, ChocDecor, Center Parcs Europe, Ciril en Deholi behalen de erkenning voor het eerst. “Duurzaam ondernemen gaat niet over mooie i…",
+  "vermelding": true
+ },
+ {
+  "id": "63765fba389e6a9e",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Negen bedrijven uit Antwerpen en het Waasland krijgen internationale erkenning voor duurzaamheid",
+  "url": "https://www.made-in.be/oost-vlaanderen/negen-bedrijven-uit-antwerpen-en-het-waasland-krijgen-internationale-erkenning-voor-duurzaamheid/",
+  "medium": "Made in",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "ba065dbe7fed37b0",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Van AI voor tandartsen tot menstruatiearmoede: VLAIO bekroont Vlaamse innovatie",
+  "url": "https://www.vlaio.be/nl/nieuws/van-ai-voor-tandartsen-tot-menstruatiearmoede-vlaio-bekroont-vlaamse-innovatie",
+  "medium": "VLAIO",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "accd5f38723d69dd",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Klimaatdak: multifunctioneel platte dak — Buildwise gids",
+  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90bzR5NnhsTnNiX3pnSUhkQ2d1N0lPd0hQd21sakdVc3dSMVVicmZtd0JIV3NnTjhYX2x5Y1JUa3c1OXU4QWFmNllkcTNJd0JuT20xcTNuTWF3WkRLWkxvSjlGSFRzTUEwYjhCWEZqdkZ5REVJX0t1eW5B?oc=5",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Klimaatdak: multifunctioneel platte dak — Buildwise gids Architectura"
+ },
+ {
+  "id": "dc91ab0d1aa83e25",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Van AI voor tandartsen tot menstruatiearmoede: VLAIO bekroont Vlaamse innovatie",
+  "url": "https://www.vlaio.be/nl/nieuws/van-ai-voor-tandartsen-tot-menstruatiearmoede-vlaio-bekroont-vlaamse-innovatie",
+  "medium": "VLAIO",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "40f25727df66e1cf",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Cours d'hiver 2027 : Garde-corps : révision de la norme NBN B 03-004 - Grâce-Hollogne (16/02/2027)",
+  "url": "https://www.buildwise.be/fr/agenda/cours-dhiver-2027-garde-corps-revision-de-la-norme-nbn-b-03-004-grace-hollogne-16022027/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "ce7d61a08dd2963e",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Renow - Réemploi et rénovation performante : est-ce compatible ? - Webinaire (17/11/2026)",
+  "url": "https://www.buildwise.be/fr/agenda/renow-reemploi-et-renovation-performante-est-ce-compatible-webinaire-17112026/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "HR & talent"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "139e7045d806a999",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-23",
+  "week": "2026-W43",
+  "titel": "Comité stratégique du projet SPEC",
+  "url": "https://www.buildwise.be/fr/recherche-innovation/showroom-des-projets/spec-systeme-de-specifications-du-futur/comite-strategique-du-projet-spec/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "41c05319bed1213e",
+  "bedrijf": "Verstraete.team",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Ambitieus cohousing-project in hartje Kortrijk officieel van start gegaan met eerste steen: “Dit is de woonformule van de toekomst”",
+  "url": "https://www.nieuwsblad.be/regio/west-vlaanderen/zuid-west-vlaanderen/kortrijk/ambitieus-cohousing-project-in-hartje-kortrijk-officieel-van-start-gegaan-met-eerste-steen-dit-is-de-woonformule-van-de-toekomst/163413492.html",
+  "medium": "Nieuwsblad",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "0653226816161c8a",
+  "bedrijf": "VDS Vanderstraeten",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Bouw woonbuurt Bruis aan Mechels Keerdok gestart",
+  "url": "https://www.bouwenwonen.net/artikel/Bouw-woonbuurt-Bruis-aan-Mechels-Keerdok-gestart/54899",
+  "medium": "Bouw & Wonen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…O van projectontwikkelaar ION, Maxime Koot, CEO van projectontwikkelaar NEW en Karel Luyckx, CEO van aannemer Vanderstraeten. Nog vóór de eerste steen is gelegd, is 80% van de appartementen verkocht. De eerste bewoners worden in het najaar van 2028 verwa…",
+  "vermelding": true
+ },
+ {
+  "id": "ba246748898e2293",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Van staalslak tot CO2-negatieve gevelsteen: Pirrouet krijgt nieuw langformaat",
+  "url": "https://www.dearchitect.nl/320152/pirrouet-vrij-ontwerpen-verantwoord-bouwen",
+  "medium": "de Architect",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…Van staalslak tot CO2-negatieve gevelsteen: Pirrouet krijgt nieuw langformaat Delen Met Pirrouet® ontwikkelde Vandersanden een gevelsteen die tijdens productie CO₂ opneemt in plaats van uitstoot, goed voor een netto negatieve voetafdruk van -35,5 kg CO…",
+  "vermelding": true
+ },
+ {
+  "id": "bce96f791a06a515",
+  "bedrijf": "BESIX Unitec",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Nieuw contract ter waarde van 95,6 miljoen euro voor de modernisering van de N5/E420 in Wallonië - BESIX Unitec",
+  "url": "https://www.besixunitec.com/nl/news/nieuw-contract-ter-waarde-van-956-miljoen-euro-voor-de-modernisering-van-de-n5e420-in-wallonie",
+  "medium": "besixunitec.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "052e78d173444632",
+  "bedrijf": "BESIX Unitec",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "King Philippe makes first public journey through Antwerp’s Scheldt Tunnel - BESIX Unitec",
+  "url": "https://www.besixunitec.com/nl/news/king-philippe-makes-first-public-journey-through-antwerps-scheldt-tunnel",
+  "medium": "besixunitec.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "0238a2f7a7496870",
+  "bedrijf": "BESIX Unitec",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Un marché de 95,6 millions d'euros pour la modernisation de la N5/E420 en Wallonie - BESIX Unitec",
+  "url": "https://www.besixunitec.com/fr/news/un-marche-de-956-millions-deuros-pour-la-modernisation-de-la-n5e420-en-wallonie",
+  "medium": "besixunitec.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c77550731aff2db2",
+  "bedrijf": "EEG",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Slimme en flexibele technische ruggengraat voor nieuw VRT-huis",
+  "url": "https://www.architectura.be/nl/nieuws/slimme-en-flexibele-technische-ruggengraat-voor-nieuw-vrt-huis/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven",
+   "HR & talent"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…² aan ruimte, waarvan 40.000 m² bovengronds, wordt het een indrukwekkend en technologisch geavanceerd gebouw. EEG Group speelt een sleutelrol binnen het bouwteam en staat in voor het volledige technische luik. Mathias Bruggeman, projectleider bij EE…",
+  "vermelding": true
+ },
+ {
+  "id": "471eca898ae9c895",
+  "bedrijf": "BESIX Infra",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "New €95.6 million contract for the modernisation of the N5/E420 in Wallonia - BESIX Infra",
+  "url": "https://www.besixinfra.com/en/news/new-956-million-contract-for-the-modernisation-of-the-n5e420-in-wallonia",
+  "medium": "besixinfra.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "28efd5603173c59c",
+  "bedrijf": "BESIX Infra",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "King Philippe makes first public journey through Antwerp’s Scheldt Tunnel - BESIX Infra",
+  "url": "https://www.besixinfra.com/en/news/king-philippe-makes-first-public-journey-through-antwerps-scheldt-tunnel",
+  "medium": "besixinfra.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c028ffdec2927b5f",
+  "bedrijf": "BESIX Infra",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Nieuw contract ter waarde van 95,6 miljoen euro voor de modernisering van de N5/E420 in Wallonië - BESIX Infra",
+  "url": "https://www.besixinfra.com/nl/news/nieuw-contract-ter-waarde-van-956-miljoen-euro-voor-de-modernisering-van-de-n5e420-in-wallonie",
+  "medium": "besixinfra.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "2e646d65e7761b56",
+  "bedrijf": "Vanhout",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Nieuw contract ter waarde van 95,6 miljoen euro voor de modernisering van de N5/E420 in Wallonië - Vanhout",
+  "url": "https://www.vanhout.be/nl/news/nieuw-contract-ter-waarde-van-956-miljoen-euro-voor-de-modernisering-van-de-n5e420-in-wallonie",
+  "medium": "vanhout.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "edf9e23234ddb19f",
+  "bedrijf": "Vanhout",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "King Philippe makes first public journey through Antwerp’s Scheldt Tunnel - Vanhout",
+  "url": "https://www.vanhout.be/nl/news/king-philippe-makes-first-public-journey-through-antwerps-scheldt-tunnel",
+  "medium": "vanhout.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "fbbdb924d3417c65",
+  "bedrijf": "Archipelago",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Brucargo Centraal — duurzame vernieuwing Brussels Airport",
+  "url": "https://www.architectura.be/nl/nieuws/nieuwe-blauwdruk-voor-toekomstgerichte-luchthavenlogistiek-archipelago/",
+  "medium": "Architectura",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…Deel artikel ✕ Nieuwe blauwdruk voor toekomstgerichte luchthavenlogistiek (archipelago) Tim Janssens 22 oktober 2026 © Pieter Rabijns Brucargo Centraal is een compact complex met drie hedendaagse volumes, die in de t…",
+  "vermelding": true
+ },
+ {
+  "id": "ca7663e4476b14d5",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "'Vlaanderen heeft nood aan 600.000 extra woningen in plaats van 450.000'",
+  "url": "https://trends.knack.be/geld/immo/embuild-vlaanderen-heeft-nood-aan-600-000-extra-woningen-in-plaats-van-450-000/",
+  "medium": "Knack",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "5559ee9731385975",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "DPS opent in Drongen eerste inspiratieruimte voor sociale woningbouw",
+  "url": "https://www.pzc.nl/gent/dps-opent-in-drongen-eerste-inspiratieruimte-voor-sociale-woningbouw~ab0e9a53/",
+  "medium": "pzc.nl",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "b63657a166ac93ca",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Vlaanderen heeft 600.000 extra woningen nodig tegen 2050",
+  "url": "https://www.bouwenwonen.net/artikel/Vlaanderen-heeft-600000-extra-woningen-nodig-tegen-2050/54900",
+  "medium": "Bouw & Wonen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…aken. Daar zal het Beleidsplan Ruimte Vlaanderen bij moeten helpen. Wat is nodig om woonopgave te doen slagen Embuild schuift drie prioriteiten naar voren om de woonopgave aan te pakken. Eén, lokale besturen verantwoordelijk maken voor het realise…",
+  "vermelding": true
+ },
+ {
+  "id": "6e061d6ebebf52ca",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Storm Austen: bouwbedrijven beveiligen werven en stoppen risicowerk",
+  "url": "https://www.bouwenwonen.net/artikel/Storm-Austen-bouwbedrijven-beveiligen-werven-en-stoppen-risicowerk/54903",
+  "medium": "Bouw & Wonen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "HR & talent",
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…iligheid van onze medewerkers en de omwonenden komt altijd op de eerste plaats\", zegt Niko Demeester, CEO van Embuild. Vooral los materiaal, windvangende doeken en zeilen en nog niet volledig stabiele constructies vormen bij hevige windstoten een…",
+  "vermelding": true
+ },
+ {
+  "id": "d6aa8c7cacd5473d",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Storm austen bouwsector beveiligt werven en schort risicovolle werken op",
+  "url": "http://default/nl/storm-austen-bouwsector-beveiligt-werven-en-schort-risicovolle-werken-op",
+  "medium": "embuild.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "b0194f5cef7f69e9",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-22",
+  "week": "2026-W43",
+  "titel": "Temp%c3%aate austen le secteur de la construction s%c3%a9curise les chantiers et suspend les travaux %c3%a0 risque",
+  "url": "http://default/fr/temp%C3%AAte-austen-le-secteur-de-la-construction-s%C3%A9curise-les-chantiers-et-suspend-les-travaux-%C3%A0-risque",
+  "medium": "embuild.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "1777d16bb851db34",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Constructiv | Ingenium.be",
+  "url": "https://www.ingenium.be/projecten/constructiv",
+  "medium": "ingenium.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "9f513c992d191d3d",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Administratief Centrum Meise - HVAC-installatie | Ingenium.be",
+  "url": "https://www.ingenium.be/projecten/nv-administratief-centrum-meise-hvac-installatie",
+  "medium": "ingenium.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "e6130522b7ee3153",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "POM West-Vlaanderen - Bedrijventerreinen van de Toekomst - Blauwe Toren Brugge | Ingenium.be",
+  "url": "https://www.ingenium.be/projecten/pom-west-vlaanderen---bedrijventerreinen-van-de-toekomst---blauwe-toren-brugge",
+  "medium": "ingenium.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c6f190588bdf65bd",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "POM West-Vlaanderen - Bedrijventerreinen van de Toekomst - Veurne | Ingenium.be",
+  "url": "https://www.ingenium.be/projecten/pom-west-vlaanderen---bedrijventerreinen-van-de-toekomst---veurne",
+  "medium": "ingenium.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "11d7af79a64b5781",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Ruimtelijk economische strategie Poort West-Limburg | Ingenium.be",
+  "url": "https://www.ingenium.be/projecten/ruimtelijk-economische-strategie-poort-west-limburg",
+  "medium": "ingenium.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "993282c94286ea81",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Steven Wallays aangesteld als nieuwe CEO van Ingenium | Ingenium.be",
+  "url": "https://www.ingenium.be/nieuws/steven-wallays-aangesteld-als-nieuwe-ceo-van-ingenium",
+  "medium": "ingenium.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "d01b98d3f2196b76",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Van labo naar CGMP-faciliteit: ontwerp een omgeving die klaar is voor de volgende stap | Ingenium.be",
+  "url": "https://www.ingenium.be/nieuws/van-labo-naar-cgmp-faciliteit-ontwerp-een-omgeving-die-klaar-is-voor-de-volgende-stap",
+  "medium": "ingenium.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "17074a7b7850f968",
+  "bedrijf": "Ingenium",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Wat als je project plots hoogspanning vraagt? | Ingenium.be",
+  "url": "https://www.ingenium.be/nieuws/wat-als-je-project-plots-hoogspanning-vraagt",
+  "medium": "ingenium.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "6ff1dca73a615e6a",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Deze Limburgse steenfabrieken met eeuw geschiedenis krijgen zicht op uitbreiding: “Exporteren stenen naar 50 landen”",
+  "url": "https://www.hln.be/lanaken/deze-limburgse-steenfabrieken-met-eeuw-geschiedenis-krijgen-zicht-op-uitbreiding-exporteren-stenen-naar-50-landen~ae149338/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "93506dd0fe75fb13",
+  "bedrijf": "BESIX Unitec",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "340 ton staal op z’n plek: eerste Krammersluisdeur met succes vervoerd en teruggeplaatst - BESIX Unitec",
+  "url": "https://www.besixunitec.com/nl/news/340-ton-staal-op-zn-plek-eerste-krammersluisdeur-met-succes-vervoerd-en-teruggeplaatst",
+  "medium": "besixunitec.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "ae2cd1806ee7f0ab",
+  "bedrijf": "BESIX Unitec",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "340 tonnes d'acier remises en place : la première porte des écluses Krammer a été réinstallée avec succès (Pays-Bas) - BESIX Unitec",
+  "url": "https://www.besixunitec.com/fr/news/340-tonnes-dacier-remises-en-place-la-premiere-porte-des-ecluses-krammer-a-ete-reinstallee-avec-succes-pays-bas",
+  "medium": "besixunitec.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "3bfddc9c98751835",
+  "bedrijf": "BESIX Infra",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "340 tonnes of steel in place: the first Krammer lock gate is successfully transported and reinstalled (The Netherlands) - BESIX Infra",
+  "url": "https://www.besixinfra.com/en/news/340-tonnes-of-steel-in-place-the-first-krammer-lock-gate-is-successfully-transported-and-reinstalled-the-netherlands",
+  "medium": "besixinfra.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "54f95047be4d2865",
+  "bedrijf": "BESIX Infra",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "340 ton staal op z’n plek: eerste Krammersluisdeur met succes vervoerd en teruggeplaatst - BESIX Infra",
+  "url": "https://www.besixinfra.com/nl/news/340-ton-staal-op-zn-plek-eerste-krammersluisdeur-met-succes-vervoerd-en-teruggeplaatst",
+  "medium": "besixinfra.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "9559a75963ba4d2f",
+  "bedrijf": "DEME",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Deck Equipment Supervisor - Heavy Lift Vessel | DEME Group",
+  "url": "https://www.deme-group.com/jobs/deck-equipment-supervisor-heavy-lift-vessel",
+  "medium": "deme-group.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "bfd0edf23fd045ab",
+  "bedrijf": "Vanhout",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "340 ton staal op z’n plek: eerste Krammersluisdeur met succes vervoerd en teruggeplaatst - Vanhout",
+  "url": "https://www.vanhout.be/nl/news/340-ton-staal-op-zn-plek-eerste-krammersluisdeur-met-succes-vervoerd-en-teruggeplaatst",
+  "medium": "vanhout.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "00acffaed1e102c7",
+  "bedrijf": "Archipelago",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "80 woningen in Heusden-Zolder worden proeftuin voor circulair bouwen",
+  "url": "https://projecto.pmg.be/nl/dossier/CMGbe0018S55_00",
+  "medium": "Professional Media Group",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Duurzaamheid",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "c4be58b0f86b133f",
+  "bedrijf": "Driesen",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Nachtelijke werken op Nieuwe Staatsbaan voor plaatsing woningunit",
+  "url": "https://www.hln.be/oud-turnhout/nachtelijke-werken-op-nieuwe-staatsbaan-voor-plaatsing-woningunit~ae5e3cc6/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "3ab9ae1b77afaff2",
+  "bedrijf": "Nelissen",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "Deze Limburgse steenfabrieken met eeuw geschiedenis krijgen zicht op uitbreiding: “Exporteren stenen naar 50 landen”",
+  "url": "https://www.hln.be/lanaken/deze-limburgse-steenfabrieken-met-eeuw-geschiedenis-krijgen-zicht-op-uitbreiding-exporteren-stenen-naar-50-landen~ae149338/",
+  "medium": "HLN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "4f3dc80474b066fb",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "4 beurzen en 13000 vakmensen",
+  "url": "http://default/nl/nieuws/4-beurzen-en-13000-vakmensen",
+  "medium": "embuild.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c63ed2224011dcbc",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "4 salons professionnels 13000 passionn%c3%a9s du m%c3%a9tier",
+  "url": "http://default/fr/actualit%C3%A9s/4-salons-professionnels-13000-passionn%C3%A9s-du-m%C3%A9tier",
+  "medium": "embuild.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "fdd10bd3ab1770e3",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "SPEC - Système de spécifications du futur",
+  "url": "https://www.buildwise.be/fr/recherche-innovation/showroom-des-projets/spec-systeme-de-specifications-du-futur/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "e4fc77c2aff9b187",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-21",
+  "week": "2026-W43",
+  "titel": "L'étude de faisabilité",
+  "url": "https://www.buildwise.be/fr/recherche-innovation/showroom-des-projets/spec-systeme-de-specifications-du-futur/letude-de-faisabilite/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "91abfc6f5c08f858",
+  "bedrijf": "VDS Vanderstraeten",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Paralegal | werf",
+  "url": "http://vanderstraeten.be/vacatures/paralegal",
+  "medium": "vanderstraeten.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "4309144822f4fae8",
+  "bedrijf": "Houben",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Werkmateriaal gestolen op werf in Genk",
+  "url": "https://www.hbvl.be/regio/limburg/genk/werkmateriaal-gestolen-op-werf-in-genk/163348885.html",
+  "medium": "HBVL",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "32c8f6a804ec427f",
+  "bedrijf": "BESIX Unitec",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Piramidebrug in Gent ingehuldigd: belangrijke mijlpaal voor BESIX en het R4WO-project (België) - BESIX Unitec",
+  "url": "https://www.besixunitec.com/nl/news/piramidebrug-in-gent-ingehuldigd-belangrijke-mijlpaal-voor-besix-en-het-r4wo-project-belgie",
+  "medium": "besixunitec.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "31ef80067ab1856f",
+  "bedrijf": "BESIX Unitec",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Inauguration du Pyramid Bridge à Gand : une étape majeure pour BESIX et le projet R4WO (Belgique) - BESIX Unitec",
+  "url": "https://www.besixunitec.com/fr/news/inauguration-du-pyramid-bridge-a-gand-une-etape-majeure-pour-besix-et-le-projet-r4wo-belgique",
+  "medium": "besixunitec.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "fb8449cc89b9b666",
+  "bedrijf": "BESIX Infra",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Pyramid Bridge inaugurated in Ghent: major milestone for BESIX and the R4WO project (Belgium) - BESIX Infra",
+  "url": "https://www.besixinfra.com/en/news/pyramid-bridge-inaugurated-in-ghent-major-milestone-for-besix-and-the-r4wo-project-belgium",
+  "medium": "besixinfra.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "18c98209753cffbc",
+  "bedrijf": "BESIX Infra",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Piramidebrug in Gent ingehuldigd: belangrijke mijlpaal voor BESIX en het R4WO-project (België) - BESIX Infra",
+  "url": "https://www.besixinfra.com/nl/news/piramidebrug-in-gent-ingehuldigd-belangrijke-mijlpaal-voor-besix-en-het-r4wo-project-belgie",
+  "medium": "besixinfra.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "6eb29d42892a2eb8",
+  "bedrijf": "OpenSpace",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "OpenSpace CEO at NECA 2026: Spatial AI Delivers ROI",
+  "url": "https://www.openspace.ai/news/jeevan-kalanithi-at-neca-2026-spatial-ai-goes-beyond-chatbots/",
+  "medium": "openspace.ai",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "BIM & digitaal",
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "fcce2a77752f12a7",
+  "bedrijf": "OpenSpace",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "OpenSpace CEO on Spatial AI and the Future of Construction - OpenSpace",
+  "url": "https://www.openspace.ai/news/openspace-ceo-on-spatial-ai-and-the-future-of-construction/",
+  "medium": "openspace.ai",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "BIM & digitaal",
+   "Bedrijf & financieel"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "1da3b49602aa3a69",
+  "bedrijf": "Vanhout",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Piramidebrug in Gent ingehuldigd: belangrijke mijlpaal voor BESIX en het R4WO-project (België) - Vanhout",
+  "url": "https://www.vanhout.be/nl/news/piramidebrug-in-gent-ingehuldigd-belangrijke-mijlpaal-voor-besix-en-het-r4wo-project-belgie",
+  "medium": "vanhout.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "0b741bc3409c006a",
+  "bedrijf": "Archipelago",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Archipelago onderzoekt hoe slim gebouwontwerp de koelbehoefte kan beperken",
+  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPajF0ckhBUVZRaXFLN2tqX084cWNTWGFVWGNLaUFOOVQwams1WlllMkpfM29aa21wVC0tRW5JLTZBZ0NJNzk1VllyaXFyNGpOZjV6OFNldlRoVXB4SDJnU0xZRWdzQkNzU3U1bDJMcXRDa2duYTY0a19FV3d6eUt6d3BadWtFN3pfclp1cWtVbDhwS1BNWXZQeU1ucEhsNVBkaEQ0Nm96VE5sV0hod0VMalZmVWs4VFk?oc=5",
+  "medium": "Bouwkroniek",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Archipelago onderzoekt hoe slim gebouwontwerp de koelbehoefte kan beperken Bouwkroniek"
+ },
+ {
+  "id": "bc48ebd72c50f4b1",
+  "bedrijf": "Cooperlink",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Packages: approve interdependent documents together",
+  "url": "https://www.cooperlink.io/post/packages-approve-interdependent-documents-together",
+  "medium": "cooperlink.io",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "34d97746f03ab7bd",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Drones in de bouwlogistiek: van innovatie naar vaste plek op de bouwplaats",
+  "url": "https://www.mobiliteit.nl/gebiedsontwikkeling/bereikbaarheid/2026/10/20/drones-in-de-bouwlogistiek-van-innovatie-naar-vaste-plek-op-de-bouwplaats/",
+  "medium": "OVPro.nl",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal",
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
+  "vermelding": true
+ },
+ {
+  "id": "30cdefe2c5ec828f",
+  "bedrijf": "Embuild",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Vakbeurzen Embuild trekken recordaantal van 12.700 bezoekers",
+  "url": "https://www.bouwenwonen.net/artikel/Vakbeurzen-Embuild-trekken-recordaantal-van-12700-bezoekers/54887",
+  "medium": "Bouw & Wonen",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "BIM & digitaal"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "…12.700 bezoekers Bron: Embuild Vlaanderen 20 oktober 2026 Met 12.700 bezoekers hebben de vier vakbeurzen van Embuild vorige week een bezoekersrecord gevestigd. Install Day, Digital Construction Day, Dag van de Afwerking en Belgian Roof Day bracht…",
+  "vermelding": true
+ },
+ {
+  "id": "7ff8dfa0b0ae652c",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Certification Combi : formation placement de portes + traversées de parois - Limelette (3+5+10+17/11/2026)",
+  "url": "https://www.buildwise.be/fr/agenda/certification-combi-formation-placement-de-portes-plus-traversees-de-parois-limelette-3plus5plus10plus17112026/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "47eaf556db381944",
+  "bedrijf": "Buildwise",
+  "datum": "2026-10-20",
+  "week": "2026-W43",
+  "titel": "Forum de l’innovation : À la jonction des métiers : menuiseries et travaux d'enduit et de façade - Zaventem (19/11/2026)",
+  "url": "https://www.buildwise.be/fr/agenda/forum-de-l-innovation-a-la-jonction-des-metiers-menuiseries-et-travaux-denduit-et-de-facade-zaventem-19112026/",
+  "medium": "buildwise.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Innovatie & prefab"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
   "id": "3142f100e3179f34",
   "bedrijf": "Furnibo",
   "datum": "2026-10-19",
@@ -481,6 +1979,299 @@
   "samenvatting": ""
  },
  {
+  "id": "4a867d4e9b01f825",
+  "bedrijf": "Dethier",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "De inschuifwijk van Zaventem",
+  "url": "https://www.vvsg.be/kennis/praktijken/praktijkendatabank/de-inschuifwijk-van-zaventem",
+  "medium": "VVSG",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": false,
+  "samenvatting": "…aciawijk 1932 Zaventem België Financiering Andere Externe partners Woonwerk architecten (opent nieuw venster) Dethier (opent nieuw venster) Group Machiels (opent nieuw venster) Wat is er gebeurd? Het project werd in 2022 via een Design & Build-opd…",
+  "vermelding": true
+ },
+ {
+  "id": "7abae2e4f53243ff",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Benefits of E-Board | Vandersanden",
+  "url": "https://www.vandersanden.com/en/benefits-e-board",
+  "medium": "vandersanden.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "5c7af176e0e4f4e5",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Les avantages du système E-Board | Vandersanden",
+  "url": "https://www.vandersanden.com/fr-be/les-avantages-du-systeme-e-board",
+  "medium": "vandersanden.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "8230a7bc2589fb76",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Voordelen van E-Board | Vandersanden",
+  "url": "https://www.vandersanden.com/nl-be/voordelen-van-e-board",
+  "medium": "vandersanden.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "751f1d1483c97cd8",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Vorteile von E-Board | Vandersanden",
+  "url": "https://www.vandersanden.com/de-de/vorteile-von-e-board",
+  "medium": "vandersanden.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "d97af8b6e40c292c",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Avantages du système E-Board | Vandersanden",
+  "url": "https://www.vandersanden.com/fr-fr/avantages-du-systeme-e-board",
+  "medium": "vandersanden.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "67f0bd47561e97af",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Преимущества E-Board | Vandersanden",
+  "url": "https://www.vandersanden.com/ru-ru/preimushchestva-e-board",
+  "medium": "vandersanden.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c2376ca480917e4e",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "La gamme Pirrouet décroche la certification ATG en Belgique | Vandersanden",
+  "url": "https://www.vandersanden.com/fr-be/la-gamme-pirrouet-decroche-la-certification-atg-en-belgique",
+  "medium": "vandersanden.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "c38874aa559b3364",
+  "bedrijf": "Vandersanden",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Pirrouet behaalt ATG-certificaat voor toepassing in België | Vandersanden",
+  "url": "https://www.vandersanden.com/nl-be/pirrouet-behaalt-atg-certificaat-voor-toepassing-belgie",
+  "medium": "vandersanden.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "9a090983a23e05f3",
+  "bedrijf": "OpenSpace",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "How construction mapping actually helps on the jobsite",
+  "url": "https://www.openspace.ai/blog/construction-site-mapping/",
+  "medium": "openspace.ai",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "HR & talent",
+   "BIM & digitaal"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "See how construction mapping software helps teams track site conditions, progress, and logistics. Compare top tools and what to look for. The post How construction mapping actually helps on the jobsite appeared first on OpenSpace ."
+ },
+ {
+  "id": "82e0334e44171dc6",
+  "bedrijf": "OpenSpace",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "What to document on a data center project before the walls close",
+  "url": "https://www.openspace.ai/blog/data-center-construction-documentation/",
+  "medium": "openspace.ai",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "BIM & digitaal",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "Data center construction documentation protects schedules, commissioning, and handover. See what to capture and how GCs record work in place with OpenSpace. The post What to document on a data center project before the walls close…"
+ },
+ {
+  "id": "e54177c67043bc0a",
+  "bedrijf": "DEME",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Responsable pont-bascule – Centre de recyclage Seraing | DEME Group",
+  "url": "https://www.deme-group.com/jobs/responsable-pont-bascule-centre-de-recyclage-seraing",
+  "medium": "deme-group.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "e41c3cbf717a9074",
+  "bedrijf": "DEME",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Conducteur de chantier – Région Wallonne | DEME Group",
+  "url": "https://www.deme-group.com/jobs/conducteur-de-chantier-region-wallonne",
+  "medium": "deme-group.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "45f7b66420d9224a",
+  "bedrijf": "DEME",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Site Superintendent – Région de Liège | DEME Group",
+  "url": "https://www.deme-group.com/jobs/site-superintendent-region-de-liege",
+  "medium": "deme-group.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "759fbeb953f4fdcc",
+  "bedrijf": "DEME",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Project Engineer – Dragage Wallon | DEME Group",
+  "url": "https://www.deme-group.com/jobs/project-engineer-dragage-wallon",
+  "medium": "deme-group.com",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "f4f7c502b11d2842",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Vacature Junior Adviseur Mobiliteit Antea Group | Antea Group",
+  "url": "https://anteagroup.be/vacatures/junior-adviseur-mobiliteit",
+  "medium": "anteagroup.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "HR & talent"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "d961d507cfe525e3",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Vacature projectleider landschaps- en natuurinrichting | Antea Group",
+  "url": "https://anteagroup.be/vacatures/projectleider-landschaps-en-natuurinrichting",
+  "medium": "anteagroup.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "HR & talent",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
+  "id": "a63f3ceb93ab4f79",
+  "bedrijf": "Antea Group",
+  "datum": "2026-10-19",
+  "week": "2026-W43",
+  "titel": "Vacature Projectleider natuur- en landschapsontwikkeling Antea | Antea Group",
+  "url": "https://anteagroup.be/vacatures/projectleider-natuur-en-landschapsontwikkeling",
+  "medium": "anteagroup.be",
+  "bron": "Website",
+  "kanaal": "Eigen kanalen",
+  "themas": [
+   "HR & talent",
+   "Projecten & werven"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": ""
+ },
+ {
   "id": "13902c5bd3300f8c",
   "bedrijf": "OpenSpace",
   "datum": "2026-10-18",
@@ -512,6 +2303,22 @@
   "naam_in_titel": false,
   "samenvatting": "Vermeld in de artikeltekst (artikel achter een cookie- of betaalmuur, niet automatisch nagelezen).",
   "vermelding": true
+ },
+ {
+  "id": "f2423878cbc93b6f",
+  "bedrijf": "BATO",
+  "datum": "2026-10-17",
+  "week": "2026-W42",
+  "titel": "BATO stunt niet tegen een onvolledig Veendam 1894",
+  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa3JtUWtWMVp3NnVfNk1FU3BoZmRtLVZyTEpPNFFpZ1Ytd09TMmUxbVlIRG04Y2pwcDFjaUJVNGFFZHNsOW42eF9obVBSZGxMd0FURnVBUnhFemNIak9ZMjFoejRpMm95bDJFcW9WeFQybW82aUYyZFVtODBRbXo3czlpZjF2eUVjNFB1LU5qeUlhOGZPbUtGTjRsbTdtbGExejRXa2lpMmI?oc=5",
+  "medium": "DVHN",
+  "bron": "Google Nieuws",
+  "kanaal": "Pers & nieuws",
+  "themas": [
+   "Overige"
+  ],
+  "naam_in_titel": true,
+  "samenvatting": "BATO stunt niet tegen een onvolledig Veendam 1894 DVHN"
  },
  {
   "id": "07c426c3a44ac189",
